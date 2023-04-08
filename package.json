@@ -9,15 +9,16 @@
   "scripts": {
     "test": "ts-node node_modules/jasmine/bin/jasmine",
     "build": "tsc",
+    "dev": "docker stop api && docker start db cache && NODE_ENV=dev concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "start": "docker compose up -d",
-    "stop": "docker stop app database cache",
-    "dev": "docker stop app && docker start database cache && NODE_ENV=dev concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "seed:db": "NODE_ENV=dev && docker start database cache && npx prisma db seed",
-    "format:schemas": "prisma format --schema prisma/poliqlo_schema.prisma",
-    "generate:schemas": "npm run format:schemas && prisma generate --schema=prisma/poliqlo_schema.prisma",
-    "migrate:init": "docker start database cache && npm run generate:schemas &&  prisma migrate dev --schema=prisma/poliqlo_schema.prisma --name poliqlo",
-    "migrate:dev": "NODE_ENV=dev && docker start database cache && npm run generate:schemas && prisma migrate dev --create-only --schema=prisma/poliqlo_schema.prisma --name poliqlo",
-    "migrate:deploy": "prisma migrate deploy --schema=prisma/poliqlo_schema.prisma"
+    "stop": "docker stop api db cache",
+    "seed:db": "NODE_ENV=dev && docker start postgres redis && npx prisma db seed",
+    "format:schemas": "prisma format --schema prisma/schema.prisma",
+    "generate:schemas": "npm run format:schemas && prisma generate --schema=prisma/schema.prisma",
+    "migrate:init": "npx prisma migrate dev --name init",
+    "migrate:dev": "NODE_ENV=dev && docker start postgres redis && npm run generate:schemas && prisma migrate dev --create-only --schema=prisma/schema.prisma --name init",
+    "migrate:deploy": "prisma migrate deploy --schema=prisma/schema.prisma",
+    "db:push": "docker exec -i db /bin/bash -c 'pg_restore --clean -U admin -d db' < ./dump.sql"
   },
   "keywords": [],
   "author": "",
@@ -31,7 +32,7 @@
     "express-fileupload": "^1.4.0",
     "express-session": "^1.17.3",
     "ioredis": "^5.2.4",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "prettier": "^2.7.1",
     "uuid": "^8.3.2"
   },
@@ -46,7 +47,7 @@
     "@types/uuid": "^8.3.4",
     "concurrently": "^7.2.2",
     "nodemon": "^2.0.19",
-    "prisma": "^4.4.0",
+    "prisma": "4.12.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   }

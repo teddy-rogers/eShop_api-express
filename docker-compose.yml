@@ -1,58 +1,40 @@
 version: '3'
 services:
-  database:
-    image: postgres:12
-    container_name: database
-    ports:
-      - ${POSTGRES_PORT}:${POSTGRES_PORT}
-    volumes:
-      - database:/var/lib/postgresql/data
+  db:
+    image: 'postgres:14.2-alpine'
+    container_name: 'db'
     environment:
+      POSTGRES_DB: ${POSTGRES_DB:-db}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PORT: ${POSTGRES_PORT:-5432}
+      POSTGRES_HOST: ${POSTGRES_HOST:-postgres}
+    volumes:
+      - db:/var/lib/postgresql/data
+    ports:
+      - '127.0.0.1:5433:5432'
 
   cache:
-    image: redis:5-alpine
-    container_name: cache
+    image: 'redis:5-alpine'
+    container_name: 'cache'
     ports:
-      - ${REDIS_PORT}:${REDIS_PORT}
+      - '6379:6379'
     volumes:
-      - cache:/data
+      - 'cache:/data'
 
-  app:
-    container_name: app
+  api:
+    container_name: 'api'
     build: .
     environment:
-      POSTGRES_URL: ${DOCKER_POSTGRES_URL}
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-      REDIS_HOST: ${DOCKER_REDIS_HOST}
+      POSTGRES_URL: '${DOCKER_POSTGRES_URL}'
       NODE_ENV: prod
     depends_on:
-      - database
-      - cache
-    restart: always
+      - 'db'
+      - 'cache'
+    restart: 'always'
     ports:
-      - ${APP_PORT}:${APP_PORT}
-
-  migration:
-    container_name: migration
-    build: .
-    environment:
-      POSTGRES_URL: ${DOCKER_POSTGRES_URL}
-      POSTGRES_USER: ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      POSTGRES_DB: ${POSTGRES_DB}
-      REDIS_HOST: ${DOCKER_REDIS_HOST}
-    command: sh -c "npm run migrate:deploy"
-    links:
-      - database
-    depends_on:
-      - database
-    stop_grace_period: 3s
+      - '8000:8000'
 
 volumes:
-  database:
-  cache:
+  db: {}
+  cache: {}

@@ -1,9 +1,9 @@
-FROM node:14
+FROM node:17
 EXPOSE 8000
-WORKDIR /app
-COPY package.json package-lock.json /app/
-COPY tsconfig.json /app/
-COPY . /app/
+WORKDIR /api
+COPY package.json package-lock.json /api/
+COPY tsconfig.json /api/
+COPY . /api/
 RUN npm install
 RUN npm install tsc -g
 RUN npm run generate:schemas
