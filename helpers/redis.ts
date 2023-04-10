@@ -9,7 +9,6 @@ export const appCache = new Redis({
 
 (async function main() {
   try {
-    appCache.on('success', () => console.log('CACHE CONNECTED'));
     appCache.on('error', (err) => console.error('error' + err));
   } catch (error) {
     setTimeout(main, 5000);

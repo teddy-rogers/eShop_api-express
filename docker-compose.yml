@@ -4,7 +4,7 @@ services:
     image: 'postgres:14.2-alpine'
     container_name: 'db'
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-db}
+      POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_PORT: ${POSTGRES_PORT:-5432}
@@ -26,7 +26,7 @@ services:
     container_name: 'api'
     build: .
     environment:
-      POSTGRES_URL: '${DOCKER_POSTGRES_URL}'
+      POSTGRES_URL: '${POSTGRES_DOCKER_URL}'
       NODE_ENV: prod
     depends_on:
       - 'db'
