@@ -43,13 +43,13 @@ export class CloudinaryHelper {
           },
           { fetch_format: 'auto' },
         ],
-      }
+      };
       return await cloudinary.uploader
         .upload(image.tempFilePath, options)
         .then((result) => {
           return {
             imageUrl: result.secure_url,
-            backgroundColor: result.colors[0][0],
+            backgroundColor: result.colors ? result.colors[0][0] : '#FFFFFF',
           };
         });
     } catch (error) {

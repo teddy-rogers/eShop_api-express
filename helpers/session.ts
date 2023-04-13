@@ -54,14 +54,14 @@ export class SessionHelper {
     user: UserResponse;
   }) {
     await this.cacheService.delete({
-      field: CacheStore.cart,
+      store: CacheStore.cart,
       id: session.guestSession!.guestId,
     });
     session.regenerate(async () => {
       this.createUserSession({ session, user });
       delete session.guestSession;
       await this.cacheService.setList({
-        field: CacheStore.cart,
+        store: CacheStore.cart,
         id: user.id,
         data: user.cart,
       });

@@ -3,7 +3,7 @@ import { Utils } from '../helpers';
 import { CreatePostFields } from '../types';
 import {
   partialAllPostsResponse,
-  partialCountryTodaysPostsResponse,
+  partialCountryTodaysPostsResponse
 } from './response';
 
 export class PostService {
@@ -18,7 +18,7 @@ export class PostService {
     ]);
   }
 
-  async findAll() {
+  async findMany() {
     try {
       return await this.db.post.findMany({
         select: { ...partialAllPostsResponse },

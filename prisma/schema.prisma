@@ -161,7 +161,7 @@ model PostSection {
   paragraph    String      @default("")
   localPath    String?     @default("")
   externalLink String?     @default("")
-  imageUrl     String?      @default("")
+  imageUrl     String?     @default("")
   keywords     Keywords?
   post         Post?       @relation(references: [id], fields: [postId])
   imageAspect  ImageAspect @default(landscape)
