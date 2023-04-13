@@ -48,19 +48,17 @@ Router.use('/article', require('./routes/article'));
 Router.use('/order', require('./routes/order'));
 Router.use('/product', require('./routes/product'));
 Router.use('/selection', require('./routes/selection'));
+Router.use('/post', require('./routes/post'));
 
 Router.listen(port);
 
 //
 
-// Router.get('/', async (_, res) => {
-//   console.log('Yo World!');
-//   res.status(200).json('Yo World!');
+// Router.use('/fix', async () => {
+//   try {
+//     await createProductSkus().then(() => {});
+//   } catch (e) {}
 // });
-
-// Router.use('/fix', require('./routes/fix'));
-// import { Category, PrismaClient, Product, Size } from '@prisma/database';
-// import { v4 as uuid } from 'uuid';
 // const db = new PrismaClient();
 //
 // const createProductSkus = async () => {
@@ -134,15 +132,3 @@ Router.listen(port);
 //     throw error;
 //   }
 // };
-//
-// Router.get('/fix_sku', async (_, res) => {
-//   try {
-//     await createProductSkus().then(() => {
-//       res.status(200).json('done!');
-//     });
-//   } catch (e) {
-//     res.status(400).json(e);
-//   }
-// });
-
-//

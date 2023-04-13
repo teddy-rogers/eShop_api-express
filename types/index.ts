@@ -2,6 +2,8 @@ export * from './Address';
 export * from './Article';
 export * from './Cache';
 export * from './Order';
+export * from './Post';
+export * from './PostSection';
 export * from './Product';
 export * from './Selection';
 export * from './User';

@@ -18,7 +18,7 @@ declare module 'express-session' {
 
 export type SessionType = Session & Partial<SessionData>;
 
-export enum CacheStoreField {
+export enum CacheStore {
   products = 'products',
   cart = 'cart',
   orders = 'orders',

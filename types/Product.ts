@@ -62,17 +62,17 @@ export type CreateProductFields = {
 };
 
 export type UpdateProductFields = {
-  id?: string;
-  isActive?: boolean;
-  name?: string;
-  description?: string;
-  price?: number;
-  sale?: number;
-  gender?: Gender;
-  category?: Category;
-  color?: Color;
-  season?: Season;
-  keywords?: string[];
-  imageUrl?: string;
-  backgroundColor?: string;
+  id: string;
+  isActive: boolean;
+  name: string;
+  description: string;
+  price: number;
+  sale: number;
+  gender: Gender;
+  category: Category;
+  color: Color;
+  season: Season;
+  keywords: string[];
+  imageUrl: string;
+  backgroundColor: string;
 };

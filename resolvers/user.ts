@@ -2,12 +2,7 @@ import { Country } from '@prisma/database';
 import bcrypt from 'bcryptjs';
 import { LoginHelper, SessionHelper } from '../helpers';
 import { CacheService, UserService } from '../services';
-import {
-  CacheStoreField,
-  LoginInputs,
-  SessionType,
-  UserInputs
-} from '../types';
+import { CacheStore, LoginInputs, SessionType, UserInputs } from '../types';
 import { ArticleReslover } from './article';
 
 export class UserResolver {
@@ -20,7 +15,7 @@ export class UserResolver {
 
   private async verifyCredentials(login: LoginInputs) {
     return await this.userService
-      .findCredentialsByUserEmail(login.email)
+      .findCredentialsByEmail(login.email)
       .then(
         async ({ password: userPassword }) =>
           await this.loginHelper.comparePassword(login.password, userPassword),
@@ -38,15 +33,15 @@ export class UserResolver {
       password: userInputs.password,
     });
     const [user, guestCart] = await Promise.all([
-      await this.userService.createUser({
+      await this.userService.create({
         email: userInputs.email,
         password: await bcrypt.hash(userInputs.password, 8),
         firstName: userInputs.firstName,
         lastName: userInputs.lastName,
         storeCountry: userInputs.storeCountry as Country,
       }),
-      await this.cacheService.getListFromCache({
-        field: CacheStoreField.cart,
+      await this.cacheService.getList({
+        store: CacheStore.cart,
         id: session.guestSession?.guestId || '',
       }),
     ]);
@@ -63,9 +58,9 @@ export class UserResolver {
     if (session.userSession) throw 'User already logged in !';
     const [_, user, guestCart] = await Promise.all([
       await this.verifyCredentials(login),
-      await this.userService.findUserByEmail(login.email),
-      await this.cacheService.getListFromCache({
-        field: CacheStoreField.cart,
+      await this.userService.findByEmail(login.email),
+      await this.cacheService.getList({
+        store: CacheStore.cart,
         id: session.guestSession?.guestId || '',
       }),
     ]);
@@ -81,8 +76,8 @@ export class UserResolver {
   async logOutUser(session: SessionType, callback: VoidFunction) {
     if (!session.userSession) throw 'User already logged out..';
     await this.cacheService
-      .removeFromCache({
-        field: CacheStoreField.cart,
+      .delete({
+        store: CacheStore.cart,
         id: session.userSession.userId,
       })
       .then(() => session.destroy(callback));

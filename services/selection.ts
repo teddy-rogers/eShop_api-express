@@ -51,7 +51,7 @@ export class SelectionService {
     ]);
   }
 
-  async findManySelectionWhere({ keywords, filters, lastId }: any) {
+  async findMany({ keywords, filters, lastId }: any) {
     try {
       return await this.db.selection
         .findMany({
@@ -67,7 +67,7 @@ export class SelectionService {
     }
   }
 
-  async findOneSelection(id: string) {
+  async findById(id: string) {
     try {
       return await this.db.selection
         .findFirst({
@@ -83,22 +83,13 @@ export class SelectionService {
     }
   }
 
-  async createSelection(selection: CreateSelectionFields) {
+  async create(selection: CreateSelectionFields) {
     try {
       return await this.db
         .$transaction([
           this.db.selection.create({
             data: {
-              id: selection.id,
-              title: selection.title.trim(),
-              description: selection.description.trim(),
-              foregroundColor: selection.foregroundColor,
-              imageUrl: selection.imageUrl,
-              backgroundColor: selection.backgroundColor,
-              selectionPath: selection.selectionPath,
-              isActive: selection.isActive,
-              imageAspect: selection.imageAspect,
-              countries: selection.countries,
+              ...selection,
               dateStart: new Date(selection.dateStart),
               dateEnd: new Date(selection.dateEnd),
             },
@@ -119,34 +110,25 @@ export class SelectionService {
     }
   }
 
-  async updateSelection(selection: any) {
+  async update(selection: any) {
     try {
-      return await this.db.selection
+      return await this.db.$transaction([this.db.selection
         .update({
           where: { id: selection.id },
           data: {
-            id: selection.id,
-            title: selection.title.trim(),
-            description: selection.description.trim(),
-            foregroundColor: selection.foregroundColor,
-            imageUrl: selection.imageUrl,
-            backgroundColor: selection.backgroundColor,
-            selectionPath: selection.selectionPath,
-            isActive: selection.isActive,
-            imageAspect: selection.imageAspect,
-            countries: selection.countries,
+            ...selection,
             dateStart: new Date(selection.dateStart),
             dateEnd: new Date(selection.dateEnd),
           },
-        })
+        }),
+      this.db.keywords.update({
+        where: { selectionId: selection.id },
+        data: {
+          indexes: this.getKeywords(selection),
+        },
+      })])
         .then(async (updatedSelection) => {
           if (!updatedSelection) throw 'Selection not updated in database.';
-          await this.db.keywords.update({
-            where: { selectionId: updatedSelection.id },
-            data: {
-              indexes: this.getKeywords(updatedSelection),
-            },
-          });
           return updatedSelection;
         });
     } catch (error) {

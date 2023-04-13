@@ -26,7 +26,7 @@ export class ProductResolver {
       filters.category,
       filters.season,
     ].map((filter) => filter?.toLowerCase());
-    return this.productService.findProductWhere({
+    return this.productService.findWhere({
       keywords: keywords?.length ? keywords?.split(' ') : undefined,
       filters: {
         price: filters.price ? parseInt(filters.price) : undefined,
@@ -52,7 +52,7 @@ export class ProductResolver {
   }
 
   async getProductById(id: string) {
-    return await this.productService.findProductById(id);
+    return await this.productService.findById(id);
   }
 
   async createProductWith(product: ProductInputs) {
@@ -60,7 +60,7 @@ export class ProductResolver {
       Folder.products,
       product,
     );
-    return await this.productService.createProduct(productFields);
+    return await this.productService.create(productFields);
   }
 
   async updateProductWith(product: ProductInputs) {
@@ -68,6 +68,6 @@ export class ProductResolver {
       Folder.products,
       product,
     );
-    return await this.productService.updateProduct(productFields);
+    return await this.productService.update(productFields);
   }
 }

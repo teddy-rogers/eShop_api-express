@@ -4,7 +4,7 @@ import { skuResponse } from './response/skuResponse';
 export class SkuService {
   private db = new PrismaClient();
 
-  async findSkuById(id: string) {
+  async findById(id: string) {
     try {
       return await this.db.sku
         .findFirst({

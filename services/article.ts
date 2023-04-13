@@ -5,7 +5,7 @@ import { articleResponse } from './response';
 export class ArticleService {
   private db = new PrismaClient();
 
-  async findManyArticlesById(articlesId: string[]) {
+  async findManyById(articlesId: string[]) {
     try {
       return await this.db.article.findMany({
         where: { id: { in: [...articlesId] } },
@@ -16,7 +16,7 @@ export class ArticleService {
     }
   }
 
-  async findManyArticlesByUserId(userId: string) {
+  async findManyByUserId(userId: string) {
     try {
       return await this.db.article
         .findMany({
@@ -43,7 +43,7 @@ export class ArticleService {
     }
   }
 
-  async createOneArticle(article: ArticleFields) {
+  async create(article: ArticleFields) {
     const { skuId, userId, sale } = article;
     try {
       return await this.db.article
@@ -78,7 +78,7 @@ export class ArticleService {
     }
   }
 
-  async removeOneArticle(userId: string, articleId: string) {
+  async delete(userId: string, articleId: string) {
     try {
       return await this.db.user
         .update({
@@ -98,7 +98,7 @@ export class ArticleService {
     }
   }
 
-  async removeAllArticles(userId: string) {
+  async deleteMany(userId: string) {
     try {
       return await this.db.user
         .update({
@@ -118,7 +118,7 @@ export class ArticleService {
     }
   }
 
-  async updateOneArticle(article: ArticleFields) {
+  async update(article: ArticleFields) {
     try {
       return await this.db.article.update({
         where: { id: article.id },
@@ -136,7 +136,7 @@ export class ArticleService {
     }
   }
 
-  async updateManyArticlesById(articlesId: string[], article: ArticleFields) {
+  async updateMany(articlesId: string[], article: ArticleFields) {
     try {
       return await this.db.article.updateMany({
         where: { id: { in: [...articlesId] } },

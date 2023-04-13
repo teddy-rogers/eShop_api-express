@@ -1,5 +1,5 @@
 {
-  "name": "poliqlo-api",
+  "name": "poliqlo",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -37,7 +37,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@prisma/client": "^4.4.0",
+    "@prisma/client": "4.12.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/connect-redis": "^0.0.18",
     "@types/express": "^4.17.13",
