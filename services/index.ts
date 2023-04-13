@@ -3,6 +3,7 @@ export * from './article';
 export * from './cache';
 export * from './order';
 export * from './post';
+export * from './postSection';
 export * from './product';
 export * from './selection';
 export * from './sku';

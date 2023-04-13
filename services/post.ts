@@ -3,14 +3,14 @@ import { Utils } from '../helpers';
 import { CreatePostFields } from '../types';
 import {
   partialAllPostsResponse,
-  partialCountryTodaysPostsResponse
+  partialCountryTodaysPostsResponse,
 } from './response';
 
 export class PostService {
   private db = new PrismaClient();
   private utils = new Utils();
-  
-  private getKeywords(post:CreatePostFields) {
+
+  private getKeywords(post: CreatePostFields) {
     return this.utils.createKeywords([
       ...post.countries,
       post.title,
@@ -93,7 +93,7 @@ export class PostService {
             data: { ...post },
           }),
           this.db.keywords.update({
-            where: { id: post.id },
+            where: { postId: post.id },
             data: { indexes: this.getKeywords(post) },
           }),
         ])
