@@ -25,7 +25,7 @@ export class ProductResolver {
       filters.color,
       filters.category,
       filters.season,
-    ].map((filter) => filter?.toLowerCase());
+    ].map((filter) => filter && this.utils.changeCaseAndTrim(filter, 'lower'));
     return this.productService.findWhere({
       keywords: keywords?.length ? keywords?.split(' ') : undefined,
       filters: {

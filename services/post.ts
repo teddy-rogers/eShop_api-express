@@ -1,6 +1,6 @@
 import { Country, PrismaClient } from '@prisma/database';
 import { Utils } from '../helpers';
-import { CreatePostFields } from '../types';
+import { CreatePostFields, UpdatePostFields } from '../types';
 import {
   partialAllPostsResponse,
   partialCountryTodaysPostsResponse
@@ -66,7 +66,17 @@ export class PostService {
       return this.db
         .$transaction([
           this.db.post.create({
-            data: { ...post },
+            data: {
+              id: post.id,
+              title: post.title,
+              description: post.description,
+              dateStart: post.dateStart,
+              dateEnd: post.dateEnd,
+              imageUrl: post.imageUrl,
+              foregroundColor: post.foregroundColor,
+              backgroundColor: post.backgroundColor,
+              countries: post.countries,
+            },
           }),
           this.db.keywords.create({
             data: {
@@ -84,13 +94,24 @@ export class PostService {
     }
   }
 
-  async update(post: CreatePostFields) {
+  async update(post: UpdatePostFields) {
     try {
       return this.db
         .$transaction([
           this.db.post.update({
             where: { id: post.id },
-            data: { ...post },
+            data: {
+              id: post.id,
+              isActive: post.isActive,
+              title: post.title,
+              description: post.description,
+              dateStart: post.dateStart,
+              dateEnd: post.dateEnd,
+              imageUrl: post.imageUrl,
+              foregroundColor: post.foregroundColor,
+              backgroundColor: post.backgroundColor,
+              countries: post.countries,
+            },
           }),
           this.db.keywords.update({
             where: { postId: post.id },

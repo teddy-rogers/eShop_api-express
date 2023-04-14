@@ -43,7 +43,7 @@ export class ProductService {
       };
     return fields;
   }
-  
+
   private getKeywords(product: CreateProductFields) {
     return this.utils.createKeywords([
       product.name,
@@ -52,7 +52,7 @@ export class ProductService {
       product.gender,
       product.category,
       product.season,
-    ])
+    ]);
   }
 
   async findWhere({ keywords, filters, lastId }: SearchProductFields) {
@@ -104,7 +104,19 @@ export class ProductService {
       return await this.db
         .$transaction([
           this.db.product.create({
-            data: { ...product },
+            data: {
+              id: product.id,
+              name: product.name,
+              description: product.description,
+              color: product.color,
+              gender: product.gender,
+              category: product.category,
+              season: product.season,
+              price: product.price,
+              sale: product.sale,
+              imageUrl: product.imageUrl,
+              backgroundColor: product.backgroundColor,
+            },
           }),
           this.db.keywords.create({
             data: {
@@ -132,7 +144,20 @@ export class ProductService {
         .$transaction([
           this.db.product.update({
             where: { id: product.id },
-            data: { ...product },
+            data: {
+              isActive: product.isActive,
+              id: product.id,
+              name: product.name,
+              description: product.description,
+              color: product.color,
+              gender: product.gender,
+              category: product.category,
+              season: product.season,
+              price: product.price,
+              sale: product.sale,
+              imageUrl: product.imageUrl,
+              backgroundColor: product.backgroundColor,
+            },
           }),
           this.db.keywords.update({
             where: { productId: product.id },

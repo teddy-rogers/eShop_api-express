@@ -1,4 +1,4 @@
-import { v2 as cloudinary } from 'cloudinary';
+import { UploadApiResponse, v2 as cloudinary } from 'cloudinary';
 import dotenv from 'dotenv';
 import { UploadedFile } from 'express-fileupload';
 
@@ -28,7 +28,11 @@ export class CloudinaryHelper {
   private async uploadImage(
     destinationFolder: Folder,
     image: UploadedFile,
-  ): Promise<{ imageUrl: string; backgroundColor: string }> {
+  ): Promise<{
+    imageUrl: string;
+    backgroundColor: string;
+    foregroundColor: string;
+  }> {
     try {
       const options = {
         use_filename: true,
@@ -46,11 +50,20 @@ export class CloudinaryHelper {
       };
       return await cloudinary.uploader
         .upload(image.tempFilePath, options)
-        .then((result) => {
-          return {
-            imageUrl: result.secure_url,
-            backgroundColor: result.colors ? result.colors[0][0] : '#FFFFFF',
+        .then((result: UploadApiResponse) => {
+          let imageProps = {
+            imageUrl: '',
+            backgroundColor: '#FFFFFF',
+            foregroundColor: '#000000',
           };
+          if (result.colors) {
+            imageProps = {
+              imageUrl: result.secure_url,
+              backgroundColor: result.colors[0][0],
+              foregroundColor: result.colors[result.colors.length - 1][0],
+            };
+          }
+          return imageProps;
         });
     } catch (error) {
       throw error;
@@ -63,11 +76,16 @@ export class CloudinaryHelper {
   ): Promise<{
     imageUrl: string | undefined;
     backgroundColor: string | undefined;
+    foregroundColor: string | undefined;
   }> {
     if (image !== undefined) {
       return await this.uploadImage(destinationFolder, image);
     }
-    return { imageUrl: undefined, backgroundColor: undefined }; //send "do not update" to Prisma
+    return {
+      imageUrl: undefined,
+      backgroundColor: undefined,
+      foregroundColor: undefined,
+    }; //send "do not update" to Prisma
   }
 }
 
