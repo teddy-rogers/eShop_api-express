@@ -2,9 +2,9 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "debian-openssl-1.1.x", "linux-musl"]
-  output   = "../../node_modules/@prisma/database"
+  output        = "../../node_modules/@prisma/database"
 }
 
 datasource db {
@@ -161,7 +161,7 @@ model PostSection {
   paragraph    String      @default("")
   localPath    String?     @default("")
   externalLink String?     @default("")
-  imageUrl     String      @default("")
+  imageUrl     String?     @default("")
   keywords     Keywords?
   post         Post?       @relation(references: [id], fields: [postId])
   imageAspect  ImageAspect @default(landscape)

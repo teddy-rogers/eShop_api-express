@@ -5,7 +5,7 @@ import { orderResponse, partialOrderResponse } from './response';
 export class OrderService {
   private db = new PrismaClient();
 
-  async findManyOrdersByUserId(userId: string) {
+  async findManyByUserId(userId: string) {
     try {
       return await this.db.order.findMany({
         where: { userId },
@@ -16,7 +16,7 @@ export class OrderService {
     }
   }
 
-  async findOrderById(id: string) {
+  async findById(id: string) {
     try {
       return await this.db.order
         .findFirst({
@@ -32,7 +32,7 @@ export class OrderService {
     }
   }
 
-  async createOrder(order: OrderFields) {
+  async create(order: OrderFields) {
     try {
       return await this.db.order
         .create({

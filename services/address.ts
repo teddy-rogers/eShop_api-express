@@ -5,7 +5,7 @@ import { addressResponse, partialAddressResponse } from './response';
 export class AddressService {
   private db = new PrismaClient();
 
-  async findManyAddressByUserId(userId: string) {
+  async findManyByUserId(userId: string) {
     try {
       return await this.db.address.findMany({
         where: { userId },
@@ -16,7 +16,7 @@ export class AddressService {
     }
   }
 
-  async findAddressById(id: string) {
+  async findById(id: string) {
     try {
       return await this.db.address
         .findFirst({
@@ -33,7 +33,7 @@ export class AddressService {
     }
   }
 
-  async createOneAddress(address: AddressFields, userId: string) {
+  async create(address: AddressFields, userId: string) {
     try {
       return await this.db.address
         .create({
@@ -55,7 +55,7 @@ export class AddressService {
     }
   }
 
-  async updateAddressById(address: AddressFields) {
+  async update(address: AddressFields) {
     try {
       return await this.db.address
         .update({
@@ -73,7 +73,7 @@ export class AddressService {
     }
   }
 
-  async deleteAddressById(id: string, userId: string) {
+  async delete(id: string, userId: string) {
     try {
       return await this.db.user
         .update({

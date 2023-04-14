@@ -1,45 +1,39 @@
 import { appCache } from '../helpers';
-import { CacheStoreField } from '../types';
+import { CacheStore } from '../types';
 
 export class CacheService {
-  async getFromCache({
-    field,
-    id,
-  }: {
-    field: CacheStoreField;
-    id: string | 'all';
-  }) {
-    return await appCache.get(`${field}-${id}`).then((obj) => {
+  async get({ store, id }: { store: CacheStore; id: string | 'all' }) {
+    return await appCache.get(`${store}-${id}`).then((obj) => {
       if (!obj) return;
       return JSON.parse(obj);
     });
   }
 
-  async setToCache<T>({
-    field,
+  async set<T>({
+    store,
     id,
     data,
   }: {
-    field: CacheStoreField;
+    store: CacheStore;
     id: 'all' | string;
     data: T;
   }) {
     const cacheResponse = await appCache.set(
-      `${field}-${id}`,
+      `${store}-${id}`,
       JSON.stringify(data),
     );
-    await appCache.expire(`${field}-${id}`, 60 * 60);
+    await appCache.expire(`${store}-${id}`, 60 * 60);
     if (cacheResponse === 'OK') {
-      return await this.getFromCache({ field, id });
+      return await this.get({ store, id });
     }
   }
 
-  async getListFromCache({
-    field,
+  async getList({
+    store,
     id,
     page,
   }: {
-    field: CacheStoreField;
+    store: CacheStore;
     id: string | 'all';
     page?: number;
   }) {
@@ -49,79 +43,79 @@ export class CacheService {
       return [start, stop];
     };
     const [start, stop] = range(page);
-    let items = await appCache.lrange(`${field}-${id}`, start, stop);
+    let items = await appCache.lrange(`${store}-${id}`, start, stop);
     return items.map((i: any) => JSON.parse(i));
   }
 
-  async setListInCache<T>({
-    field,
+  async setList<T>({
+    store,
     id,
     data,
     page,
   }: {
-    field: CacheStoreField;
+    store: CacheStore;
     id: 'all' | string;
     data: T[];
     page?: number;
   }) {
-    await appCache.del(`${field}-${id}`);
+    await appCache.del(`${store}-${id}`);
     for (let x in data) {
-      await appCache.rpush(`${field}-${id}`, JSON.stringify(data[x]));
-      await appCache.expire(`${field}-${id}`, 60 * 60);
+      await appCache.rpush(`${store}-${id}`, JSON.stringify(data[x]));
+      await appCache.expire(`${store}-${id}`, 60 * 60);
     }
-    return await this.getListFromCache({ field, id, page });
+    return await this.getList({ store, id, page });
   }
 
-  async addToListFromCache<T>({
-    field,
+  async updateList<T>({
+    store,
     id,
     data,
     page,
   }: {
-    field: CacheStoreField;
+    store: CacheStore;
     id: 'all' | string;
     data: T;
     page?: number;
   }) {
-    await appCache.rpush(`${field}-${id}`, JSON.stringify(data));
-    await appCache.expire(`${field}-${id}`, 60 * 60);
-    return await this.getListFromCache({ field, id, page });
+    await appCache.rpush(`${store}-${id}`, JSON.stringify(data));
+    await appCache.expire(`${store}-${id}`, 60 * 60);
+    return await this.getList({ store, id, page });
   }
 
-  async upsertInListFromCache<T>({
-    field,
+  async upsertList<T>({
+    store,
     id,
     index,
     data,
     page,
   }: {
-    field: CacheStoreField;
+    store: CacheStore;
     id: 'all' | string;
     index: number;
     data: T;
     page?: number;
   }) {
-    await appCache.lset(`${field}-${id}`, index, JSON.stringify(data));
-    return await this.getListFromCache({ field, id, page });
+    await appCache.lset(`${store}-${id}`, index, JSON.stringify(data));
+    return await this.getList({ store, id, page });
   }
 
-  async removeFromListFromCache<T>({
-    field,
+  async deleteList<T>({
+    store,
     id,
     data,
     page,
   }: {
-    field: CacheStoreField;
+    store: CacheStore;
     id: 'all' | string;
     data: T;
     page?: number;
   }) {
-    await appCache.lrem(`${field}-${id}`, 1, JSON.stringify(data));
-    return await this.getListFromCache({ field, id, page });
+    await appCache.lrem(`${store}-${id}`, 1, JSON.stringify(data));
+    return await this.getList({ store, id, page });
   }
 
-  async removeFromCache({ field, id }: { field: CacheStoreField; id: string }) {
-    await appCache.del(`${field}-${id}`);
+  async delete({ store, id }: { store: CacheStore; id: string }) {
+    await appCache.del(`${store}-${id}`);
     return;
   }
 }

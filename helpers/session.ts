@@ -1,7 +1,7 @@
 import { Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
 import { CacheService } from '../services';
-import { CacheStoreField, SessionType, UserResponse } from '../types';
+import { CacheStore, SessionType, UserResponse } from '../types';
 
 export class SessionHelper {
   private cacheService = new CacheService();
@@ -53,15 +53,15 @@ export class SessionHelper {
     session: SessionType;
     user: UserResponse;
   }) {
-    await this.cacheService.removeFromCache({
-      field: CacheStoreField.cart,
+    await this.cacheService.delete({
+      store: CacheStore.cart,
       id: session.guestSession!.guestId,
     });
     session.regenerate(async () => {
       this.createUserSession({ session, user });
       delete session.guestSession;
-      await this.cacheService.setListInCache({
-        field: CacheStoreField.cart,
+      await this.cacheService.setList({
+        store: CacheStore.cart,
         id: user.id,
         data: user.cart,
       });

@@ -5,7 +5,7 @@ import { UserFields } from '../types';
 export class UserService {
   private db = new PrismaClient();
 
-  async createUser(user: UserFields) {
+  async create(user: UserFields) {
     try {
       user = { ...user, id: createUniqueId() };
       return await this.db
@@ -34,7 +34,7 @@ export class UserService {
     }
   }
 
-  async findUserByEmail(email: string) {
+  async findByEmail(email: string) {
     try {
       return await this.db.user
         .findFirst({
@@ -55,7 +55,6 @@ export class UserService {
       return await this.db.user
         .findFirst({
           where: { email },
-          // select: userLoginResponse,
         })
         .then((user) => {
           return user;
@@ -65,7 +64,7 @@ export class UserService {
     }
   }
 
-  async findCredentialsByUserEmail(email: string) {
+  async findCredentialsByEmail(email: string) {
     try {
       return await this.db.credentials
         .findFirst({ where: { email } })

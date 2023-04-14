@@ -8,7 +8,7 @@ export class Utils {
   isTypeOf<T extends { [s: string]: unknown } | ArrayLike<unknown>, V>(
     type: T,
     value: V,
-  ) {
+  ): boolean {
     return Object.values(type).includes(value);
   }
 
@@ -17,7 +17,6 @@ export class Utils {
       if (!spec) return keywords;
       const filteredWords = spec
         .replace('_', '-')
-        // .replace("'", '')
         .replace('=', ' ')
         .replace('+', ' ')
         .replace('.', ' ')
@@ -44,14 +43,21 @@ export class Utils {
 
   async createFields<T>(folder: Folder, object: any): Promise<T> {
     const id = object.id !== undefined ? object.id : createUniqueId();
-    const { imageUrl, backgroundColor } =
+    const { imageUrl, backgroundColor, foregroundColor } =
       await this.cloudinaryHelper.createImageFields(folder, object.image);
     const obj = {
       ...object,
       id,
       imageUrl,
       backgroundColor,
+      foregroundColor,
     } as T;
     return obj;
+  }
+
+  changeCaseAndTrim(text: string, to: 'lower' | 'upper'): string {
+    return to === 'lower'
+      ? text.toLowerCase().trim()
+      : text.toUpperCase().trim();
   }
 }

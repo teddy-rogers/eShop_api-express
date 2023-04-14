@@ -44,7 +44,18 @@ export class ProductService {
     return fields;
   }
 
-  async findProductWhere({ keywords, filters, lastId }: SearchProductFields) {
+  private getKeywords(product: CreateProductFields) {
+    return this.utils.createKeywords([
+      product.name,
+      product.description,
+      product.color,
+      product.gender,
+      product.category,
+      product.season,
+    ]);
+  }
+
+  async findWhere({ keywords, filters, lastId }: SearchProductFields) {
     try {
       return await this.db.product
         .findMany({
@@ -68,7 +79,7 @@ export class ProductService {
     }
   }
 
-  async findProductById(id: string) {
+  async findById(id: string) {
     try {
       return await this.db.product
         .findFirst({
@@ -88,29 +99,21 @@ export class ProductService {
     }
   }
 
-  async createProduct(product: CreateProductFields) {
-    const indexes = this.utils.createKeywords([
-      product.name,
-      product.description,
-      product.color,
-      product.gender,
-      product.category,
-      product.season,
-    ]);
+  async create(product: CreateProductFields) {
     try {
       return await this.db
         .$transaction([
           this.db.product.create({
             data: {
               id: product.id,
-              name: product.name.trim(),
-              description: product.description.trim(),
-              price: product.price,
-              sale: product.sale,
+              name: product.name,
+              description: product.description,
+              color: product.color,
               gender: product.gender,
               category: product.category,
-              color: product.color,
               season: product.season,
+              price: product.price,
+              sale: product.sale,
               imageUrl: product.imageUrl,
               backgroundColor: product.backgroundColor,
             },
@@ -118,7 +121,7 @@ export class ProductService {
           this.db.keywords.create({
             data: {
               productId: product.id,
-              indexes,
+              indexes: this.getKeywords(product),
             },
           }),
         ])
@@ -135,27 +138,34 @@ export class ProductService {
     }
   }
 
-  async updateProduct(product: UpdateProductFields) {
+  async update(product: UpdateProductFields) {
     try {
-      return await this.db.product
-        .update({
-          where: { id: product.id },
-          data: { ...product },
-        })
-        .then(async (product) => {
-          if (!product) throw 'Product not updated in database.';
-          const indexes = this.utils.createKeywords([
-            product.name.trim(),
-            product.description.trim(),
-            product.color,
-            product.gender,
-            product.category,
-            product.season,
-          ]);
-          await this.db.keywords.update({
+      return await this.db
+        .$transaction([
+          this.db.product.update({
+            where: { id: product.id },
+            data: {
+              isActive: product.isActive,
+              id: product.id,
+              name: product.name,
+              description: product.description,
+              color: product.color,
+              gender: product.gender,
+              category: product.category,
+              season: product.season,
+              price: product.price,
+              sale: product.sale,
+              imageUrl: product.imageUrl,
+              backgroundColor: product.backgroundColor,
+            },
+          }),
+          this.db.keywords.update({
             where: { productId: product.id },
-            data: { indexes },
-          });
+            data: { indexes: this.getKeywords(product) },
+          }),
+        ])
+        .then(([product, _]) => {
+          if (!product) throw 'Product not updated in database.';
           return {
             ...product,
             price: product.price.toNumber(),

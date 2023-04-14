@@ -1,10 +1,10 @@
 import { Folder, Utils } from '../helpers';
 import { SelectionService } from '../services';
 import {
-	CreateSelectionFields,
-	CreateSelectionInputs,
-	SearchSelectionInputs,
-	UpdateSelectionFields
+  CreateSelectionFields,
+  CreateSelectionInputs,
+  SearchSelectionInputs,
+  UpdateSelectionFields
 } from '../types';
 
 export class SelectionResolver {
@@ -19,7 +19,7 @@ export class SelectionResolver {
     const countries = filters.countries?.map((country) =>
       country.toUpperCase(),
     );
-    return this.selectionService.findManySelectionWhere({
+    return this.selectionService.findMany({
       keywords: keywords?.length
         ? keywords?.split(' ').map((k) => k.toLowerCase())
         : undefined,
@@ -34,7 +34,7 @@ export class SelectionResolver {
   }
 
   async getSelectionById(id: string) {
-    return await this.selectionService.findOneSelection(id);
+    return await this.selectionService.findById(id);
   }
 
   async createSelectionWith(product: CreateSelectionInputs) {
@@ -42,7 +42,7 @@ export class SelectionResolver {
       Folder.selections,
       product,
     );
-    return await this.selectionService.createSelection(productFields);
+    return await this.selectionService.create(productFields);
   }
 
   async updateSelectionWith(product: SearchSelectionInputs) {
@@ -50,6 +50,6 @@ export class SelectionResolver {
       Folder.selections,
       product,
     );
-    return await this.selectionService.updateSelection(productFields);
+    return await this.selectionService.update(productFields);
   }
 }
