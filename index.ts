@@ -49,6 +49,7 @@ Router.use('/order', require('./routes/order'));
 Router.use('/product', require('./routes/product'));
 Router.use('/selection', require('./routes/selection'));
 Router.use('/post', require('./routes/post'));
+Router.use('/post_section', require('./routes/postSections'));
 
 Router.listen(port);
 
