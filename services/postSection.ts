@@ -31,7 +31,16 @@ export class PostSectionService {
       return this.db
         .$transaction([
           this.db.postSection.create({
-            data: { ...postSection },
+            data: {
+              id: postSection.id,
+              postId: postSection.postId,
+              title: postSection.title,
+              paragraph: postSection.paragraph,
+              localPath: postSection.localPath,
+              externalLink: postSection.externalLink,
+              imageUrl: postSection.imageUrl,
+              imageAspect: postSection.imageAspect,
+            },
           }),
           this.db.keywords.create({
             data: {
@@ -55,7 +64,16 @@ export class PostSectionService {
         .$transaction([
           this.db.postSection.update({
             where: { id: postSection.id },
-            data: { ...postSection },
+            data: {
+              id: postSection.id,
+              postId: postSection.postId,
+              title: postSection.title,
+              paragraph: postSection.paragraph,
+              localPath: postSection.localPath,
+              externalLink: postSection.externalLink,
+              imageUrl: postSection.imageUrl,
+              imageAspect: postSection.imageAspect,
+            },
           }),
           this.db.keywords.update({
             where: { postSectionId: postSection.id },
