@@ -71,9 +71,10 @@ export class SessionHelper {
   }
 
   getCurrentLocal(acceptLanguage: string | undefined) {
-    return (
-      (acceptLanguage?.split(';')[0].split(',')[0].split('-')[1] as Country) ||
-      Country.FR
-    );
+    const currentDeviceLanguage = acceptLanguage
+      ?.split(';')[0]
+      .split(',')[0]
+      .split('-')[1];
+    return (currentDeviceLanguage as Country) || Country.FR;
   }
 }

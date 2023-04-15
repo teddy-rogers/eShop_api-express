@@ -5,23 +5,18 @@ export type LoginInputs = {
   password: string;
 };
 
-export type UserInputs = {
-  id?: string;
+export type UserInputs = LoginInputs & {
   firstName: string;
   lastName: string;
-  storeCountry?: string;
-} & LoginInputs;
+  storeCountry: string;
+};
 
-export type UserFields = UserInputs & {
+export type UserFields = Omit<UserInputs, 'storeCountry'> & {
+  id: string;
   storeCountry: Country;
 };
 
-export type UserResponse = {
-  id: string;
-  email: string;
+export type UserResponse = Omit<UserFields, 'password'> & {
   civility: Civility;
-  firstName: string;
-  lastName: string;
-  storeCountry: Country;
   cart: Article[];
 };

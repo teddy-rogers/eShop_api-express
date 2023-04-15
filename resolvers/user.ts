@@ -1,5 +1,6 @@
 import { Country } from '@prisma/database';
 import bcrypt from 'bcryptjs';
+import { v4 as createUniqueId } from 'uuid';
 import { LoginHelper, SessionHelper } from '../helpers';
 import { CacheService, UserService } from '../services';
 import { CacheStore, LoginInputs, SessionType, UserInputs } from '../types';
@@ -34,6 +35,7 @@ export class UserResolver {
     });
     const [user, guestCart] = await Promise.all([
       await this.userService.create({
+        id: createUniqueId(),
         email: userInputs.email,
         password: await bcrypt.hash(userInputs.password, 8),
         firstName: userInputs.firstName,
@@ -45,13 +47,13 @@ export class UserResolver {
         id: session.guestSession?.guestId || '',
       }),
     ]);
-    return Promise.all([
+    const transferedCart =
       await this.articleResolver.transferGuestCartToUserCart(
         user.id,
         guestCart,
-      ),
-      await this.sessionHelper.initUserSession({ session, user }),
-    ]).then(() => user);
+      );
+    await this.sessionHelper.initUserSession({ session, user });
+    return { ...user, cart: [...user.cart, ...transferedCart] };
   }
 
   async logInUser(login: LoginInputs, session: SessionType) {
@@ -64,13 +66,13 @@ export class UserResolver {
         id: session.guestSession?.guestId || '',
       }),
     ]);
-    return Promise.all([
+    const transferedCart =
       await this.articleResolver.transferGuestCartToUserCart(
         user.id,
         guestCart,
-      ),
-      await this.sessionHelper.initUserSession({ session, user }),
-    ]).then(() => user);
+      );
+    await this.sessionHelper.initUserSession({ session, user });
+    return { ...user, cart: [...user.cart, ...transferedCart] };
   }
 
   async logOutUser(session: SessionType, callback: VoidFunction) {

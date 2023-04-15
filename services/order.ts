@@ -45,7 +45,6 @@ export class OrderService {
             shippingAddressId: order.shippingAddressId,
             billingAddressId: order.billingAddressId,
           },
-          select: orderResponse,
         })
         .then((orderRes) => {
           if (!orderRes)
