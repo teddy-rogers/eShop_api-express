@@ -1,7 +1,7 @@
 import { Country } from '@prisma/database';
 import { Folder, Utils } from '../helpers';
 import { PostService } from '../services';
-import { CreatePostFields, PostInputs, UpdatePostFields } from '../types';
+import { CreatePostFields, CreatePostInputs, UpdatePostFields } from '../types';
 
 export class PostResolver {
   private postService = new PostService();
@@ -32,7 +32,7 @@ export class PostResolver {
     return post;
   }
 
-  async createPost(post: PostInputs) {
+  async createPost(post: CreatePostInputs) {
     const postFields: CreatePostFields = await this.utils.createFields(
       Folder.posts,
       post,
@@ -40,7 +40,7 @@ export class PostResolver {
     return await this.postService.create(postFields);
   }
 
-  async updatePost(post: PostInputs) {
+  async updatePost(post: CreatePostInputs) {
     const postFields: UpdatePostFields = await this.utils.createFields(
       Folder.posts,
       post,

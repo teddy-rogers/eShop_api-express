@@ -10,12 +10,18 @@ export class PostService {
   private db = new PrismaClient();
   private utils = new Utils();
 
-  private getKeywords(post: CreatePostFields) {
-    return this.utils.createKeywords([
-      ...post.countries,
+  private getKeywords(
+    post: Pick<CreatePostFields, 'title' | 'description' | 'countries'>,
+  ) {
+    const fields: string[] = [
       post.title,
       post.description,
-    ]);
+      ...post.countries,
+    ].reduce((acc, cur) => {
+      cur && acc.push;
+      return acc;
+    }, [] as string[]);
+    return this.utils.createKeywords(fields);
   }
 
   async findMany() {

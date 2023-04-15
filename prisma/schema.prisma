@@ -143,7 +143,7 @@ model Post {
   id              String        @id @default(uuid())
   title           String
   description     String?       @default("")
-  imageUrl        String?
+  imageUrl        String
   foregroundColor String        @default("white")
   backgroundColor String        @default("")
   isActive        Boolean       @default(false)
@@ -158,7 +158,7 @@ model PostSection {
   id           String      @id @default(uuid())
   postId       String?
   title        String?     @default("")
-  paragraph    String      @default("")
+  paragraph    String?     @default("")
   localPath    String?     @default("")
   externalLink String?     @default("")
   imageUrl     String?     @default("")

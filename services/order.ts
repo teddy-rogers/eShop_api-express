@@ -36,7 +36,15 @@ export class OrderService {
     try {
       return await this.db.order
         .create({
-          data: { ...order },
+          data: {
+            id: order.id,
+            orderNumber: order.orderNumber,
+            total: order.total,
+            userId: order.userId,
+            creditCardId: order.creditCardId,
+            shippingAddressId: order.shippingAddressId,
+            billingAddressId: order.billingAddressId,
+          },
           select: orderResponse,
         })
         .then((orderRes) => {
