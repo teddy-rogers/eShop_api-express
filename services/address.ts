@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/database';
-import { AddressFields, AddressResponse } from '../types';
+import { CreateAddressFields, UpdateAddressFields } from '../types';
 import { addressResponse, partialAddressResponse } from './response';
 
 export class AddressService {
@@ -33,7 +33,7 @@ export class AddressService {
     }
   }
 
-  async create(address: AddressFields, userId: string) {
+  async create(address: CreateAddressFields, userId: string) {
     try {
       return await this.db.address
         .create({
@@ -45,7 +45,7 @@ export class AddressService {
           },
           select: addressResponse,
         })
-        .then((address: AddressResponse) => {
+        .then((address) => {
           if (!address)
             throw 'Something went wrong while creating new address.';
           return address;
@@ -55,7 +55,7 @@ export class AddressService {
     }
   }
 
-  async update(address: AddressFields) {
+  async update(address: UpdateAddressFields) {
     try {
       return await this.db.address
         .update({

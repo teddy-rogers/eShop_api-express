@@ -37,8 +37,8 @@ export class OrderResolver {
           id: article.id,
           skuId: article.skuId,
           orderId: orderResponse.id,
-          userId: null,
           sale: article.sku?.product?.sale!,
+          userId: null,
         });
       }),
     );

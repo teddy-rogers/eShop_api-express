@@ -1,3 +1,4 @@
+import { Article } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
 import { ArticleService, CacheService, SkuService } from '../services';
 import { ArticleResponse, CacheStore, SessionType } from '../types';
@@ -40,6 +41,7 @@ export class ArticleReslover {
     }
     if (userSession) {
       return await this.articleService.create({
+        id: createUniqueId(),
         skuId,
         userId: userSession.userId,
         sale: sku.product.sale,
@@ -86,12 +88,16 @@ export class ArticleReslover {
     userId: string,
     guestCart: ArticleResponse[],
   ) {
-    guestCart.forEach(async (article) => {
-      return await this.articleService.create({
+    let userCart: Article[] = [];
+    for (let i = 0; i < guestCart.length; i++) {
+      const updatedArticles = await this.articleService.create({
         userId,
-        skuId: article.skuId,
+        id: guestCart[i].id,
+        skuId: guestCart[i].skuId,
+        sale: guestCart[i].sale,
       });
-    });
-    return;
+      userCart = updatedArticles;
+    }
+    return userCart;
   }
 }

@@ -1,5 +1,9 @@
 import { AddressService } from '../services';
-import { AddressInputs, SessionType } from '../types';
+import {
+  CreateAddressInputs,
+  SessionType,
+  UpdateAddressInputs,
+} from '../types';
 
 export class AddressResolver {
   private addressService = new AddressService();
@@ -16,7 +20,7 @@ export class AddressResolver {
     return await this.addressService.findById(id);
   }
 
-  async createAddress(address: AddressInputs, session: SessionType) {
+  async createAddress(address: CreateAddressInputs, session: SessionType) {
     if (!session.userSession) throw 'User must be connected first!';
     return await this.addressService.create(
       address,
@@ -24,7 +28,7 @@ export class AddressResolver {
     );
   }
 
-  async updateAddress(address: AddressInputs, session: SessionType) {
+  async updateAddress(address: UpdateAddressInputs, session: SessionType) {
     if (!session.userSession) throw 'User must be connected first!';
     return await this.addressService.update(address);
   }

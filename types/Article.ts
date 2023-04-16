@@ -1,22 +1,23 @@
 import { SkuResponse } from './Sku';
 
-export type ArticleInputs = {
+export type CreateArticleInputs = {
   skuId: string;
 };
 
-export type ArticleFields = {
-  id?: string;
-  sale?: number;
-  orderId?: string;
-  userId?: string | null;
-} & ArticleInputs;
+export type CreateArticleFields = {
+  id: string;
+  sale: number;
+  userId: string;
+} & CreateArticleInputs;
 
-export type ArticleResponse = {
-  id?: string;
+export type UpdateArticleFields = Omit<CreateArticleFields, 'userId'> & {
+  orderId: string;
+  userId: null;
+};
+
+export type ArticleResponse = Omit<CreateArticleFields, 'userId'> & {
+  sku: SkuResponse;
   orderId: string | null;
   userId: string | null;
   guestId: string | null;
-  skuId: string;
-  sku: SkuResponse;
-  sale: number;
 };

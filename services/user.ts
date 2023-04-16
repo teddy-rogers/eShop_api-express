@@ -1,5 +1,4 @@
 import { PrismaClient } from '@prisma/database';
-import { v4 as createUniqueId } from 'uuid';
 import { UserFields } from '../types';
 
 export class UserService {
@@ -7,7 +6,6 @@ export class UserService {
 
   async create(user: UserFields) {
     try {
-      user = { ...user, id: createUniqueId() };
       return await this.db
         .$transaction([
           this.db.credentials.create({

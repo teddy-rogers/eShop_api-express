@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/database';
-import { ArticleFields } from '../types';
+import { CreateArticleFields, UpdateArticleFields } from '../types';
 import { articleResponse } from './response';
 
 export class ArticleService {
@@ -43,7 +43,7 @@ export class ArticleService {
     }
   }
 
-  async create(article: ArticleFields) {
+  async create(article: CreateArticleFields) {
     const { skuId, userId, sale } = article;
     try {
       return await this.db.article
@@ -63,9 +63,7 @@ export class ArticleService {
           },
           select: {
             user: {
-              select: {
-                cart: { select: articleResponse },
-              },
+              include: { cart: true },
             },
           },
         })
@@ -118,7 +116,7 @@ export class ArticleService {
     }
   }
 
-  async update(article: ArticleFields) {
+  async update(article: UpdateArticleFields) {
     try {
       return await this.db.article.update({
         where: { id: article.id },
@@ -136,7 +134,7 @@ export class ArticleService {
     }
   }
 
-  async updateMany(articlesId: string[], article: ArticleFields) {
+  async updateMany(articlesId: string[], article: CreateArticleFields) {
     try {
       return await this.db.article.updateMany({
         where: { id: { in: [...articlesId] } },
