@@ -1,6 +1,5 @@
 import { PrismaClient } from '@prisma/database';
 import { CreateAddressFields, UpdateAddressFields } from '../types';
-import { addressResponse, partialAddressResponse } from './response';
 
 export class AddressService {
   private db = new PrismaClient();
@@ -9,7 +8,6 @@ export class AddressService {
     try {
       return await this.db.address.findMany({
         where: { userId },
-        select: partialAddressResponse,
       });
     } catch (error) {
       throw error;
@@ -21,7 +19,6 @@ export class AddressService {
       return await this.db.address
         .findFirst({
           where: { id },
-          select: addressResponse,
         })
         .then((address) => {
           if (!address)
@@ -43,7 +40,6 @@ export class AddressService {
               connect: { id: userId! },
             },
           },
-          select: addressResponse,
         })
         .then((address) => {
           if (!address)
@@ -61,7 +57,6 @@ export class AddressService {
         .update({
           where: { id: address.id },
           data: { ...address },
-          select: addressResponse,
         })
         .then((addressRes) => {
           if (!addressRes)
@@ -83,11 +78,8 @@ export class AddressService {
               disconnect: { id },
             },
           },
-          select: {
-            addresses: { select: partialAddressResponse },
-          },
         })
-        .then(({ addresses }) => addresses);
+        .then(() => 'ok');
     } catch (error) {
       throw error;
     }

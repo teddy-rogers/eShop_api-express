@@ -74,7 +74,7 @@ export class SessionHelper {
     const currentDeviceLanguage = acceptLanguage
       ?.split(';')[0]
       .split(',')[0]
-      .split('-')[1];
+      .split('-')[0];
     return (currentDeviceLanguage as Country) || Country.FR;
   }
 }

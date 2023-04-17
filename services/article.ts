@@ -1,27 +1,58 @@
-import { PrismaClient } from '@prisma/database';
+import { Country, PrismaClient } from '@prisma/database';
+import { Utils } from '../helpers';
 import { CreateArticleFields, UpdateArticleFields } from '../types';
-import { articleResponse } from './response';
 
 export class ArticleService {
   private db = new PrismaClient();
+  private utils = new Utils();
 
-  async findManyById(articlesId: string[]) {
+  async findManyById(articlesId: string[], lang: Country) {
     try {
       return await this.db.article.findMany({
         where: { id: { in: [...articlesId] } },
-        select: articleResponse,
+        include: {
+          sku: {
+            include: {
+              product: {
+                select: {
+                  title: this.utils.selectLanguage(lang),
+                  id: true,
+                  price: true,
+                  sale: true,
+                  gender: true,
+                  imageUrl: true,
+                },
+              },
+            },
+          },
+        },
       });
     } catch (error) {
       throw error;
     }
   }
 
-  async findManyByUserId(userId: string) {
+  async findManyByUserId(userId: string, lang: Country) {
     try {
       return await this.db.article
         .findMany({
           where: { userId },
-          select: articleResponse,
+          include: {
+            sku: {
+              include: {
+                product: {
+                  select: {
+                    title: this.utils.selectLanguage(lang),
+                    id: true,
+                    price: true,
+                    sale: true,
+                    gender: true,
+                    imageUrl: true,
+                  },
+                },
+              },
+            },
+          },
         })
         .then((articles) => {
           return articles.map((article) => {
@@ -31,8 +62,8 @@ export class ArticleService {
                 ...article.sku,
                 product: {
                   ...article.sku.product,
-                  price: article.sku.product.price.toNumber(),
-                  sale: article.sku.product.sale.toNumber(),
+                  price: Number(article.sku.product.price),
+                  sale: Number(article.sku.product.sale),
                 },
               },
             };
@@ -43,7 +74,7 @@ export class ArticleService {
     }
   }
 
-  async create(article: CreateArticleFields) {
+  async create(article: CreateArticleFields, lang: Country) {
     const { skuId, userId, sale } = article;
     try {
       return await this.db.article
@@ -63,7 +94,26 @@ export class ArticleService {
           },
           select: {
             user: {
-              include: { cart: true },
+              include: {
+                cart: {
+                  include: {
+                    sku: {
+                      include: {
+                        product: {
+                          select: {
+                            title: this.utils.selectLanguage(lang),
+                            id: true,
+                            price: true,
+                            sale: true,
+                            gender: true,
+                            imageUrl: true,
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
             },
           },
         })
@@ -76,7 +126,7 @@ export class ArticleService {
     }
   }
 
-  async delete(userId: string, articleId: string) {
+  async delete(userId: string, articleId: string, lang: Country) {
     try {
       return await this.db.user
         .update({
@@ -87,7 +137,24 @@ export class ArticleService {
             },
           },
           select: {
-            cart: { select: articleResponse },
+            cart: {
+              include: {
+                sku: {
+                  include: {
+                    product: {
+                      select: {
+                        title: this.utils.selectLanguage(lang),
+                        id: true,
+                        price: true,
+                        sale: true,
+                        gender: true,
+                        imageUrl: true,
+                      },
+                    },
+                  },
+                },
+              },
+            },
           },
         })
         .then(({ cart }) => cart);
@@ -96,7 +163,7 @@ export class ArticleService {
     }
   }
 
-  async deleteMany(userId: string) {
+  async deleteMany(userId: string, lang: Country) {
     try {
       return await this.db.user
         .update({
@@ -107,7 +174,24 @@ export class ArticleService {
             },
           },
           select: {
-            cart: { select: articleResponse },
+            cart: {
+              include: {
+                sku: {
+                  include: {
+                    product: {
+                      select: {
+                        title: this.utils.selectLanguage(lang),
+                        id: true,
+                        price: true,
+                        sale: true,
+                        gender: true,
+                        imageUrl: true,
+                      },
+                    },
+                  },
+                },
+              },
+            },
           },
         })
         .then(({ cart }) => cart);
@@ -116,7 +200,7 @@ export class ArticleService {
     }
   }
 
-  async update(article: UpdateArticleFields) {
+  async update(article: UpdateArticleFields, lang: Country) {
     try {
       return await this.db.article.update({
         where: { id: article.id },
@@ -127,7 +211,30 @@ export class ArticleService {
           orderId: article.orderId,
           sale: article.sale,
         },
-        select: articleResponse,
+        select: {
+          user: {
+            include: {
+              cart: {
+                include: {
+                  sku: {
+                    include: {
+                      product: {
+                        select: {
+                          title: this.utils.selectLanguage(lang),
+                          id: true,
+                          price: true,
+                          sale: true,
+                          gender: true,
+                          imageUrl: true,
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
       });
     } catch (error) {
       throw error;
