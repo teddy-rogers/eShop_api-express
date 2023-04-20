@@ -1,9 +1,16 @@
-import { Category, Color, Gender, Season, Size } from '@prisma/database';
+import {
+  Category,
+  Color,
+  Country,
+  Gender,
+  Season,
+  Size
+} from '@prisma/database';
 import { Folder, Utils } from '../helpers';
 import { ProductService } from '../services';
 import {
   CreateProductFields,
-  ProductInputs,
+  CreateProductInputs,
   SearchProductInputs,
   UpdateProductFields
 } from '../types';
@@ -12,7 +19,10 @@ export class ProductResolver {
   private productService = new ProductService();
   private utils = new Utils();
 
-  async getProductWhere({ keywords, filters, lastId }: SearchProductInputs) {
+  async getProductWhere(
+    { keywords, filters, lastId }: SearchProductInputs,
+    lang: Country,
+  ) {
     const [
       sizeLowercase,
       genderLowercase,
@@ -26,36 +36,39 @@ export class ProductResolver {
       filters.category,
       filters.season,
     ].map((filter) => filter && this.utils.changeCaseAndTrim(filter, 'lower'));
-    return this.productService.findWhere({
-      keywords: keywords?.length ? keywords?.split(' ') : undefined,
-      filters: {
-        price: filters.price ? parseInt(filters.price) : undefined,
-        sale: filters.sale ? parseInt(filters.sale) : undefined,
-        size: this.utils.isTypeOf(Size, sizeLowercase)
-          ? sizeLowercase
-          : undefined,
-        gender: this.utils.isTypeOf(Gender, genderLowercase)
-          ? genderLowercase
-          : undefined,
-        color: this.utils.isTypeOf(Color, colorLowercase)
-          ? colorLowercase
-          : undefined,
-        category: this.utils.isTypeOf(Category, categoryLowercase)
-          ? categoryLowercase
-          : undefined,
-        season: this.utils.isTypeOf(Season, seasonLowercase)
-          ? seasonLowercase
-          : undefined,
+    return this.productService.findWhere(
+      {
+        keywords: keywords?.length ? keywords?.split(' ') : undefined,
+        filters: {
+          price: filters.price ? parseInt(filters.price) : undefined,
+          sale: filters.sale ? parseInt(filters.sale) : undefined,
+          size: this.utils.isTypeOf(Size, sizeLowercase)
+            ? sizeLowercase
+            : undefined,
+          gender: this.utils.isTypeOf(Gender, genderLowercase)
+            ? genderLowercase
+            : undefined,
+          color: this.utils.isTypeOf(Color, colorLowercase)
+            ? colorLowercase
+            : undefined,
+          category: this.utils.isTypeOf(Category, categoryLowercase)
+            ? categoryLowercase
+            : undefined,
+          season: this.utils.isTypeOf(Season, seasonLowercase)
+            ? seasonLowercase
+            : undefined,
+        },
+        lastId,
       },
-      lastId,
-    });
+      lang,
+    );
   }
 
-  async getProductById(id: string) {
-    return await this.productService.findById(id);
+  async getProductById(id: string, lang: Country) {
+    return await this.productService.findById(id, lang);
   }
 
-  async createProductWith(product: ProductInputs) {
+  async createProductWith(product: CreateProductInputs) {
     const productFields: CreateProductFields = await this.utils.createFields(
       Folder.products,
       product,
@@ -63,7 +76,7 @@ export class ProductResolver {
     return await this.productService.create(productFields);
   }
 
-  async updateProductWith(product: ProductInputs) {
+  async updateProductWith(product: CreateProductInputs) {
     const productFields: UpdateProductFields = await this.utils.createFields(
       Folder.products,
       product,

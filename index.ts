@@ -55,6 +55,9 @@ Router.listen(port);
 
 //
 
+// import { Category, PrismaClient, Product, Size } from '@prisma/database';
+// import { v4 as uuid } from 'uuid';
+//
 // Router.use('/fix', async () => {
 //   try {
 //     await createProductSkus().then(() => {});

@@ -2,7 +2,7 @@ import { AddressService } from '../services';
 import {
   CreateAddressInputs,
   SessionType,
-  UpdateAddressInputs,
+  UpdateAddressInputs
 } from '../types';
 
 export class AddressResolver {
