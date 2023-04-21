@@ -23,11 +23,7 @@ export class UserResolver {
       );
   }
 
-  async signInUser(
-    userInputs: UserInputs,
-    session: SessionType,
-    lang: Country,
-  ) {
+  async signInUser(userInputs: UserInputs, session: SessionType) {
     if (!session) throw 'Something went wrong while getting session';
     const existingUser = await this.userService.findFirstUserByEmail(
       userInputs.email,
@@ -55,13 +51,12 @@ export class UserResolver {
       await this.articleResolver.transferGuestCartToUserCart(
         user.id,
         guestCart,
-        lang,
       );
     await this.sessionHelper.initUserSession({ session, user });
     return { ...user, cart: [...user.cart, ...transferedCart] };
   }
 
-  async logInUser(login: LoginInputs, session: SessionType, lang: Country) {
+  async logInUser(login: LoginInputs, session: SessionType) {
     if (session.userSession) throw 'User already logged in !';
     const [_, user, guestCart] = await Promise.all([
       await this.verifyCredentials(login),
@@ -75,7 +70,6 @@ export class UserResolver {
       await this.articleResolver.transferGuestCartToUserCart(
         user.id,
         guestCart,
-        lang,
       );
     await this.sessionHelper.initUserSession({ session, user });
     return { ...user, cart: [...user.cart, ...transferedCart] };

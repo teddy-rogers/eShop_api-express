@@ -1,4 +1,3 @@
-import { Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
 import { OrderHelper } from '../helpers';
 import { ArticleService, OrderService } from '../services';
@@ -9,28 +8,20 @@ export class OrderResolver {
   private articleService = new ArticleService();
   private orderHelper = new OrderHelper();
 
-  async getAllOrders(session: SessionType, lang: Country) {
+  async getAllOrders(session: SessionType) {
     if (!session.userSession) throw 'User must be connected first!';
-    return await this.orderService.findManyByUserId(
-      session.userSession.userId,
-      lang,
-    );
+    return await this.orderService.findManyByUserId(session.userSession.userId);
   }
 
-  async getOneOrder(id: string, session: SessionType, lang: Country) {
+  async getOneOrder(id: string, session: SessionType) {
     if (!session.userSession) throw 'User must be connected first!';
-    return await this.orderService.findById(id, lang);
+    return await this.orderService.findById(id);
   }
 
-  async createOneOrder(
-    order: OrderInputs,
-    session: SessionType,
-    lang: Country,
-  ) {
+  async createOneOrder(order: OrderInputs, session: SessionType) {
     if (!session.userSession) throw 'User must be connected first';
     const userCartArticles = await this.articleService.findManyByUserId(
       session.userSession.userId,
-      lang,
     );
     if (!userCartArticles.length) throw "No articles in user's cart";
     const orderResponse = await this.orderService.create({
@@ -42,19 +33,16 @@ export class OrderResolver {
     });
     const orderArticles = await Promise.all(
       userCartArticles.map(async (article) => {
-        return await this.articleService.update(
-          {
-            id: article.id,
-            skuId: article.skuId,
-            orderId: orderResponse.id,
-            sale: article.sku?.product?.sale!,
-            userId: null,
-          },
-          lang,
-        );
+        return await this.articleService.update({
+          id: article.id,
+          skuId: article.skuId,
+          orderId: orderResponse.id,
+          sale: article.sku?.product?.sale!,
+          userId: null,
+        });
       }),
     );
     if (orderArticles.length === userCartArticles.length)
-      return await this.orderService.findById(orderResponse.id, lang);
+      return await this.orderService.findById(orderResponse.id);
   }
 }

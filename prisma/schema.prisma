@@ -14,24 +14,20 @@ datasource db {
 
 model Credentials {
   id       String @id @unique @default(uuid())
-  //
   email    String @unique
   password String
 }
 
 model User {
   id             String       @id @default(uuid())
-  //
   email          String       @unique
   firstName      String
   lastName       String
   updatedAt      DateTime     @updatedAt
   createdAt      DateTime     @default(now())
   lastConnection DateTime     @default(now())
-  //enum
   civility       Civility     @default(unknown)
   storeCountry   Country      @default(FR)
-  //array
   creditCard     CreditCard[]
   addresses      Address[]
   orders         Order[]
@@ -40,13 +36,11 @@ model User {
 
 model Article {
   id      String  @id @default(uuid())
-  //
   sale    Float   @default(0)
   skuId   String
   userId  String?
   guestId String?
   orderId String?
-  //relation
   sku     Sku     @relation(fields: [skuId], references: [id])
   user    User?   @relation(fields: [userId], references: [id])
   order   Order?  @relation(fields: [orderId], references: [id])
@@ -54,7 +48,6 @@ model Article {
 
 model Address {
   id                   String  @id @default(uuid())
-  //
   title                String  @default("")
   civility             String  @default("unknown")
   firstName            String
@@ -68,29 +61,24 @@ model Address {
   phone                String
   prefixPhone          String
   userId               String?
-  //relation
-  user                 User?   @relation(references: [id], fields: [userId])
   shippingOrderAddress Order[] @relation("shipping")
   billingOrderAddress  Order[] @relation("billing")
+  user                 User?   @relation(references: [id], fields: [userId])
 }
 
 model CreditCard {
   id             String  @id @default(uuid())
-  //
   CCNumber       String
   ExpirationDate String
   CCV            Int
   cardOwner      String
   userId         String
-  //relation
-  user           User?   @relation(references: [id], fields: [userId])
-  //array
   orders         Order[]
+  user           User?   @relation(references: [id], fields: [userId])
 }
 
 model Order {
   id                String      @id @default(uuid())
-  //
   orderNumber       String
   total             Decimal
   trackingNumber    String      @default("")
@@ -100,129 +88,92 @@ model Order {
   userId            String
   billingAddressId  String?
   shippingAddressId String?
-  //enum
+  articles          Article[]
   status            OrderStatus @default(waiting)
-  //relation
   creditCard        CreditCard? @relation(references: [id], fields: [creditCardId])
   user              User?       @relation(references: [id], fields: [userId])
   billingAddress    Address?    @relation("billing", fields: [billingAddressId], references: [id])
   shippingAddress   Address?    @relation("shipping", fields: [shippingAddressId], references: [id])
-  //array
-  articles          Article[]
 }
 
 model Product {
   id              String    @id @default(uuid())
-  //
   isActive        Boolean   @default(true)
-  titleId         String    @unique
-  descriptionId   String    @unique
+  name            String
+  description     String
   imageUrl        String
   backgroundColor String
-  foregroundColor String
   price           Decimal   @default(0)
   sale            Decimal   @default(0)
-  //enum
+  keywords        Keywords?
+  skus            Sku[]
   gender          Gender    @default(man)
   category        Category  @default(t_shirt)
   color           Color     @default(white)
   season          Season    @default(winter)
-  //relation
-  title           Text      @relation("productTitle", fields: [titleId], references: [id])
-  description     Text      @relation("productDescription", fields: [descriptionId], references: [id])
-  keywords        Keywords?
-  //array
-  skus            Sku[]
 }
 
 model Sku {
   id        String    @id @default(uuid())
-  //
   ref       String
   quantity  Int
   productId String
-  //enum
   size      Size
-  //relation
-  product   Product   @relation(references: [id], fields: [productId])
-  //array
   articles  Article[]
+  product   Product   @relation(references: [id], fields: [productId])
 }
 
 model Selection {
   id              String      @id @default(uuid())
-  //
-  titleId         String      @unique
-  descriptionId   String?     @unique
+  title           String
+  description     String
   selectionPath   String
   imageUrl        String
-  backgroundColor String?
-  foregroundColor String?     @default("black")
+  backgroundColor String
+  foregroundColor String      @default("white")
   isActive        Boolean     @default(true)
   dateStart       DateTime    @default(now())
   dateEnd         DateTime    @default(now())
-  updatedAt       DateTime    @default(now())
-  //enum
-  imageAspect     ImageAspect @default(portrait)
-  //relation
-  title           Text        @relation("selectionTitle", fields: [titleId], references: [id])
-  description     Text?       @relation("selectionDescription", fields: [descriptionId], references: [id])
   keywords        Keywords?
-  //array
   countries       Country[]
+  imageAspect     ImageAspect @default(portrait)
 }
 
 model Post {
   id              String        @id @default(uuid())
-  //
-  index           Int           @default(1)
-  titleId         String        @unique
-  descriptionId   String        @unique @default("")
+  title           String
+  description     String?       @default("")
   imageUrl        String
   foregroundColor String        @default("white")
   backgroundColor String        @default("")
-  isActive        Boolean       @default(true)
+  isActive        Boolean       @default(false)
   dateStart       DateTime      @default(now())
   dateEnd         DateTime      @default(now())
-  updatedAt       DateTime      @default(now())
-  //relation
-  title           Text          @relation("postTitle", fields: [titleId], references: [id])
-  description     Text?         @relation("postDescription", fields: [descriptionId], references: [id])
   keywords        Keywords?
-  //array
   sections        PostSection[]
   countries       Country[]
 }
 
 model PostSection {
   id           String      @id @default(uuid())
-  //
-  index        Int         @default(1)
-  postId       String
-  titleId      String?     @unique
-  paragraphId  String?     @unique
+  postId       String?
+  title        String?     @default("")
+  paragraph    String?     @default("")
   localPath    String?     @default("")
   externalLink String?     @default("")
   imageUrl     String?     @default("")
-  createdAt    DateTime    @default(now())
-  //enum
-  imageAspect  ImageAspect @default(landscape)
-  //relation
-  post         Post?       @relation(references: [id], fields: [postId])
-  title        Text?       @relation("postSectionTitle", fields: [titleId], references: [id])
-  paragraph    Text?       @relation("postSectionParagraph", fields: [paragraphId], references: [id])
   keywords     Keywords?
+  post         Post?       @relation(references: [id], fields: [postId])
+  imageAspect  ImageAspect @default(landscape)
 }
 
 model Keywords {
   id            String       @id @default(uuid())
-  //
   productId     String?      @unique
   selectionId   String?      @unique
   postId        String?      @unique
   postSectionId String?      @unique
   indexes       String[]
-  //relation
   product       Product?     @relation(references: [id], fields: [productId])
   selection     Selection?   @relation(references: [id], fields: [selectionId])
   post          Post?        @relation(references: [id], fields: [postId])
@@ -231,36 +182,17 @@ model Keywords {
 
 model Store {
   id      String      @id @default(uuid())
-  //enum
   status  StoreStatus @default(open)
   country Country     @unique @default(FR)
 }
 
 model Theme {
   id        String    @id @default(uuid())
-  //
   isActive  Boolean   @default(true)
   name      String
   dateStart DateTime
   dateEnd   DateTime
-  //array
   countries Country[]
-}
-
-model Text {
-  id                   String       @id @default(uuid())
-  //
-  FR                   String       @default("")
-  EN                   String       @default("")
-  //relation
-  productTitle         Product?     @relation("productTitle")
-  productDescription   Product?     @relation("productDescription")
-  selectionTitle       Selection?   @relation("selectionTitle")
-  selectionDescription Selection?   @relation("selectionDescription")
-  postTitle            Post?        @relation("postTitle")
-  postDescription      Post?        @relation("postDescription")
-  postSectionTitle     PostSection? @relation("postSectionTitle")
-  postSectionParagraph PostSection? @relation("postSectionParagraph")
 }
 
 enum Gender {
@@ -349,8 +281,11 @@ enum ImageAspect {
 }
 
 enum Country {
-  EN
+  GB
+  US
   FR
+  JP
+  ES
 }
 
 enum StoreStatus {

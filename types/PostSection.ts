@@ -1,37 +1,24 @@
-import { ImageAspect, Text } from '@prisma/database';
+import { ImageAspect } from '@prisma/database';
 import { UploadedFile } from 'express-fileupload';
 
 export type CreatePostSectionInputs = {
   postId: string;
-  title?: Omit<Text, 'id'>;
-  paragraph?: Omit<Text, 'id'>;
+  title?: string;
+  paragraph?: string;
   localPath?: string;
   externalLink?: string;
   image?: UploadedFile;
-  imageAspect?: string;
-};
-
-export type CreatePostSectionFields = Omit<
-  CreatePostSectionInputs,
-  'image' | 'title' | 'paragraph' | 'imageAspect'
-> & {
-  id: string;
-  title?: Text;
-  paragraph?: Text;
-  imageUrl?: string;
   imageAspect?: ImageAspect;
 };
 
-export type UpdatePostSectionInputs = {
+export type CreatePostSectionFields = Omit<CreatePostSectionInputs, 'image'> & {
   id: string;
-  postId: string;
-  title: Text;
-  paragraph: Text;
-  localPath: string;
-  externalLink: string;
-  image?: UploadedFile;
-  imageUrl: string;
-  imageAspect: ImageAspect;
+  imageUrl?: string;
 };
 
-export type UpdatePostSectionFields = Omit<UpdatePostSectionInputs, 'image'>;
+export type UpdatePostSectionInputs = CreatePostSectionInputs & {
+  id: string;
+  imageUrl?: string;
+};
+
+export type UpdatePostSectionFields = CreatePostSectionFields;

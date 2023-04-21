@@ -1,11 +1,11 @@
-import { Country, PrismaClient, Product, Size, Sku } from '@prisma/database';
-import { v4 as createUniqueId } from 'uuid';
+import { PrismaClient } from '@prisma/database';
 import { Utils } from '../helpers';
 import {
   CreateProductFields,
   SearchProductFields,
   UpdateProductFields
 } from '../types';
+import { partialProductResponse, productResponse } from './response';
 
 export class ProductService {
   private db = new PrismaClient();
@@ -44,17 +44,10 @@ export class ProductService {
     return fields;
   }
 
-  private getKeywords(
-    product: Pick<
-      CreateProductFields,
-      'title' | 'description' | 'color' | 'gender' | 'category' | 'season'
-    >,
-  ) {
+  private getKeywords(product: CreateProductFields) {
     return this.utils.createKeywords([
-      product.title.FR,
-      product.title.EN,
-      product.description.FR,
-      product.description.EN,
+      product.name,
+      product.description,
       product.color,
       product.gender,
       product.category,
@@ -62,10 +55,7 @@ export class ProductService {
     ]);
   }
 
-  async findWhere(
-    { keywords, filters, lastId }: SearchProductFields,
-    lang: Country,
-  ) {
+  async findWhere({ keywords, filters, lastId }: SearchProductFields) {
     try {
       return await this.db.product
         .findMany({
@@ -73,9 +63,7 @@ export class ProductService {
           where: {
             ...this.getSearchFields({ keywords, filters }),
           },
-          include: {
-            title: this.utils.selectLanguage(lang),
-          },
+          select: { ...partialProductResponse },
         })
         .then((products) => {
           return products.map((product) => {
@@ -91,22 +79,12 @@ export class ProductService {
     }
   }
 
-  async findById(id: string, lang: Country) {
+  async findById(id: string) {
     try {
       return await this.db.product
         .findFirst({
           where: { id },
-          include: {
-            title: this.utils.selectLanguage(lang),
-            description: this.utils.selectLanguage(lang),
-            skus: {
-              select: {
-                id: true,
-                size: true,
-                quantity: true,
-              },
-            },
-          },
+          select: { ...productResponse },
         })
         .then((product) => {
           if (!product) throw `Unable to find product ${id}`;
@@ -125,25 +103,11 @@ export class ProductService {
     try {
       return await this.db
         .$transaction([
-          this.db.text.createMany({
-            data: [
-              {
-                id: product.title.id,
-                FR: product.title.FR,
-                EN: product.title.EN,
-              },
-              {
-                id: product.description.id,
-                FR: product.description.FR,
-                EN: product.description.EN,
-              },
-            ],
-          }),
           this.db.product.create({
             data: {
               id: product.id,
-              titleId: product.title.id,
-              descriptionId: product.description.id,
+              name: product.name,
+              description: product.description,
               color: product.color,
               gender: product.gender,
               category: product.category,
@@ -151,12 +115,7 @@ export class ProductService {
               price: product.price,
               sale: product.sale,
               imageUrl: product.imageUrl,
-              foregroundColor: product.foregroundColor,
               backgroundColor: product.backgroundColor,
-            },
-            include: {
-              title: true,
-              description: true,
             },
           }),
           this.db.keywords.create({
@@ -166,70 +125,8 @@ export class ProductService {
             },
           }),
         ])
-        .then(async ([_, product]) => {
+        .then(([product, _]) => {
           if (!product) throw 'Product not created in database.';
-          //for dev purpose only !!!
-          const topSizes: Size[] = ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl'];
-          const bottomSizes: Size[] = [
-            'eu32',
-            'eu34',
-            'eu36',
-            'eu38',
-            'eu40',
-            'eu42',
-            'eu44',
-            'eu46',
-          ];
-          function createSkus(sizes: Partial<Size[]>): Sku[] {
-            return sizes.reduce((acc, s) => {
-              if (s !== undefined) {
-                const sku = {
-                  id: createUniqueId(),
-                  productId: product.id,
-                  quantity: Math.floor(Math.random() * 1999),
-                  ref: String(Math.floor(Math.random() * 1999999)),
-                  size: s as Size,
-                };
-                acc.push(sku);
-                return acc;
-              }
-              return acc;
-            }, [] as Sku[]);
-          }
-          function createProductSkus(product: Product): Sku[] {
-            if (
-              [
-                'shirt',
-                't_shirt',
-                'sweat',
-                'pull',
-                'dress',
-                'swimsuit',
-              ].includes(product.category)
-            ) {
-              return createSkus(topSizes);
-            }
-            if (
-              ['chino', 'jogger', 'jean', 'short', 'skirt'].includes(
-                product.category,
-              )
-            ) {
-              return createSkus(bottomSizes);
-            }
-            return [
-              {
-                id: createUniqueId(),
-                productId: product.id!,
-                quantity: Math.floor(Math.random() * 199),
-                ref: String(Math.floor(Math.random() * 1999999)),
-                size: Size.u,
-              },
-            ];
-          }
-          await this.db.sku.createMany({
-            data: createProductSkus(product),
-          });
-          //
           return {
             ...product,
             price: product.price.toNumber(),
@@ -245,27 +142,13 @@ export class ProductService {
     try {
       return await this.db
         .$transaction([
-          this.db.text.update({
-            where: { id: product.title.id },
-            data: {
-              FR: product.title.FR,
-              EN: product.title.EN,
-            },
-          }),
-          this.db.text.update({
-            where: { id: product.description.id },
-            data: {
-              FR: product.description.FR,
-              EN: product.description.EN,
-            },
-          }),
           this.db.product.update({
             where: { id: product.id },
             data: {
               isActive: product.isActive,
               id: product.id,
-              titleId: product.title.id,
-              descriptionId: product.description.id,
+              name: product.name,
+              description: product.description,
               color: product.color,
               gender: product.gender,
               category: product.category,
@@ -273,12 +156,7 @@ export class ProductService {
               price: product.price,
               sale: product.sale,
               imageUrl: product.imageUrl,
-              foregroundColor: product.foregroundColor,
               backgroundColor: product.backgroundColor,
-            },
-            include: {
-              title: true,
-              description: true,
             },
           }),
           this.db.keywords.update({
@@ -286,7 +164,7 @@ export class ProductService {
             data: { indexes: this.getKeywords(product) },
           }),
         ])
-        .then(([_, __, product]) => {
+        .then(([product, _]) => {
           if (!product) throw 'Product not updated in database.';
           return {
             ...product,

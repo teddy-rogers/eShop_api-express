@@ -1,4 +1,3 @@
-import { Country } from '@prisma/database';
 import express from 'express';
 import { UserResolver } from '../resolvers';
 
@@ -7,7 +6,6 @@ const userResolver = new UserResolver();
 
 Router.put('/sign-in', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
     await userResolver
       .signInUser(
         {
@@ -18,7 +16,6 @@ Router.put('/sign-in', async (req, res) => {
           storeCountry: req.body.user.storeCountry,
         },
         req.session,
-        lang,
       )
       .then((createdUser) => {
         res.status(200).json(createdUser);
@@ -30,7 +27,6 @@ Router.put('/sign-in', async (req, res) => {
 
 Router.put('/log-in', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
     await userResolver
       .logInUser(
         {
@@ -38,7 +34,6 @@ Router.put('/log-in', async (req, res) => {
           password: req.body.login.password,
         },
         req.session,
-        lang,
       )
       .then((user) => {
         res.status(200).json(user);

@@ -1,39 +1,34 @@
-import { Country, Text } from '@prisma/database';
+import { Country } from '@prisma/database';
 import { UploadedFile } from 'express-fileupload';
 
 export type CreatePostInputs = {
-  title: Omit<Text, 'id'>;
-  description: Omit<Text, 'id'>;
+  title: string;
+  description?: string;
   dateStart: Date;
   dateEnd: Date;
   countries: Country[];
   image: UploadedFile;
 };
 
-export type CreatePostFields = Omit<
-  CreatePostInputs,
-  'title' | 'description' | 'image'
-> & {
+export type CreatePostFields = {
   id: string;
-  title: Text;
-  description: Text;
+  title: string;
+  description?: string;
   foregroundColor: string;
   backgroundColor: string;
   imageUrl: string;
-};
-
-export type UpdatePostInputs = {
-  id: string;
-  isActive: boolean;
-  title: Text;
-  description: Text;
   dateStart: Date;
   dateEnd: Date;
   countries: Country[];
+};
+
+export type UpdatePostInputs = Omit<CreatePostInputs, 'image'> & {
+  id: string;
   image?: UploadedFile;
   imageUrl: string;
   foregroundColor: string;
   backgroundColor: string;
+  isActive: boolean;
 };
 
-export type UpdatePostFields = Omit<UpdatePostInputs, 'image'>;
+export type UpdatePostFields = CreatePostFields & { isActive: boolean };

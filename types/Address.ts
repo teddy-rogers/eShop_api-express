@@ -1,11 +1,12 @@
 import { Civility } from '@prisma/database';
 
 export type CreateAddressInputs = {
+  title: string;
   civility: Civility;
   firstName: string;
   lastName: string;
   address1: string;
-  address2?: string;
+  address2: string;
   city: string;
   zipCode: string;
   country: string;

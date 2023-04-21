@@ -1,58 +1,27 @@
-import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
+import { PrismaClient } from '@prisma/database';
 import { CreateArticleFields, UpdateArticleFields } from '../types';
+import { articleResponse } from './response';
 
 export class ArticleService {
   private db = new PrismaClient();
-  private utils = new Utils();
 
-  async findManyById(articlesId: string[], lang: Country) {
+  async findManyById(articlesId: string[]) {
     try {
       return await this.db.article.findMany({
         where: { id: { in: [...articlesId] } },
-        include: {
-          sku: {
-            include: {
-              product: {
-                select: {
-                  title: this.utils.selectLanguage(lang),
-                  id: true,
-                  price: true,
-                  sale: true,
-                  gender: true,
-                  imageUrl: true,
-                },
-              },
-            },
-          },
-        },
+        select: articleResponse,
       });
     } catch (error) {
       throw error;
     }
   }
 
-  async findManyByUserId(userId: string, lang: Country) {
+  async findManyByUserId(userId: string) {
     try {
       return await this.db.article
         .findMany({
           where: { userId },
-          include: {
-            sku: {
-              include: {
-                product: {
-                  select: {
-                    title: this.utils.selectLanguage(lang),
-                    id: true,
-                    price: true,
-                    sale: true,
-                    gender: true,
-                    imageUrl: true,
-                  },
-                },
-              },
-            },
-          },
+          select: articleResponse,
         })
         .then((articles) => {
           return articles.map((article) => {
@@ -62,8 +31,8 @@ export class ArticleService {
                 ...article.sku,
                 product: {
                   ...article.sku.product,
-                  price: Number(article.sku.product.price),
-                  sale: Number(article.sku.product.sale),
+                  price: article.sku.product.price.toNumber(),
+                  sale: article.sku.product.sale.toNumber(),
                 },
               },
             };
@@ -74,7 +43,7 @@ export class ArticleService {
     }
   }
 
-  async create(article: CreateArticleFields, lang: Country) {
+  async create(article: CreateArticleFields) {
     const { skuId, userId, sale } = article;
     try {
       return await this.db.article
@@ -94,26 +63,7 @@ export class ArticleService {
           },
           select: {
             user: {
-              include: {
-                cart: {
-                  include: {
-                    sku: {
-                      include: {
-                        product: {
-                          select: {
-                            title: this.utils.selectLanguage(lang),
-                            id: true,
-                            price: true,
-                            sale: true,
-                            gender: true,
-                            imageUrl: true,
-                          },
-                        },
-                      },
-                    },
-                  },
-                },
-              },
+              include: { cart: true },
             },
           },
         })
@@ -126,7 +76,7 @@ export class ArticleService {
     }
   }
 
-  async delete(userId: string, articleId: string, lang: Country) {
+  async delete(userId: string, articleId: string) {
     try {
       return await this.db.user
         .update({
@@ -137,24 +87,7 @@ export class ArticleService {
             },
           },
           select: {
-            cart: {
-              include: {
-                sku: {
-                  include: {
-                    product: {
-                      select: {
-                        title: this.utils.selectLanguage(lang),
-                        id: true,
-                        price: true,
-                        sale: true,
-                        gender: true,
-                        imageUrl: true,
-                      },
-                    },
-                  },
-                },
-              },
-            },
+            cart: { select: articleResponse },
           },
         })
         .then(({ cart }) => cart);
@@ -163,7 +96,7 @@ export class ArticleService {
     }
   }
 
-  async deleteMany(userId: string, lang: Country) {
+  async deleteMany(userId: string) {
     try {
       return await this.db.user
         .update({
@@ -174,24 +107,7 @@ export class ArticleService {
             },
           },
           select: {
-            cart: {
-              include: {
-                sku: {
-                  include: {
-                    product: {
-                      select: {
-                        title: this.utils.selectLanguage(lang),
-                        id: true,
-                        price: true,
-                        sale: true,
-                        gender: true,
-                        imageUrl: true,
-                      },
-                    },
-                  },
-                },
-              },
-            },
+            cart: { select: articleResponse },
           },
         })
         .then(({ cart }) => cart);
@@ -200,7 +116,7 @@ export class ArticleService {
     }
   }
 
-  async update(article: UpdateArticleFields, lang: Country) {
+  async update(article: UpdateArticleFields) {
     try {
       return await this.db.article.update({
         where: { id: article.id },
@@ -211,30 +127,7 @@ export class ArticleService {
           orderId: article.orderId,
           sale: article.sale,
         },
-        select: {
-          user: {
-            include: {
-              cart: {
-                include: {
-                  sku: {
-                    include: {
-                      product: {
-                        select: {
-                          title: this.utils.selectLanguage(lang),
-                          id: true,
-                          price: true,
-                          sale: true,
-                          gender: true,
-                          imageUrl: true,
-                        },
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
+        select: articleResponse,
       });
     } catch (error) {
       throw error;

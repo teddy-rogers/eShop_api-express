@@ -1,58 +1,27 @@
-import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
+import { PrismaClient } from '@prisma/database';
 import { OrderFields } from '../types';
+import { orderResponse, partialOrderResponse } from './response';
 
 export class OrderService {
   private db = new PrismaClient();
-  private utils = new Utils();
 
-  async findManyByUserId(userId: string, lang: Country) {
+  async findManyByUserId(userId: string) {
     try {
       return await this.db.order.findMany({
         where: { userId },
-        include: {
-          articles: {
-            include: {
-              sku: {
-                include: {
-                  product: {
-                    select: {
-                      imageUrl: true,
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
+        select: partialOrderResponse,
       });
     } catch (error) {
       throw error;
     }
   }
 
-  async findById(id: string, lang: Country) {
+  async findById(id: string) {
     try {
       return await this.db.order
         .findFirst({
           where: { id },
-          include: {
-            articles: {
-              include: {
-                sku: {
-                  include: {
-                    product: {
-                      include: {
-                        title: this.utils.selectLanguage(lang),
-                      },
-                    },
-                  },
-                },
-              },
-            },
-            billingAddress: true,
-            shippingAddress: true,
-          },
+          select: orderResponse,
         })
         .then((order) => {
           if (!order) throw `Unable to find order ${id}`;

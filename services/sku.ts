@@ -1,27 +1,15 @@
-import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
+import { PrismaClient } from '@prisma/database';
+import { skuResponse } from './response/skuResponse';
 
 export class SkuService {
   private db = new PrismaClient();
-  private utils = new Utils();
 
-  async findById(id: string, lang: Country) {
+  async findById(id: string) {
     try {
       return await this.db.sku
         .findFirst({
           where: { id },
-          include: {
-            product: {
-              select: {
-                title: this.utils.selectLanguage(lang),
-                id: true,
-                price: true,
-                sale: true,
-                gender: true,
-                imageUrl: true,
-              },
-            },
-          },
+          select: skuResponse,
         })
         .then((sku) => {
           if (!sku) throw `Unable to find the sku ${id}`;

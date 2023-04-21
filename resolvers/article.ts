@@ -1,33 +1,30 @@
-import { Article, Country } from '@prisma/database';
+import { Article } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
 import { ArticleService, CacheService, SkuService } from '../services';
-import { CacheStore, SessionType } from '../types';
+import { ArticleResponse, CacheStore, SessionType } from '../types';
 
 export class ArticleReslover {
   private articleService = new ArticleService();
   private skuService = new SkuService();
   private cacheService = new CacheService();
 
-  async getAllArticlesFromCart(session: SessionType, lang: Country) {
+  async getAllArticlesFromCart(session: SessionType) {
     const { guestSession, userSession } = session;
     if (guestSession) {
-      return await this.cacheService.getList({
+      return (await this.cacheService.getList({
         store: CacheStore.cart,
         id: guestSession.guestId,
-      });
+      })) as ArticleResponse[];
     }
     if (userSession)
-      return await this.articleService.findManyByUserId(
-        userSession.userId,
-        lang,
-      );
+      return await this.articleService.findManyByUserId(userSession.userId);
   }
 
-  async addToCart(skuId: string, session: SessionType, lang: Country) {
+  async addToCart(skuId: string, session: SessionType) {
     const { guestSession, userSession } = session;
+    const sku = await this.skuService.findById(skuId);
     if (guestSession) {
-      const sku = await this.skuService.findById(skuId, lang);
-      const guestCartArticle = {
+      const guestCartArticle: ArticleResponse = {
         id: createUniqueId(),
         guestId: guestSession.guestId,
         userId: null,
@@ -36,81 +33,69 @@ export class ArticleReslover {
         sku: { ...sku },
         sale: sku.product.sale,
       };
-      return await this.cacheService.updateList({
+      return (await this.cacheService.updateList({
         store: CacheStore.cart,
         id: guestSession.guestId,
         data: guestCartArticle,
-      });
+      })) as ArticleResponse[];
     }
     if (userSession) {
-      const sku = await this.skuService.findById(skuId, lang);
-      return await this.articleService.create(
-        {
-          id: createUniqueId(),
-          skuId,
-          userId: userSession.userId,
-          sale: sku.product.sale,
-        },
-        lang,
-      );
+      return await this.articleService.create({
+        id: createUniqueId(),
+        skuId,
+        userId: userSession.userId,
+        sale: sku.product.sale,
+      });
     }
   }
 
-  async removeFromCart(articleId: string, session: SessionType, lang: Country) {
+  async removeFromCart(articleId: string, session: SessionType) {
     const { guestSession, userSession } = session;
     if (guestSession) {
-      const articles = await this.cacheService.getList({
+      const articles = (await this.cacheService.getList({
         store: CacheStore.cart,
         id: guestSession.guestId,
-      });
-      return await this.cacheService.deleteList({
+      })) as ArticleResponse[];
+      return (await this.cacheService.deleteList({
         store: CacheStore.cart,
         id: guestSession.guestId,
         data: articles.find((x) => x.id === articleId),
-      });
+      })) as ArticleResponse[];
     }
     if (userSession) {
-      return await this.articleService.delete(
-        userSession.userId,
-        articleId,
-        lang,
-      );
+      return await this.articleService.delete(userSession.userId, articleId);
     }
   }
 
-  async resetCart(session: SessionType, lang: Country) {
+  async resetCart(session: SessionType) {
     const { guestSession, userSession } = session;
     if (guestSession) {
       await this.cacheService.delete({
         store: CacheStore.cart,
         id: guestSession.guestId,
       });
-      return await this.cacheService.getList({
+      return (await this.cacheService.getList({
         store: CacheStore.cart,
         id: guestSession.guestId,
-      });
+      })) as ArticleResponse[];
     }
     if (userSession) {
-      return await this.articleService.deleteMany(userSession.userId, lang);
+      return await this.articleService.deleteMany(userSession.userId);
     }
   }
 
   async transferGuestCartToUserCart(
     userId: string,
-    guestCart: any,
-    lang: Country,
+    guestCart: ArticleResponse[],
   ) {
     let userCart: Article[] = [];
     for (let i = 0; i < guestCart.length; i++) {
-      const updatedArticles = await this.articleService.create(
-        {
-          userId,
-          id: guestCart[i].id,
-          skuId: guestCart[i].skuId,
-          sale: guestCart[i].sale,
-        },
-        lang,
-      );
+      const updatedArticles = await this.articleService.create({
+        userId,
+        id: guestCart[i].id,
+        skuId: guestCart[i].skuId,
+        sale: guestCart[i].sale,
+      });
       userCart = updatedArticles;
     }
     return userCart;

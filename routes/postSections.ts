@@ -1,4 +1,3 @@
-import { Country } from '@prisma/database';
 import express from 'express';
 import { PostSectionResolver } from '../resolvers';
 
@@ -7,9 +6,8 @@ const postSectionResolver = new PostSectionResolver();
 
 Router.get('/:postId', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
     await postSectionResolver
-      .getAllPostSections(req.params.postId, lang)
+      .getAllPostSections(req.params.postId)
       .then((sections) => {
         res.status(200).json(sections);
       });
@@ -21,21 +19,6 @@ Router.get('/:postId', async (req, res) => {
 Router.put('/add', async (req, res) => {
   try {
     let postSectionInputs = req.body;
-    if (req.body.titleFR || req.body.titleEN) {
-      postSectionInputs.title = {
-        FR: req.body.titleFR,
-        EN: req.body.titleEN,
-      };
-    }
-    if (req.body.paragraphFR || req.body.paragraphEN) {
-      postSectionInputs.paragraph = {
-        FR: req.body.paragraphFR,
-        EN: req.body.paragraphEN,
-      };
-    }
-    ['titleFR', 'titleEN', 'paragraphFR', 'paragraphEN'].forEach((key) => {
-      delete postSectionInputs[key];
-    });
     const image = req.files?.image;
     if (image) postSectionInputs = { ...postSectionInputs, image };
     await postSectionResolver
@@ -51,30 +34,6 @@ Router.put('/add', async (req, res) => {
 Router.put('/update', async (req, res) => {
   try {
     let postSectionInputs = req.body;
-    if (req.body.titleFR || req.body.titleEN) {
-      postSectionInputs.title = {
-        id: req.body.titleId,
-        FR: req.body.titleFR,
-        EN: req.body.titleEN,
-      };
-    }
-    if (req.body.paragraphFR || req.body.paragraphEN) {
-      postSectionInputs.paragraph = {
-        id: req.body.paragraphId,
-        FR: req.body.paragraphFR,
-        EN: req.body.paragraphEN,
-      };
-    }
-    [
-      'titleId',
-      'titleFR',
-      'titleEN',
-      'paragraphId',
-      'paragraphFR',
-      'paragraphEN',
-    ].forEach((key) => {
-      delete postSectionInputs[key];
-    });
     const image = req.files?.image;
     if (image) postSectionInputs = { ...postSectionInputs, image };
     await postSectionResolver

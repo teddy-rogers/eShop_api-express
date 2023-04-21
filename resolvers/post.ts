@@ -1,5 +1,5 @@
 import { Country } from '@prisma/database';
-import { Utils } from '../helpers';
+import { Folder, Utils } from '../helpers';
 import { PostService } from '../services';
 import { CreatePostFields, CreatePostInputs, UpdatePostFields } from '../types';
 
@@ -7,35 +7,34 @@ export class PostResolver {
   private postService = new PostService();
   private utils = new Utils();
 
-  async getAllPosts(lang: Country) {
-    const posts = await this.postService.findMany(lang);
+  async getAllPosts() {
+    const posts = await this.postService.findMany();
     if (!posts.length) throw 'No posts found in database';
     return posts;
   }
 
-  async getAllTodaysCountryPosts(country: string, lang: Country) {
+  async getAllTodaysCountryPosts(country: string) {
     const formatedCountry = this.utils.changeCaseAndTrim(country, 'upper');
     if (!this.utils.isTypeOf(Country, formatedCountry)) {
       throw 'Crountry not allowed';
     }
     const posts = await this.postService.findByTodaysCountry(
       formatedCountry as Country,
-      lang,
     );
     if (!posts.length)
       throw `No posts for country ${formatedCountry} in database`;
     return posts;
   }
 
-  async getPostById(id: string, lang: Country) {
-    const post = await this.postService.findById(id, lang);
+  async getPostById(id: string) {
+    const post = await this.postService.findById(id);
     if (!post) throw `Unable to find post ${id}`;
     return post;
   }
 
   async createPost(post: CreatePostInputs) {
     const postFields: CreatePostFields = await this.utils.createFields(
-      `posts/${encodeURI(post.title.EN)}`,
+      Folder.posts,
       post,
     );
     return await this.postService.create(postFields);
@@ -43,7 +42,7 @@ export class PostResolver {
 
   async updatePost(post: CreatePostInputs) {
     const postFields: UpdatePostFields = await this.utils.createFields(
-      `posts/${encodeURI(post.title.EN)}`,
+      Folder.posts,
       post,
     );
     return await this.postService.update(postFields);

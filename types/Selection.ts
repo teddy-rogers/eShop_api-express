@@ -1,5 +1,33 @@
-import { Country, ImageAspect, Text } from '@prisma/database';
+import { Country, ImageAspect } from '@prisma/database';
 import { UploadedFile } from 'express-fileupload';
+
+export type CreateSelectionInputs = {
+  title: string;
+  description: string;
+  foregroundColor?: string;
+  image: UploadedFile;
+  imageAspect?: string;
+  selectionPath: string;
+  countries: string[];
+  dateStart?: Date;
+  dateEnd?: Date;
+  isActive?: boolean;
+};
+
+export type CreateSelectionFields = {
+  id?: string;
+  title: string;
+  description: string;
+  foregroundColor: string;
+  backgroundColor: string;
+  imageUrl: string;
+  imageAspect: ImageAspect;
+  selectionPath: string;
+  countries: Country[];
+  dateStart: Date;
+  dateEnd: Date;
+  isActive: boolean;
+};
 
 export type SearchSelectionInputs = {
   keywords?: string;
@@ -20,45 +48,18 @@ export type SearchSelectionFields = {
   countries?: Country[];
 };
 
-export type CreateSelectionInputs = {
-  title: Omit<Text, 'id'>;
-  description: Omit<Text, 'id'>;
-  selectionPath: string;
-  dateStart: Date;
-  dateEnd: Date;
-  countries: string[];
-  image: UploadedFile;
-  imageAspect?: string;
-};
-
-export type CreateSelectionFields = Omit<
-  CreateSelectionInputs,
-  'title' | 'description' | 'countries' | 'image' | 'imageAspect'
-> & {
+export type UpdateSelectionFields = {
   id: string;
-  title: Text;
-  description: Text;
-  imageUrl: string;
-  imageAspect: ImageAspect;
-  foregroundColor: string;
-  backgroundColor: string;
-  countries: Country[];
-};
-
-export type UpdateSelectionInputs = {
-  id: string;
-  isActive: boolean;
-  title: Text;
-  description: Text;
-  dateStart: Date;
-  dateEnd: Date;
+  title?: string;
+  description?: string;
+  foregroundColor?: string;
+  imageUrl?: string;
+  backgroundColor?: string;
   image?: UploadedFile;
-  imageUrl: string;
-  foregroundColor: string;
-  backgroundColor: string;
-  selectionPath: string;
-  imageAspect: ImageAspect;
-  countries: Country[];
+  selectionPath?: string;
+  isActive?: boolean;
+  dateStart?: Date;
+  dateEnd?: Date;
+  ImageAspect?: ImageAspect;
+  countries?: Country[];
 };
-
-export type UpdateSelectionFields = Omit<UpdateSelectionInputs, 'image'>;

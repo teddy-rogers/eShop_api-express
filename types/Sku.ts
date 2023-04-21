@@ -1,4 +1,4 @@
-import { Gender, Size, Text } from '@prisma/database';
+import { Gender, Size } from '@prisma/database';
 
 export type SkuResponse = {
   id: string;
@@ -7,7 +7,7 @@ export type SkuResponse = {
   quantity: number;
   product: {
     id: string;
-    title: Text;
+    name: string;
     price: number;
     sale: number;
     gender: Gender;
