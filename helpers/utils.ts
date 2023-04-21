@@ -1,6 +1,7 @@
+import { Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
 import { invalidStrings } from '../constants';
-import { CloudinaryHelper, Folder } from './cloudinary';
+import { CloudinaryHelper, DestionationFolder } from './cloudinary';
 
 export class Utils {
   private cloudinaryHelper = new CloudinaryHelper();
@@ -41,10 +42,15 @@ export class Utils {
     }, [] as string[]);
   }
 
-  async createFields<T>(folder: Folder, object: any): Promise<T> {
+  async createFields<T>(folder: DestionationFolder, object: any): Promise<T> {
     const id = object.id !== undefined ? object.id : createUniqueId();
     const { imageUrl, backgroundColor, foregroundColor } =
       await this.cloudinaryHelper.createImageFields(folder, object.image);
+    ['title', 'description', 'paragraph'].forEach((key) => {
+      if (key in object && object[key].id === undefined)
+        object[key].id = createUniqueId();
+    });
+    delete object.image;
     const obj = {
       ...object,
       id,
@@ -59,5 +65,14 @@ export class Utils {
     return to === 'lower'
       ? text.toLowerCase().trim()
       : text.toUpperCase().trim();
+  }
+
+  selectLanguage(lang: Country) {
+    return {
+      select: {
+        FR: lang === 'FR',
+        EN: lang === 'EN',
+      },
+    };
   }
 }

@@ -1,4 +1,4 @@
-import { Category, Color, Gender, Season } from '@prisma/database';
+import { Category, Color, Gender, Season, Text } from '@prisma/database';
 import { UploadedFile } from 'express-fileupload';
 
 export type Filters = {
@@ -31,11 +31,9 @@ export type SearchProductFields = {
   lastId?: string;
 };
 
-export type ProductInputs = {
-  id?: string;
-  keywords?: string[];
-  name: string;
-  description: string;
+export type CreateProductInputs = {
+  title: Omit<Text, 'id'>;
+  description: Omit<Text, 'id'>;
   color: string;
   gender: string;
   category: string;
@@ -43,24 +41,39 @@ export type ProductInputs = {
   price: number;
   sale: number;
   image: UploadedFile;
-  backgroundColor?: string;
-  imageUrl?: string;
 };
 
-export type CreateProductFields = {
+export type CreateProductFields = Omit<
+  CreateProductInputs,
+  'title' | 'description' | 'gender' | 'category' | 'color' | 'season' | 'image'
+> & {
   id: string;
-  name: string;
-  description: string;
-  price: number;
-  sale: number;
+  title: Text;
+  description: Text;
   gender: Gender;
   category: Category;
   color: Color;
   season: Season;
   imageUrl: string;
+  foregroundColor: string;
   backgroundColor: string;
 };
 
-export type UpdateProductFields = CreateProductFields & {
+export type UpdateProductInputs = {
+  id: string;
   isActive: boolean;
+  title: Text;
+  description: Text;
+  gender: Gender;
+  category: Category;
+  color: Color;
+  season: Season;
+  price: number;
+  sale: number;
+  image?: UploadedFile;
+  imageUrl: string;
+  foregroundColor: string;
+  backgroundColor: string;
 };
+
+export type UpdateProductFields = Omit<UpdateProductInputs, 'image'>;

@@ -16,7 +16,8 @@
     "format:schemas": "prisma format --schema prisma/schema.prisma",
     "generate:schemas": "npm run format:schemas && prisma generate --schema=prisma/schema.prisma",
     "migrate:init": "npx prisma migrate dev --name init",
-    "migrate:dev": "NODE_ENV=dev && docker start postgres redis && npm run generate:schemas && prisma migrate dev --create-only --schema=prisma/schema.prisma --name init",
+    "migrate:dev": "NODE_ENV=dev && docker start db cache && npm run generate:schemas && prisma migrate dev --schema=prisma/schema.prisma --name init",
+    "migrate:create-only": "NODE_ENV=dev && docker start db cache && npm run generate:schemas && prisma migrate dev --create-only --schema=prisma/schema.prisma --name init",
     "migrate:deploy": "prisma migrate deploy --schema=prisma/schema.prisma",
     "db:push": "docker exec -i db /bin/bash -c 'pg_restore --clean -U admin -d db' < ./dump.sql"
   },

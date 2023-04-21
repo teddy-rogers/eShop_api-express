@@ -1,10 +1,6 @@
 import { Country, PrismaClient } from '@prisma/database';
 import { Utils } from '../helpers';
 import { CreatePostFields, UpdatePostFields } from '../types';
-import {
-  partialAllPostsResponse,
-  partialCountryTodaysPostsResponse
-} from './response';
 
 export class PostService {
   private db = new PrismaClient();
@@ -14,8 +10,10 @@ export class PostService {
     post: Pick<CreatePostFields, 'title' | 'description' | 'countries'>,
   ) {
     const fields: string[] = [
-      post.title,
-      post.description,
+      post.title.FR,
+      post.title.EN,
+      post.description.FR,
+      post.description.EN,
       ...post.countries,
     ].reduce((acc, cur) => {
       cur && acc.push;
@@ -24,17 +22,20 @@ export class PostService {
     return this.utils.createKeywords(fields);
   }
 
-  async findMany() {
+  async findMany(lang: Country) {
     try {
       return await this.db.post.findMany({
-        select: { ...partialAllPostsResponse },
+        include: {
+          title: this.utils.selectLanguage(lang),
+          description: this.utils.selectLanguage(lang),
+        },
       });
     } catch (error) {
       throw error;
     }
   }
 
-  async findByTodaysCountry(country: Country) {
+  async findByTodaysCountry(country: Country, lang: Country) {
     try {
       return await this.db.post.findMany({
         where: {
@@ -42,20 +43,30 @@ export class PostService {
           dateEnd: { gt: new Date() },
           isActive: true,
         },
-        select: { ...partialCountryTodaysPostsResponse },
+        include: {
+          title: this.utils.selectLanguage(lang),
+          description: this.utils.selectLanguage(lang),
+        },
       });
     } catch (error) {
       throw error;
     }
   }
 
-  async findById(id: string) {
+  async findById(id: string, lang: Country) {
     try {
       return await this.db.post
         .findFirst({
           where: { id },
           include: {
-            sections: true,
+            title: this.utils.selectLanguage(lang),
+            description: this.utils.selectLanguage(lang),
+            sections: {
+              include: {
+                title: this.utils.selectLanguage(lang),
+                paragraph: this.utils.selectLanguage(lang),
+              },
+            },
           },
         })
         .then((post) => {
@@ -71,17 +82,35 @@ export class PostService {
     try {
       return this.db
         .$transaction([
+          this.db.text.createMany({
+            data: [
+              {
+                id: post.title.id,
+                FR: post.title.FR,
+                EN: post.title.EN,
+              },
+              {
+                id: post.description.id,
+                FR: post.description.FR,
+                EN: post.description.EN,
+              },
+            ],
+          }),
           this.db.post.create({
             data: {
               id: post.id,
-              title: post.title,
-              description: post.description,
+              titleId: post.title.id,
+              descriptionId: post.description.id,
               dateStart: post.dateStart,
               dateEnd: post.dateEnd,
               imageUrl: post.imageUrl,
               foregroundColor: post.foregroundColor,
               backgroundColor: post.backgroundColor,
               countries: post.countries,
+            },
+            include: {
+              title: true,
+              description: true,
             },
           }),
           this.db.keywords.create({
@@ -91,7 +120,7 @@ export class PostService {
             },
           }),
         ])
-        .then(([post, _]) => {
+        .then(([_, post]) => {
           if (!post) throw 'Post not created in database.';
           return post;
         });
@@ -109,8 +138,8 @@ export class PostService {
             data: {
               id: post.id,
               isActive: post.isActive,
-              title: post.title,
-              description: post.description,
+              titleId: post.title.id,
+              descriptionId: post.description.id,
               dateStart: post.dateStart,
               dateEnd: post.dateEnd,
               imageUrl: post.imageUrl,
@@ -118,13 +147,31 @@ export class PostService {
               backgroundColor: post.backgroundColor,
               countries: post.countries,
             },
+            include: {
+              title: true,
+              description: true,
+            },
+          }),
+          this.db.text.update({
+            where: { id: post.title.id },
+            data: {
+              FR: post.title.FR,
+              EN: post.title.EN,
+            },
+          }),
+          this.db.text.update({
+            where: { id: post.description.id },
+            data: {
+              FR: post.description.FR,
+              EN: post.description.EN,
+            },
           }),
           this.db.keywords.update({
             where: { postId: post.id },
             data: { indexes: this.getKeywords(post) },
           }),
         ])
-        .then(([post, _]) => {
+        .then(([post]) => {
           if (!post) throw 'Post not created in database.';
           return post;
         });

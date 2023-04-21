@@ -12,21 +12,21 @@ cloudinary.config({
 });
 
 export class CloudinaryHelper {
-  private getWidth = (destinationFolder: Folder) => {
+  private getWidth = (destinationFolder: DestionationFolder) => {
     switch (destinationFolder) {
       case Folder.products:
+        return Width.small;
       case Folder.selections:
-        return Width.small;
-      case Folder.posts:
-      case Folder.postSections:
         return Width.medium;
+      case Folder.posts:
+        return Width.large;
       default:
-        return Width.small;
+        return Width.medium;
     }
   };
 
   private async uploadImage(
-    destinationFolder: Folder,
+    destinationFolder: DestionationFolder,
     image: UploadedFile,
   ): Promise<{
     imageUrl: string;
@@ -71,7 +71,7 @@ export class CloudinaryHelper {
   }
 
   async createImageFields(
-    destinationFolder: Folder,
+    destinationFolder: DestionationFolder,
     image: UploadedFile,
   ): Promise<{
     imageUrl: string | undefined;
@@ -82,10 +82,11 @@ export class CloudinaryHelper {
       return await this.uploadImage(destinationFolder, image);
     }
     return {
+      //will send "do not update" to Prisma
       imageUrl: undefined,
       backgroundColor: undefined,
       foregroundColor: undefined,
-    }; //send "do not update" to Prisma
+    };
   }
 }
 
@@ -93,10 +94,12 @@ export enum Folder {
   products = 'products',
   selections = 'selections',
   posts = 'posts',
-  postSections = 'posts/sections',
 }
+
+export type DestionationFolder = Folder | `posts/${string}`;
 
 enum Width {
   small = 800,
   medium = 1024,
+  large = 1280,
 }
