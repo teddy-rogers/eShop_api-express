@@ -42,6 +42,9 @@ Router.use((req, _, next) => {
   next();
 });
 
+Router.use('/', async (req, res) => {
+  res.status(200).json('Hello!');
+});
 Router.use('/user', require('./routes/user'));
 Router.use('/address', require('./routes/address'));
 Router.use('/article', require('./routes/article'));
