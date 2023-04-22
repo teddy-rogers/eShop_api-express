@@ -1,7 +1,8 @@
 import { Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
-import { CacheService } from '../services';
-import { CacheStore, SessionType, UserResponse } from '../types';
+import { CacheService } from '../services/cache';
+import { CacheStore, SessionType } from '../types/Cache';
+import { UserResponse } from '../types/User';
 
 export class SessionHelper {
   private cacheService = new CacheService();

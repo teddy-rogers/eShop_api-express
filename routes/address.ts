@@ -1,5 +1,5 @@
 import express from 'express';
-import { AddressResolver } from '../resolvers';
+import { AddressResolver } from '../resolvers/address';
 
 const addressResolver = new AddressResolver();
 const Router = express.Router();

@@ -152,9 +152,10 @@ CREATE TABLE "Selection" (
     "imageUrl" TEXT NOT NULL,
     "backgroundColor" TEXT,
     "foregroundColor" TEXT DEFAULT 'black',
-    "isActive" BOOLEAN NOT NULL DEFAULT false,
+    "isActive" BOOLEAN NOT NULL DEFAULT true,
     "dateStart" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "dateEnd" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "imageAspect" "ImageAspect" NOT NULL DEFAULT 'portrait',
     "countries" "Country"[],
 
@@ -164,14 +165,16 @@ CREATE TABLE "Selection" (
 -- CreateTable
 CREATE TABLE "Post" (
     "id" TEXT NOT NULL,
+    "index" INTEGER NOT NULL DEFAULT 1,
     "titleId" TEXT NOT NULL,
     "descriptionId" TEXT NOT NULL DEFAULT '',
     "imageUrl" TEXT NOT NULL,
     "foregroundColor" TEXT NOT NULL DEFAULT 'white',
     "backgroundColor" TEXT NOT NULL DEFAULT '',
-    "isActive" BOOLEAN NOT NULL DEFAULT false,
+    "isActive" BOOLEAN NOT NULL DEFAULT true,
     "dateStart" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "dateEnd" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "countries" "Country"[],
 
     CONSTRAINT "Post_pkey" PRIMARY KEY ("id")
@@ -180,12 +183,14 @@ CREATE TABLE "Post" (
 -- CreateTable
 CREATE TABLE "PostSection" (
     "id" TEXT NOT NULL,
-    "postId" TEXT,
+    "index" INTEGER NOT NULL DEFAULT 1,
+    "postId" TEXT NOT NULL,
     "titleId" TEXT,
     "paragraphId" TEXT,
     "localPath" TEXT DEFAULT '',
     "externalLink" TEXT DEFAULT '',
     "imageUrl" TEXT DEFAULT '',
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "imageAspect" "ImageAspect" NOT NULL DEFAULT 'landscape',
 
     CONSTRAINT "PostSection_pkey" PRIMARY KEY ("id")
@@ -240,7 +245,25 @@ CREATE UNIQUE INDEX "Credentials_id_key" ON "Credentials"("id");
 CREATE UNIQUE INDEX "Credentials_email_key" ON "Credentials"("email");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "User_id_key" ON "User"("id");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Article_id_key" ON "Article"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Address_id_key" ON "Address"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "CreditCard_id_key" ON "CreditCard"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Order_id_key" ON "Order"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Product_id_key" ON "Product"("id");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Product_titleId_key" ON "Product"("titleId");
@@ -249,10 +272,19 @@ CREATE UNIQUE INDEX "Product_titleId_key" ON "Product"("titleId");
 CREATE UNIQUE INDEX "Product_descriptionId_key" ON "Product"("descriptionId");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "Sku_id_key" ON "Sku"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Selection_id_key" ON "Selection"("id");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "Selection_titleId_key" ON "Selection"("titleId");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Selection_descriptionId_key" ON "Selection"("descriptionId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Post_id_key" ON "Post"("id");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Post_titleId_key" ON "Post"("titleId");
@@ -261,10 +293,16 @@ CREATE UNIQUE INDEX "Post_titleId_key" ON "Post"("titleId");
 CREATE UNIQUE INDEX "Post_descriptionId_key" ON "Post"("descriptionId");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "PostSection_id_key" ON "PostSection"("id");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "PostSection_titleId_key" ON "PostSection"("titleId");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "PostSection_paragraphId_key" ON "PostSection"("paragraphId");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Keywords_id_key" ON "Keywords"("id");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Keywords_productId_key" ON "Keywords"("productId");
@@ -279,7 +317,16 @@ CREATE UNIQUE INDEX "Keywords_postId_key" ON "Keywords"("postId");
 CREATE UNIQUE INDEX "Keywords_postSectionId_key" ON "Keywords"("postSectionId");
 
 -- CreateIndex
+CREATE UNIQUE INDEX "Store_id_key" ON "Store"("id");
+
+-- CreateIndex
 CREATE UNIQUE INDEX "Store_country_key" ON "Store"("country");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Theme_id_key" ON "Theme"("id");
+
+-- CreateIndex
+CREATE UNIQUE INDEX "Text_id_key" ON "Text"("id");
 
 -- AddForeignKey
 ALTER TABLE "Article" ADD CONSTRAINT "Article_skuId_fkey" FOREIGN KEY ("skuId") REFERENCES "Sku"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
@@ -330,7 +377,7 @@ ALTER TABLE "Post" ADD CONSTRAINT "Post_titleId_fkey" FOREIGN KEY ("titleId") RE
 ALTER TABLE "Post" ADD CONSTRAINT "Post_descriptionId_fkey" FOREIGN KEY ("descriptionId") REFERENCES "Text"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
-ALTER TABLE "PostSection" ADD CONSTRAINT "PostSection_postId_fkey" FOREIGN KEY ("postId") REFERENCES "Post"("id") ON DELETE SET NULL ON UPDATE CASCADE;
+ALTER TABLE "PostSection" ADD CONSTRAINT "PostSection_postId_fkey" FOREIGN KEY ("postId") REFERENCES "Post"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
 
 -- AddForeignKey
 ALTER TABLE "PostSection" ADD CONSTRAINT "PostSection_titleId_fkey" FOREIGN KEY ("titleId") REFERENCES "Text"("id") ON DELETE SET NULL ON UPDATE CASCADE;

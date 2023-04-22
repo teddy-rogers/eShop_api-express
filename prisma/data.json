@@ -1,0 +1,3970 @@
+{
+  "addresses": [
+    {
+      "id": "8534a3a9-d26c-4f7c-a137-6b30ba85920e",
+      "title": "",
+      "civility": "Mr",
+      "firstName": "Vic",
+      "lastName": "Team",
+      "address1": "22 faubourg poissonière",
+      "address2": "",
+      "zipCode": "75000",
+      "city": "Paris",
+      "country": "France",
+      "email": "vic.team@not-a-domain.com",
+      "phone": "600000000",
+      "prefixPhone": "33",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605"
+    }
+  ],
+  "articles": [
+    {
+      "id": "03c62f9a-ad01-406e-8100-8e1044181f72",
+      "sale": 0,
+      "skuId": "1fde2124-e9ed-455a-b9ee-d6c22723b35a",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605",
+      "guestId": null,
+      "orderId": null
+    },
+    {
+      "id": "3bbbd9b5-cf2d-4d5e-884c-11e1aeb59dd1",
+      "sale": 0,
+      "skuId": "1fde2124-e9ed-455a-b9ee-d6c22723b35a",
+      "userId": null,
+      "guestId": null,
+      "orderId": "949ccded-fad8-4363-b56c-ecc39ba04a7b"
+    },
+    {
+      "id": "595b621f-f35b-489f-b906-5d867611af79",
+      "sale": 0,
+      "skuId": "1fde2124-e9ed-455a-b9ee-d6c22723b35a",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605",
+      "guestId": null,
+      "orderId": null
+    },
+    {
+      "id": "b9104516-f10f-4791-bd74-10242747458e",
+      "sale": 0,
+      "skuId": "1fde2124-e9ed-455a-b9ee-d6c22723b35a",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605",
+      "guestId": null,
+      "orderId": null
+    },
+    {
+      "id": "ea2d1be9-c9ef-43e7-bd2f-d247e583ee1b",
+      "sale": 0,
+      "skuId": "1fde2124-e9ed-455a-b9ee-d6c22723b35a",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605",
+      "guestId": null,
+      "orderId": null
+    }
+  ],
+  "credentials": [
+    {
+      "id": "6e139c08-555f-4251-b386-3cb04ecd9c2d",
+      "email": "vic.team@not-a-domain.com",
+      "password": "$2a$08$df1GBhnTmr4KyJ.w/vX9gOHQEyqAEm6TJJ/JeVs6Eo6fTdfAJWLKK"
+    }
+  ],
+  "creditCards": [
+    {
+      "id": "12345-cevvrrvbz-32155",
+      "CCNumber": "azevevaf-azevbafzz-bav",
+      "ExpirationDate": "1/99",
+      "CCV": 123,
+      "cardOwner": "Vic Team",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "00f3ed5b-61a7-468a-8373-7152743e4c3f",
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{t-shirt,imprimé,printed,tee,noir,tout,en,longueur,black,full-length,man,summer}"
+    },
+    {
+      "id": "0379f434-293b-4d1c-8137-7ada6b4d9c8f",
+      "productId": null,
+      "selectionId": "43fb9a70-44a4-4f8f-afd7-e98f1a33cad7",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{le,t-shirt,\"\",la,base,..,basic,tee,à,col,rond,en,\"v,\",\"large,\",manches,courtes,ou,\"longues,\",pas,de,du,\"tout,\",il,t'en,faut,forcément,au,moins,un,round,neck,\"v-neck,\",wide,\"neck,\",short,long,\"sleeves,\",no,sleeves,at,\"all,\",you,need,least,one,product,fr}"
+    },
+    {
+      "id": "0ae07164-64a7-4bfc-b2e9-d6a36e93ccf6",
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{jogger,rose,pink,ultra,stylé,ample,avec,poche,sur,le,devant,\"\",idéal,pour,un,look,sport,et,chic.,stylish,loose,fitting,front,pocket,ideal,sporty,chic,look.,woman,spring}"
+    },
+    {
+      "id": "0f648650-946e-42d1-a844-35a3421a8a3a",
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{t-shirt,rock,tee-shirt,noir,pour,femme,avec,imprimé,black,women,print,woman,spring}"
+    },
+    {
+      "id": "10abf74b-385c-4b8d-bfa2-9ecba7d8f7ef",
+      "productId": null,
+      "selectionId": "dd2e1af2-46ac-40e4-94ed-aa81e88239c9",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{sweet,sweat,basic,\"\",classique.,essentiel.,indémodable.,le,must-have,pour,tout,monde,classic.,essential.,timeless.,everyone,product,en,fr}"
+    },
+    {
+      "id": "14b1c193-c39d-419f-827d-847bccac354f",
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chemise,rayée,striped,shirt,à,parure,décontractée,pour,les,working,girls,\"\",mais,pas,trop,casual,too,much,white,woman,spring}"
+    },
+    {
+      "id": "1c9c8011-b4ef-4d0c-8647-9f38dc425ec3",
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{jean,slim,jeans,fuselé,bleu,avec,effet,usé,pour,homme,\"\",un,style,à,la,fois,décontracté,et,habillé.,blue,tapered,worn,effect,men,both,casual,dressy.,man,autumn}"
+    },
+    {
+      "id": "22e3f48a-9a4a-400d-80ab-d40450eb9acb",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{}"
+    },
+    {
+      "id": "277ebe1a-0dbc-4626-83d4-3fb7dbe631ae",
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{pull,rayé,striped,pullover,slim,à,rayures,horizontales,classic,\"\",sobre,et,indémodable,slim-fit,sweater,horizontal,stripes,sober,timeless,blue,man,autumn}"
+    },
+    {
+      "id": "3583c30d-d274-44fa-938a-b40b765d6d49",
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{mini,jupe,skirt,noir,à,plie,\"\",du,style,au,bureau.,sérieuse,mais,pas,trop,black,pleated,office.,serious,too,much,woman,autumn}"
+    },
+    {
+      "id": "36341df4-0e24-4025-b4c7-8ec425d16c29",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{}"
+    },
+    {
+      "id": "3a592cd6-decb-4723-a8d0-1065dc64e4af",
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{sweat,street,hoodies,noir,à,imprimé,flèches,blanches,\"\",un,style,oversize,design,over-stylé,black,sweatshirt,white,arrow,print,oversized,over-styled,man,autumn}"
+    },
+    {
+      "id": "3f4134da-a060-4140-891c-af0a0bdb6b7b",
+      "productId": null,
+      "selectionId": "a87dd37c-eeab-45fa-a98c-42b27c3fabe2",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{poum,short,tiny,mini,shorts,petite,collection,de,pour,te,faire,tourner,les,têtes,\"\",sur,la,\"plage,\",au,bord,piscine,..,\"bref,\",n'importe,où,small,make,you,turn,heads,\"beach,\",by,pool,\"short,\",anywhere,short&genre=woman,en,fr}"
+    },
+    {
+      "id": "4ca812ba-7bbd-4eba-abe9-98585aa9e22a",
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chemise,à,paillettes,glitter,shirt,rien,de,mieux,que,cette,noir,avec,petites,paillette,pour,briller,en,soirée,et,vous,démarquer,style,\"\",nothing,better,than,black,small,sequins,shine,evening,stand,out,man,summer}"
+    },
+    {
+      "id": "4f550d1d-2de3-448d-8535-41cc9d873adb",
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{sweat,orange,sweatshirt,décontracté,et,cozy,\"\",un,coloré,pour,aiguayer,vos,journées,en,toute,circonstances.,relaxed,colorful,sweater,brighten,up,day,all,circumstances.,woman,autumn}"
+    },
+    {
+      "id": "53fdb92e-2c11-436b-a471-d1d04070bc4c",
+      "productId": null,
+      "selectionId": null,
+      "postId": "1c3d83f1-2b0d-4055-9d85-cf9cfa7cfc30",
+      "postSectionId": null,
+      "indexes": "{}"
+    },
+    {
+      "id": "57acd4c4-720f-4d66-b2ca-be305f1bb42c",
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{sweat,cozy,fluffy,polaire,blue,marine,douillet,\"\",pour,un,style,urbain,assuré,même,en,hiver,navy,fleece,sweater,assured,urban,even,winter,man}"
+    },
+    {
+      "id": "5add31f5-e818-4a63-9f68-b7e032acca96",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{}"
+    },
+    {
+      "id": "5b4cd02f-457c-48fb-87bf-91226f5cdf9f",
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{tshirt,décontracté,casual,t-shirt,oversize,gris,anthracite,avec,surpiqûre,blanches,pour,style,urbain,charcoal,gray,oversized,white,stitching,urban,black,man,autumn}"
+    },
+    {
+      "id": "5d1b6cb8-3c2e-45be-9b1e-2a84103e57d8",
+      "productId": null,
+      "selectionId": "3ed56487-d2b0-47ee-9d5a-0a660d3cfb0f",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{hoodies,pour,les,homies,collection,de,sweats,à,capuche,un,style,urbain,assuré,\"\",assured,urban,keywords,hoodie,en,fr}"
+    },
+    {
+      "id": "5dbc17cb-b380-42c9-83b3-842eed0f37a2",
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chemise,à,carreaux,checkered,shirt,style,daddy,pour,femme,de,ample,\"\",comfortable,et,chaud.,women,loose,fit,warm.,blue,woman,winter}"
+    },
+    {
+      "id": "5eee88ff-2a9e-479a-b626-c2dc9590c749",
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chemise,printanière,springtime,shirt,fleuri,aux,couleurs,vives,et,un,style,décontracté,pour,préparer,l'arrivée,de,l'été,\"\",à,moins,que,ce,ne,soit,déjà,le,cas,brightly,colored,floral,casual,prepare,arrival,summer,unless,it,already,case,white,man,spring}"
+    },
+    {
+      "id": "62041cb0-a6d6-454c-9183-fdd4f904f001",
+      "productId": null,
+      "selectionId": "cdfc4004-6bf0-4560-b637-c529a9adb933",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{avec,ou,sans,cravate,without,tie,quelque,soit,ton,style,\"\",une,chemise,tu,seras,toujours,classe,whatever,shirt,you'll,always,look,good,en,fr}"
+    },
+    {
+      "id": "647f46fa-6cf8-44d9-b3b5-6cec10ee220b",
+      "productId": null,
+      "selectionId": "19419d54-64e8-427d-8f02-838b15da0a45",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{accessoires,indispensables,must-have,accessories,ce,petit,truc,qui,fait,toute,la,différence,peu,importe,ton,style,\"\",assurément,accessoire.,absolument,indispensable.,little,thing,makes,all,difference,no,matter,definitely,accessory.,absolutely,essential.,product,accessory,en,fr}"
+    },
+    {
+      "id": "651735d8-e873-48cb-b493-6a0ece81f0eb",
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{t-shirt,imprimé,printed,tee,cool,blanc,pour,homme,avec,white,men,man,summer}"
+    },
+    {
+      "id": "6869656a-7e2c-4020-b5fa-c4fb851dd225",
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{jean,troué,hole,carrot,avec,empiècement,pour,un,style,décontracté,\"\",jeans,holes,yoke,casual,blue,woman,spring}"
+    },
+    {
+      "id": "6ab7b793-8411-4176-a811-43eec41a4dff",
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{t-shirt,imprimé,printed,tee,cool,jaune,pour,homme,avec,de,couleur,vive,yellow,men,brightly,colored,print,man,summer}"
+    },
+    {
+      "id": "702dc8c9-f567-4a86-8af4-5fe8c59c3bed",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": "ee6b9247-9c93-4836-8105-4cf803730007",
+      "indexes": "{je,ne,remercierai,jamais,assez,l’équipe,d’ironhack,\"\",tati,\"nina,\",\"frank,\",\"katya,\",\"morgane,\",manon,mais,aussi,toute,ma,promo,avec,qui,j’ai,créé,des,liens,\"forts,\",fleet,pour,être,les,premiers,à,m’ouvrir,portes,de,cet,univers,ô,combien,\"riche,\",et,évidemment,mes,proches,surtout,femme,m’avoir,soutenu,avoir,su,répondre,toutes,questions,doutes,il,faut,bien,entouré,accomplir,un,tel,changement,i,will,never,thank,enough,ironhack,team,also,all,my,class,whom,created,strong,\"links,\",being,first,open,doors,universe,so,\"rich,\",course,close,relations,especially,wife,having,supported,me,known,how,answer,doubts,you,have,be,well,surrounded,accomplish,such,change}"
+    },
+    {
+      "id": "c64085e9-4e68-49d6-9ee5-ce86e2b7a27c",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": "6327550c-d61f-43c1-bdfc-6f94044a7700",
+      "indexes": "{ça,faisait,presque,dix,ans,que,j’occupais,mon,poste,de,chauffeur,bus,\"\",j’étais,confortablement,installé,dans,ma,profession,j’avais,mes,petites,routines.,tous,les,\"matins,\",je,saluais,\"collègues,\",faisais,le,tour,du,et,prenais,la,route.,j’appréciais,\"quotidien,\",quand,en,\"2017,\",alors,me,rendais,sur,lieu,travail,ju,un,accident,\"route,\",ne,pouvais,plus,continuer,d’exercer,métier…,i,had,been,working,as,driver,almost,ten,years,was,comfortable,my,little,every,\"morning,\",greeted,\"colleagues,\",went,around,took,road.,enjoying,daily,\"life,\",way,work,car,\"accident,\",could,no,longer,continue,job...}"
+    },
+    {
+      "id": "74597118-c318-40d3-adfb-f0aa5034924b",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": "5e269bac-9735-4063-9a80-385699787c4d",
+      "indexes": "{j’apprécie,beaucoup,la,marge,de,progression,infinie,que,j’aie,:,je,n’ai,jamais,fini,d’apprendre,\"\",j’ai,l’opportunité,d’entreprendre,sans,cesse,des,missions,nouvelles,en,étant,à,fois,l’écoute,utilisateurs,et,pointe,technologie,ne,pensais,pas,être,capable,autant,choses,aussi,complexes,si,peu,temps.,réalisé,j’étais,plus,patient,le,\"pensais,\",savais,me,remettre,\"question,\",aller,l’avant.,ce,n’est,début,!,i,really,appreciate,infinite,room,improvement,have:,i'm,never,done,learning,have,opportunity,constantly,undertake,new,being,both,attentive,users,at,cutting,edge,technology,thought,would,be,able,learn,so,much,such,short,time.,also,realized,was,more,than,\"thought,\",knew,how,question,\"myself,\",move,forward.,beginning!}"
+    },
+    {
+      "id": "82c7aea4-79ab-4060-b10a-0167c3d95dd6",
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{tshirt,estival,summer,de,joli,fleur,sur,ce,t-shirt,décontracté,pour,chiller,tout,l'été,et,bien,au,delà,\"\",pretty,flowers,casual,chill,out,all,beyond,blue,man}"
+    },
+    {
+      "id": "8528bfd1-6f26-4d45-978e-eff6b9cdcf41",
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{pull,à,rayures,striped,sweater,en,mailles,ajusté,rayure,\"\",idéal,pour,rester,au,chaud,avec,style.,fitted,knit,stripes,ideal,staying,warm,black,man,winter}"
+    },
+    {
+      "id": "8644c8bd-513a-4119-a640-922e54d9c833",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{ça,faisait,presque,dix,ans,que,j’occupais,mon,poste,de,chauffeur,bus,\"\",j’étais,confortablement,installé,dans,ma,profession,j’avais,mes,petites,routines.,tous,les,\"matins,\",je,saluais,\"collègues,\",faisais,le,tour,du,et,prenais,la,route.,j’appréciais,\"quotidien,\",quand,en,\"2017,\",alors,me,rendais,sur,lieu,travail,ju,un,accident,\"route,\",ne,pouvais,plus,continuer,d’exercer,métier…,i,had,been,working,as,driver,almost,ten,years,was,comfortable,my,little,every,\"morning,\",greeted,\"colleagues,\",went,around,took,road.,enjoying,daily,\"life,\",way,work,car,\"accident,\",could,no,longer,continue,job...}"
+    },
+    {
+      "id": "86858b29-9a0f-4c51-84e2-f4ddb38553ed",
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{hoodie,deisgn,cool,hoodies,sweat,à,capuche,oversized,blanc,avec,imprimés,street,art,\"\",white,print,man,spring}"
+    },
+    {
+      "id": "88a196e3-17a2-4157-85d1-793fcfb61844",
+      "productId": null,
+      "selectionId": "c977703c-913b-4884-b8d0-70db582701c5",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{tout,chaud,so,comfy,si,t'as,froid,\"\",fais-toi,un,petit,chocolat,près,de,la,cheminé,avec,ton,pull,doux,if,you're,cold,make,yourself,little,hot,chocolate,by,fireplace,soft,sweater,pull&season=winter,en,fr}"
+    },
+    {
+      "id": "8c46ccfe-e4aa-4e1f-b0c6-aceb2e866878",
+      "productId": null,
+      "selectionId": null,
+      "postId": "052dd9e6-0720-4113-91b5-b6d60dcb3482",
+      "postSectionId": null,
+      "indexes": "{}"
+    },
+    {
+      "id": "8c7039bf-2065-4d86-a986-dba28cdbcb57",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": "267ff2b5-b1e9-4640-9069-e485c4ca33df",
+      "indexes": "{cela,demande,beaucoup,d’organisation,\"\",car,il,y,une,quantité,d’informations,colossale,à,ingurgiter,et,\"puis,\",des,cours,aussi,intensifs,intégralement,en,anglais,associés,vie,de,famille,confinée,particulièrement,\"animée,\",ça,ne,fait,pas,forcément,bon,ménage.,non,seulement,apprend,\"choses,\",mais,sur,nous-même,se,découvre,immense,capacité,d’apprentissage,persévérance.,it,takes,lot,organization,because,there,huge,amount,information,take,\"then,\",such,intensive,courses,entirely,english,combined,confined,busy,family,\"life,\",good,combination.,you,learn,\"lot,\",also,about,yourself,discover,capacity,learning,perseverance.}"
+    },
+    {
+      "id": "92735aea-5fef-4dcd-9c02-949fec0c9d27",
+      "productId": null,
+      "selectionId": "a149864c-3d26-476d-8a4c-492c53f89929",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{toutes,les,jupes,\"\",skirts,qu'elle,soit,longue,ou,courte,bohème,\"chic,\",pour,\"nous,\",filles,whether,it's,long,short,bohemian,us,girls,product,skirt,en,fr}"
+    },
+    {
+      "id": "9701ba8c-25bf-4a02-98da-8851057173ec",
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chino,regular,pantalon,beige,style,pour,homme,\"\",classic,mais,indispensable.,pants,men,essential.,white,man,autumn}"
+    },
+    {
+      "id": "97e6f1a7-46b9-4239-bd5a-93765b43d06b",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{accessoires,indispensables,must-have,accessories,ce,petit,truc,qui,fait,toute,la,différence,peu,importe,ton,style,\"\",assurément,accessoire.,absolument,indispensable.,little,thing,makes,all,difference,no,matter,definitely,accessory.,absolutely,essential.,product,accessory,en,fr}"
+    },
+    {
+      "id": "9b3535e2-acc9-4489-adcd-cbb8655fafe2",
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{sweat,à,capuche,hoodies,urbain,et,décontracté,avec,ce,swear,relax,zippé,pour,accompagner,tous,vos,styles,en,toute,occasion,\"\",urban,casual,relaxed,zipped,hoodie,accompany,all,brown,man,autumn}"
+    },
+    {
+      "id": "9b55a4da-a1fe-4e2d-879c-4994a9d8c9c6",
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{pull,en,maille,knitted,sweater,à,motif,pour,femme,couleur,blanc,cassé,\"\",classique,et,ajusté.,parfait,compléter,tout,vos,styles.,women's,patterned,knit,off-white,classic,fitted.,perfect,complete,all,white,woman,winter}"
+    },
+    {
+      "id": "a34d5b53-fc5a-4790-9615-a735cd9ac3ef",
+      "productId": null,
+      "selectionId": null,
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "postSectionId": null,
+      "indexes": "{}"
+    },
+    {
+      "id": "a360dfef-4b26-44bd-8211-2d6d6b483ba6",
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{hoodie,chaud,warm,sweat,en,polaire,ample,à,capuche,\"\",confortable,est,douillet.,un,style,urbain,assuré.,loose,fleece,comfortable,cozy.,urban,guaranteed.,blue,man,winter}"
+    },
+    {
+      "id": "a500452b-93e4-49f4-a2ab-d22a7a5631ad",
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{pull,vert,spring,sweater,en,maille,ajusté,et,col,v,\"\",un,style,classique,parfait,pour,accueillir,l'hiver.,green,knit,v-neck,classic,perfect,welcome,winter.,man,autumn}"
+    },
+    {
+      "id": "a6c4dc96-d92a-4c6b-923d-89958e30ae5b",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{ça,faisait,presque,dix,ans,que,j’occupais,mon,poste,de,chauffeur,bus,\"\",j’étais,confortablement,installé,dans,ma,profession,j’avais,mes,petites,routines.,tous,les,\"matins,\",je,saluais,\"collègues,\",faisais,le,tour,du,et,prenais,la,route.,j’appréciais,\"quotidien,\",quand,en,\"2017,\",alors,me,rendais,sur,lieu,travail,ju,un,accident,\"route,\",ne,pouvais,plus,continuer,d’exercer,métier…,i,had,been,working,as,driver,almost,ten,years,was,comfortable,my,little,every,\"morning,\",greeted,\"colleagues,\",went,around,took,road.,enjoying,daily,\"life,\",way,work,car,\"accident,\",could,no,longer,continue,job...}"
+    },
+    {
+      "id": "af28cdf0-0eef-49b4-9bc8-f074deabf348",
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chemisier,à,encolure,shirt,neckline,petite,chemise,légère,blanche,avec,grande,\"\",parfait,pour,l'été,qui,approche.,leger,effet,froissé,et,transparence,sur,la,partie,basse.,ajustement,décontracté,style,bohème.,small,light,white,large,perfect,upcoming,summer.,crumpled,effect,transparency,lower,part.,casual,fit,bohemian,style.,woman,summer}"
+    },
+    {
+      "id": "b30895c6-f6ee-47ff-bb87-232d7f8f8739",
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{tshirt,relax,casual,tee,t-shirt,blanc,à,imprimé,\"\",le,compagnon,idéal,de,vos,randonné,ou,brunch,entre,amis.,white,print,ideal,companion,hikes,friends.,woman,autumn}"
+    },
+    {
+      "id": "be9939b8-8db6-4999-a5fd-1c57dd016024",
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{short,flashy,shorts,une,couleur,néon,idéale,pour,des,journées,ensoleillés,au,bord,de,la,piscine,ou,sur,plage,\"\",neon,color,ideal,sunny,days,by,pool,beach,pink,man,winter}"
+    },
+    {
+      "id": "c32f57c1-2d89-46a8-89a3-87664b8315d4",
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{mini,short,shorts,bleu,estival,retroussé,\"\",parfait,pour,chiller,sur,la,plage,ou,au,bord,de,piscine,blue,summer,rolled,up,perfect,chilling,beach,by,pool,woman}"
+    },
+    {
+      "id": "c7b76c1d-2700-42b5-8168-8974ae9a9b2c",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": "88354b83-9f5a-4f04-961c-90319168a953",
+      "indexes": "{j’ai,fait,beaucoup,de,recherches,sur,les,différentes,formations,et,choisi,un,cursus,spécialisé,dans,technologies,mern,\"\",mongo,\"express,\",\"react,\",node,qui,sont,très,appréciées,recherchées,le,développement,web,c’était,important,pour,moi,d’opter,court,\"accessible,\",\"certes,\",mais,il,me,tenait,aussi,à,cœur,d’avoir,tous,outils,nécessaires,trouver,du,travail,rapidement,derrière.,je,voulais,quelque,chose,professionnalisant.,i,did,lot,research,different,courses,course,specialized,very,appreciated,sought,after,development,it,was,choose,short,accessible,\"course,\",also,wanted,have,all,necessary,tools,find,job,quickly.,something,professional.}"
+    },
+    {
+      "id": "cf1be78c-9fe6-4abe-b5f3-a21f5080b872",
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{pull,ajusté,fitted,sweater,noir,à,col,rond,\"\",un,style,classique,parfait,pour,sortir,de,l'hiver,en,douceur.,black,round,neck,classic,perfect,out,winter.,man,spring}"
+    },
+    {
+      "id": "d45f0cb0-185d-462a-bd36-b3829903be76",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{je,ne,remercierai,jamais,assez,l’équipe,d’ironhack,\"\",tati,\"nina,\",\"frank,\",\"katya,\",\"morgane,\",manon,mais,aussi,toute,ma,promo,avec,qui,j’ai,créé,des,liens,\"forts,\",fleet,pour,être,les,premiers,à,m’ouvrir,portes,de,cet,univers,ô,combien,\"riche,\",et,évidemment,mes,proches,surtout,femme,m’avoir,soutenu,avoir,su,répondre,toutes,questions,doutes,il,faut,bien,entouré,accomplir,un,tel,changement,i,will,never,thank,enough,ironhack,team,also,all,my,class,whom,created,strong,\"links,\",being,first,open,doors,universe,so,\"rich,\",course,close,relations,especially,wife,having,supported,me,known,how,answer,doubts,you,have,be,well,surrounded,accomplish,such,change}"
+    },
+    {
+      "id": "d4810aff-dade-407b-b871-798f227d99e7",
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{petit,short,tiny,shorts,mini,blue,clair,avec,effet,chiné,sur,le,devant,et,déchiré,les,jambières,\"\",light,mottled,effect,front,ripped,legs,woman,summer}"
+    },
+    {
+      "id": "dabe6adf-ea3e-4e7f-aaf8-1a07f5e9abd1",
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{jean,ajusté,skinny,jeans,blue,clair,avec,effet,usé,\"\",un,classique,indémodable.,light,worn,effect,timeless,classic.,woman,spring}"
+    },
+    {
+      "id": "dac6735e-01c3-4806-ab7e-68604d81172b",
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{tshirt,noir,black,tee,t-shirt,basique,avec,imprimé,et,manches,courtes,retroussées,\"\",parfait,en,toute,circonstance.,basic,print,rolled,up,short,sleeves,perfect,occasion.,woman,summer}"
+    },
+    {
+      "id": "dcceebcd-1647-49af-b42d-be7cc50ff09d",
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{pull,pourpre,purple,sweater,en,maille,de,couleur,\"\",confortable,et,douillet.,sa,taille,ajustée,est,parfaite,pour,se,réchauffer,avec,style,knit,comfortable,cozy.,its,fitted,waist,perfect,warm,up,man,winter}"
+    },
+    {
+      "id": "df832c95-3f00-4437-b6a4-665b98f009e0",
+      "productId": null,
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": "8919209e-6579-4a9b-ab92-20eee1af956a",
+      "indexes": "{j’ai,toujours,été,intéressé,par,la,technologie,et,l’univers,du,web,\"\",mais,jamais,je,n’aurais,imaginé,travailler,dans,l’informatique,encore,moins,en,tant,que,développeur,\"web,\",tout,simplement,parce,ce,métier,m’a,paru,inaccessible,aux,personne,qui,comme,moi,n’ont,pas,fait,de,longues,études,i,have,always,been,interested,technology,world,would,never,imagined,working,it,even,less,as,\"developer,\",simply,because,job,has,seemed,people,like,me,who,did,long,studies}"
+    },
+    {
+      "id": "e44d8e12-a93f-4fd9-a85e-18b816d86808",
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{tshirt,structuré,structured,noir,fashion,à,poche,texturée,et,au,design,l'ajustement,large,fashionable,black,t-shirt,textured,pocket,wide,fit,man,summer}"
+    },
+    {
+      "id": "e863a0e9-3c24-449b-b25c-c1f77a93cf1d",
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{t-shirt,épais,thick,rose,ample,à,col,rond,pink,round,neck,man,spring}"
+    },
+    {
+      "id": "ea48aef2-adb3-4b9f-8d26-583e4796b141",
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{t-shirt,gris,grey,casual,à,col,rond,avec,imprimé,noir,round,neck,black,print,man,summer}"
+    },
+    {
+      "id": "f5fafff7-51bd-4530-8ab0-ce93f06981d8",
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{jogger,marron,cozy,décontracté,\"\",parfait,pour,chiller,pendant,vos,weekends,brown,casual,perfect,chilling,out,during,woman,autumn}"
+    },
+    {
+      "id": "fdb613c6-fef7-4d06-bf22-d43f75779b34",
+      "productId": null,
+      "selectionId": "25cef2e1-689c-4be7-80ea-a8c109255a49",
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{la,petite,robe,noire,\"\",ou,rouge,..,little,black,dress,red,qu'elle,soit,longue,courte,bohème,\"chic,\",pour,\"nous,\",les,filles,whether,it's,long,short,bohemian,us,girls,product,en,fr}"
+    },
+    {
+      "id": "fe360af5-2266-432a-aedf-53b870cbd1dc",
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "selectionId": null,
+      "postId": null,
+      "postSectionId": null,
+      "indexes": "{chemise,légère,lightweight,shirt,blanche,ample,façon,dentelle,avec,noeud,devant,loose,lace-like,white,front,bow,woman,summer}"
+    }
+  ],
+  "orders": [
+    {
+      "id": "949ccded-fad8-4363-b56c-ecc39ba04a7b",
+      "orderNumber": "82cc11c9",
+      "total": 39.9,
+      "trackingNumber": "",
+      "createdAt": "2023-04-30T22:57:53.701Z",
+      "updatedAt": "2023-04-30T22:57:53.701Z",
+      "creditCardId": "12345-cevvrrvbz-32155",
+      "userId": "1ee1de53-f08d-4ed4-9832-fcc77416c605",
+      "billingAddressId": "8534a3a9-d26c-4f7c-a137-6b30ba85920e",
+      "shippingAddressId": "8534a3a9-d26c-4f7c-a137-6b30ba85920e",
+      "status": "waiting"
+    }
+  ],
+  "posts": [
+    {
+      "id": "052dd9e6-0720-4113-91b5-b6d60dcb3482",
+      "titleId": "e70a0dc8-0d15-4dd5-9c9a-3d55d17b8284",
+      "descriptionId": "a2dd9bb7-3c3a-4d41-872c-5f38072f7cea",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681984421/poliqlo/posts/Watch%2520out%2520the%2520summer%2520%21/tmp-2-1681984421046.jpg",
+      "foregroundColor": "#8DEE0A",
+      "backgroundColor": "#FC92AE",
+      "isActive": true,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "2999-04-30T22:57:53.701Z",
+      "countries": ["FR", "EN"],
+      "index": 1,
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "1c3d83f1-2b0d-4055-9d85-cf9cfa7cfc30",
+      "titleId": "080edc80-d0c1-4bfa-a9b9-caa0362141bd",
+      "descriptionId": "4ad22c0d-0673-4677-b087-a338e18fee42",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681985149/poliqlo/posts/Winter%2520is%2520over%2520%21/tmp-3-1681985148414.jpg",
+      "foregroundColor": "#496B3F",
+      "backgroundColor": "#300905",
+      "isActive": true,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "2999-04-30T22:57:53.701Z",
+      "countries": ["FR", "EN"],
+      "index": 1,
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": "86c0d220-6a1e-4483-b6fa-242ebed986be",
+      "descriptionId": "085a4a54-0bbb-487a-94d3-79a6a5fd929f",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681903319/poliqlo/posts/About%2520me/tmp-2-1681903318611.jpg",
+      "foregroundColor": "#162837",
+      "backgroundColor": "#6EBEDC",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "2999-04-30T22:57:53.701Z",
+      "countries": ["FR", "EN"],
+      "index": 1,
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    }
+  ],
+  "postsSections": [
+    {
+      "id": "267ff2b5-b1e9-4640-9069-e485c4ca33df",
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": null,
+      "paragraphId": "0410bee2-a284-4fe0-a43a-40fbf48afe35",
+      "localPath": "",
+      "externalLink": "",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681934668/poliqlo/posts/About%2520me/tmp-3-1681934667516.jpg",
+      "imageAspect": "landscape",
+      "index": 0,
+      "createdAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "5e269bac-9735-4063-9a80-385699787c4d",
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": null,
+      "paragraphId": "5612ca9f-ec7e-4002-b5c9-4bf5823d5f23",
+      "localPath": "",
+      "externalLink": "",
+      "imageUrl": "",
+      "imageAspect": "landscape",
+      "index": 0,
+      "createdAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "6327550c-d61f-43c1-bdfc-6f94044a7700",
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": null,
+      "paragraphId": "8e4155ea-2fd2-4808-8c7d-e1b8219b4ba6",
+      "localPath": "",
+      "externalLink": "",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681933290/poliqlo/posts/About%2520me/tmp-1-1681933289550.jpg",
+      "imageAspect": "square",
+      "index": 0,
+      "createdAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "88354b83-9f5a-4f04-961c-90319168a953",
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": null,
+      "paragraphId": "0c5ed04b-71ce-4f2a-aec8-45bb35ceb316",
+      "localPath": "",
+      "externalLink": "",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681934090/poliqlo/posts/About%2520me/tmp-2-1681934089524.jpg",
+      "imageAspect": "landscape",
+      "index": 0,
+      "createdAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "8919209e-6579-4a9b-ab92-20eee1af956a",
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": null,
+      "paragraphId": "c5da608b-93f7-4561-9262-c0d617f3c3c3",
+      "localPath": "",
+      "externalLink": "",
+      "imageUrl": "",
+      "imageAspect": "landscape",
+      "index": 0,
+      "createdAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "ee6b9247-9c93-4836-8105-4cf803730007",
+      "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
+      "titleId": null,
+      "paragraphId": "1a61872a-af9b-4413-9c00-fa27ae78f1e0",
+      "localPath": "",
+      "externalLink": "https://www.linkedin.com/in/teddy-rogers/",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681935725/poliqlo/posts/About%2520me/tmp-4-1681935725127.jpg",
+      "imageAspect": "portrait",
+      "index": 0,
+      "createdAt": "2023-04-30T22:57:53.701Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "isActive": true,
+      "titleId": "b95bd756-3613-439f-9bc8-e0a2178333b8",
+      "descriptionId": "55a6ba2c-d45e-4621-aa27-ba40a86ae081",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681761976/poliqlo/products/tmp-6-1681761975815.jpg",
+      "backgroundColor": "#C69275",
+      "foregroundColor": "#024544",
+      "price": 19.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "short",
+      "color": "pink",
+      "season": "winter"
+    },
+    {
+      "id": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "isActive": true,
+      "titleId": "7266f0e0-283e-45f8-a711-a372bcaf6238",
+      "descriptionId": "feba15dd-74ff-47ce-a015-273a9fc94171",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681854540/poliqlo/products/tmp-6-1681854540185.jpg",
+      "backgroundColor": "#015391",
+      "foregroundColor": "#403E29",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "white",
+      "season": "summer"
+    },
+    {
+      "id": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "isActive": true,
+      "titleId": "43f8c13d-8f77-419a-8c97-94d1c8d548e9",
+      "descriptionId": "e90cb8f6-beb9-4c5c-9b4a-f1e828f8a105",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681766503/poliqlo/products/tmp-15-1681766503072.jpg",
+      "backgroundColor": "#E1D5C1",
+      "foregroundColor": "#36332E",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "black",
+      "season": "summer"
+    },
+    {
+      "id": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "isActive": true,
+      "titleId": "ac25c16b-57a3-4fc3-8a14-48ec61a6f3ed",
+      "descriptionId": "245e0d24-0e4a-454d-92df-de52559b21df",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681853935/poliqlo/products/tmp-2-1681853934602.jpg",
+      "backgroundColor": "#929072",
+      "foregroundColor": "#887D5E",
+      "price": 19.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "grey",
+      "season": "summer"
+    },
+    {
+      "id": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "isActive": true,
+      "titleId": "fa3bf832-8ed0-40b1-a3e1-3ad06597a3ae",
+      "descriptionId": "52e7924e-1776-4f39-b3f5-c8fcb669114d",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681802495/poliqlo/products/tmp-28-1681802495223.jpg",
+      "backgroundColor": "#CEDDDF",
+      "foregroundColor": "#DBDBD4",
+      "price": 59.9,
+      "sale": 10,
+      "gender": "woman",
+      "category": "pull",
+      "color": "white",
+      "season": "winter"
+    },
+    {
+      "id": "15772c34-e0d7-4790-965a-69563312cd63",
+      "isActive": true,
+      "titleId": "4a026ff7-0b4d-4c8a-9129-057b43c91c11",
+      "descriptionId": "d5db8e68-6a08-46af-9ecd-5d974eded91d",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681801796/poliqlo/products/tmp-26-1681801796282.jpg",
+      "backgroundColor": "#1D2F14",
+      "foregroundColor": "#C68D8C",
+      "price": 39.9,
+      "sale": 10,
+      "gender": "woman",
+      "category": "shirt",
+      "color": "blue",
+      "season": "winter"
+    },
+    {
+      "id": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "isActive": true,
+      "titleId": "2088e1ba-82fa-475d-910c-718e0165e9c1",
+      "descriptionId": "7b5b5d61-b13c-401a-8237-396c0b9a8b65",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681854123/poliqlo/products/tmp-3-1681854122750.jpg",
+      "backgroundColor": "#DEAA12",
+      "foregroundColor": "#7593CE",
+      "price": 29.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "pink",
+      "season": "spring"
+    },
+    {
+      "id": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "isActive": true,
+      "titleId": "09d3530d-7384-4819-8b75-532c7738bba4",
+      "descriptionId": "821a9288-4f89-4653-96b9-7891501b0f32",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681803863/poliqlo/products/tmp-32-1681803862589.jpg",
+      "backgroundColor": "#825640",
+      "foregroundColor": "#B3B8B5",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "pull",
+      "color": "green",
+      "season": "autumn"
+    },
+    {
+      "id": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "isActive": true,
+      "titleId": "2c591a91-e168-48ca-aab8-f025146292ed",
+      "descriptionId": "a9dc09b3-b4bb-4216-bc96-629be5d1e59f",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681769728/poliqlo/products/tmp-24-1681769728224.jpg",
+      "backgroundColor": "#242223",
+      "foregroundColor": "#BE803B",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "jogger",
+      "color": "brown",
+      "season": "autumn"
+    },
+    {
+      "id": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "isActive": true,
+      "titleId": "554cabc2-7ed0-446e-ac38-c4542d4be381",
+      "descriptionId": "5fdde55c-1985-437a-b816-5150b6c5b2ad",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681768791/poliqlo/products/tmp-21-1681768790399.jpg",
+      "backgroundColor": "#D9D6D3",
+      "foregroundColor": "#4C4235",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "chino",
+      "color": "white",
+      "season": "autumn"
+    },
+    {
+      "id": "385385df-114e-4050-afa0-0dce42b14901",
+      "isActive": true,
+      "titleId": "38969fa7-7ecb-4bb1-9afd-75c77a965033",
+      "descriptionId": "9327aeb4-ac5a-4416-81c7-cb57f101907c",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681767087/poliqlo/products/tmp-16-1681767086508.jpg",
+      "backgroundColor": "#FBA8BC",
+      "foregroundColor": "#F9D9D7",
+      "price": 69.9,
+      "sale": 10,
+      "gender": "man",
+      "category": "pull",
+      "color": "black",
+      "season": "winter"
+    },
+    {
+      "id": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "isActive": true,
+      "titleId": "1d3d256f-ae64-4090-8e35-17e54e8b82cd",
+      "descriptionId": "48e74957-f73d-43b5-8b03-26570c91871c",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681764220/poliqlo/products/tmp-12-1681764219641.jpg",
+      "backgroundColor": "#939185",
+      "foregroundColor": "#1D2932",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "black",
+      "season": "autumn"
+    },
+    {
+      "id": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "isActive": true,
+      "titleId": "ca93acb6-44cc-4faf-9aab-e32ae40f43e5",
+      "descriptionId": "9cf06f30-5c47-4d5e-a675-426f522390eb",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681769495/poliqlo/products/tmp-23-1681769495346.jpg",
+      "backgroundColor": "#F5F3F0",
+      "foregroundColor": "#8E8279",
+      "price": 19.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "t_shirt",
+      "color": "white",
+      "season": "autumn"
+    },
+    {
+      "id": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "isActive": true,
+      "titleId": "00374c88-170c-4a60-a740-2028575f4482",
+      "descriptionId": "2b7bdb83-a66d-4596-bc7b-a67bc90ba79e",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681762720/poliqlo/products/tmp-8-1681762720232.jpg",
+      "backgroundColor": "#1F3037",
+      "foregroundColor": "#7B814D",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "pull",
+      "color": "blue",
+      "season": "autumn"
+    },
+    {
+      "id": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "isActive": true,
+      "titleId": "6677f781-9ebe-4086-b127-7606c1f211c5",
+      "descriptionId": "8211ae56-ace3-42a3-b1a4-9317c3b9990d",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681753859/poliqlo/products/tmp-3-1681753858928.jpg",
+      "backgroundColor": "#303537",
+      "foregroundColor": "#440D24",
+      "price": 49.9,
+      "sale": 10,
+      "gender": "man",
+      "category": "pull",
+      "color": "purple",
+      "season": "winter"
+    },
+    {
+      "id": "89271e23-dda3-4446-a44d-28789b01c610",
+      "isActive": true,
+      "titleId": "0e584725-c08a-4912-949e-cc8e8aedd9ad",
+      "descriptionId": "696cb688-4d3a-496f-a6bc-a5347e941130",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681751639/poliqlo/products/tmp-1-1681751638356.jpg",
+      "backgroundColor": "#D0A165",
+      "foregroundColor": "#D5D4E9",
+      "price": 29.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "short",
+      "color": "blue",
+      "season": "summer"
+    },
+    {
+      "id": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "isActive": true,
+      "titleId": "ecb05090-a425-4fb9-880d-ee7d5a2f4654",
+      "descriptionId": "93a9231c-6f4d-41b2-812e-3976bf5ee28b",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681802047/poliqlo/products/tmp-27-1681802046640.jpg",
+      "backgroundColor": "#080A13",
+      "foregroundColor": "#C7CAC8",
+      "price": 69.9,
+      "sale": 10,
+      "gender": "man",
+      "category": "sweat",
+      "color": "blue",
+      "season": "winter"
+    },
+    {
+      "id": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "isActive": true,
+      "titleId": "e67f228f-fa51-4f4f-9212-4b91406ef1fd",
+      "descriptionId": "39b8e285-4743-4519-8a6d-12dcea92db3c",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681768560/poliqlo/products/tmp-20-1681768560282.jpg",
+      "backgroundColor": "#9BAFBA",
+      "foregroundColor": "#68423D",
+      "price": 49.9,
+      "sale": 10,
+      "gender": "man",
+      "category": "sweat",
+      "color": "blue",
+      "season": "winter"
+    },
+    {
+      "id": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "isActive": true,
+      "titleId": "35aa3790-84e4-4528-8fff-cc88ebfdf466",
+      "descriptionId": "f7728dcb-365e-42d2-8cc5-f2318348416a",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681763391/poliqlo/products/tmp-11-1681763390318.jpg",
+      "backgroundColor": "#D1C9C2",
+      "foregroundColor": "#81827A",
+      "price": 59.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "shirt",
+      "color": "white",
+      "season": "spring"
+    },
+    {
+      "id": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "isActive": true,
+      "titleId": "b160ed93-4d29-4c9e-91a1-5871a3a1568e",
+      "descriptionId": "c672106d-2c19-4684-a0a0-12ec8bf51b7d",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681767488/poliqlo/products/tmp-17-1681767487842.jpg",
+      "backgroundColor": "#CC041F",
+      "foregroundColor": "#010509",
+      "price": 79.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "sweat",
+      "color": "white",
+      "season": "spring"
+    },
+    {
+      "id": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "isActive": true,
+      "titleId": "bb65ce92-2aed-4b49-9f34-d90eb90521a1",
+      "descriptionId": "0a850a5d-4202-4b02-b7aa-160e51a14376",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681763184/poliqlo/products/tmp-10-1681763183832.jpg",
+      "backgroundColor": "#2A242B",
+      "foregroundColor": "#D4CBD3",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "blue",
+      "season": "summer"
+    },
+    {
+      "id": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "isActive": true,
+      "titleId": "3fa620de-301b-4206-acc4-5faf0a8b0d66",
+      "descriptionId": "8c4befb9-1242-403b-99ba-0a8885bf1562",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681837202/poliqlo/products/tmp-34-1681837201779.jpg",
+      "backgroundColor": "#D6CDC6",
+      "foregroundColor": "#C4907A",
+      "price": 19.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "black",
+      "season": "summer"
+    },
+    {
+      "id": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "isActive": true,
+      "titleId": "bebc494e-bbbf-4cfc-9792-9243091c6218",
+      "descriptionId": "360f94be-cea0-4502-abb3-a9cdbd2a4181",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681803521/poliqlo/products/tmp-30-1681803520462.jpg",
+      "backgroundColor": "#F4F7F9",
+      "foregroundColor": "#2A2F4C",
+      "price": 59.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "jean",
+      "color": "blue",
+      "season": "spring"
+    },
+    {
+      "id": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "isActive": true,
+      "titleId": "14fe3f2e-aef5-43cf-9253-dbba37d23cf3",
+      "descriptionId": "e50191be-4228-4bbd-ade1-266ad885c974",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681803655/poliqlo/products/tmp-31-1681803654869.jpg",
+      "backgroundColor": "#DFDEDE",
+      "foregroundColor": "#815E4C",
+      "price": 19.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "t_shirt",
+      "color": "black",
+      "season": "summer"
+    },
+    {
+      "id": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "isActive": true,
+      "titleId": "e76afa20-fcda-446b-90d4-84afe8393312",
+      "descriptionId": "0f1ba8ad-e3ba-4937-9d62-851fd05e48f2",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681801617/poliqlo/products/tmp-25-1681801617244.jpg",
+      "backgroundColor": "#DFD3CF",
+      "foregroundColor": "#885B56",
+      "price": 69.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "jean",
+      "color": "blue",
+      "season": "autumn"
+    },
+    {
+      "id": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "isActive": true,
+      "titleId": "b7b4eee8-9e24-4958-b691-d9b0300d610d",
+      "descriptionId": "b575dff7-58e4-4363-8d3f-d2a4e7f0a413",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681768055/poliqlo/products/tmp-19-1681768055004.jpg",
+      "backgroundColor": "#DFC364",
+      "foregroundColor": "#866C46",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "short",
+      "color": "blue",
+      "season": "summer"
+    },
+    {
+      "id": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "isActive": true,
+      "titleId": "c19758ff-efb2-4d56-aeaa-8c258891f7b6",
+      "descriptionId": "5c742c3c-b71c-49bb-8e72-c9c3ce54b08f",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681753247/poliqlo/products/tmp-2-1681753247279.jpg",
+      "backgroundColor": "#B1CECC",
+      "foregroundColor": "#072831",
+      "price": 59.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "shirt",
+      "color": "white",
+      "season": "summer"
+    },
+    {
+      "id": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "isActive": true,
+      "titleId": "30c2f309-1817-4186-b4d1-f430cce340d2",
+      "descriptionId": "0ddc5345-3c33-43d6-bc77-b7dc8aea24c6",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681837111/poliqlo/products/tmp-33-1681837110476.jpg",
+      "backgroundColor": "#777068",
+      "foregroundColor": "#7A5440",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "pull",
+      "color": "black",
+      "season": "spring"
+    },
+    {
+      "id": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "isActive": true,
+      "titleId": "e0fae358-3494-4dee-9243-49c35f904def",
+      "descriptionId": "fc25e26e-afae-440e-abfe-62ec78014bca",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681803044/poliqlo/products/tmp-29-1681803043950.jpg",
+      "backgroundColor": "#FCFDFF",
+      "foregroundColor": "#F3F7F9",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "jogger",
+      "color": "pink",
+      "season": "spring"
+    },
+    {
+      "id": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "isActive": true,
+      "titleId": "d2be61e0-852d-4333-b5c8-d50db518626d",
+      "descriptionId": "966384cd-17f7-46d9-8e96-85abb7837d6e",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681769045/poliqlo/products/tmp-22-1681769044464.jpg",
+      "backgroundColor": "#7B5039",
+      "foregroundColor": "#48240E",
+      "price": 59.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "sweat",
+      "color": "black",
+      "season": "autumn"
+    },
+    {
+      "id": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "isActive": true,
+      "titleId": "a01463cc-78f9-478b-bd2e-57f0f74972e6",
+      "descriptionId": "99360046-ac1d-43bf-95ae-9928716ca8a6",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681854371/poliqlo/products/tmp-5-1681854370721.jpg",
+      "backgroundColor": "#89837B",
+      "foregroundColor": "#CDCCC3",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "t_shirt",
+      "color": "yellow",
+      "season": "summer"
+    },
+    {
+      "id": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "isActive": true,
+      "titleId": "edc7f993-91df-4d46-ac0a-39541fd4b18f",
+      "descriptionId": "94f97668-3d2b-429b-9363-46c33bc34fc1",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681767770/poliqlo/products/tmp-18-1681767769941.jpg",
+      "backgroundColor": "#B0BEB0",
+      "foregroundColor": "#B9A17D",
+      "price": 79.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "jean",
+      "color": "blue",
+      "season": "spring"
+    },
+    {
+      "id": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "isActive": true,
+      "titleId": "be376075-71f7-4e80-a62a-906ac37046a4",
+      "descriptionId": "35b19a98-fca7-4ea4-9231-55f14a5b4b8e",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681852920/poliqlo/products/tmp-1-1681852919569.jpg",
+      "backgroundColor": "#CEC0B5",
+      "foregroundColor": "#C2A485",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "shirt",
+      "color": "white",
+      "season": "summer"
+    },
+    {
+      "id": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "isActive": true,
+      "titleId": "cd704191-1480-4a17-ad5e-4d4405a014d3",
+      "descriptionId": "da8c5ca1-49e1-431d-8f92-5276cdf3976e",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681755716/poliqlo/products/tmp-4-1681755715646.jpg",
+      "backgroundColor": "#C2D8DC",
+      "foregroundColor": "#4F7E8A",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "shirt",
+      "color": "black",
+      "season": "summer"
+    },
+    {
+      "id": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "isActive": true,
+      "titleId": "c15bf6fb-1ad1-497c-badc-01398c3840e0",
+      "descriptionId": "cb53908e-de5d-48d5-99dd-370e726d15cc",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681854245/poliqlo/products/tmp-4-1681854244596.jpg",
+      "backgroundColor": "#F0E9E5",
+      "foregroundColor": "#FDFBFD",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "t_shirt",
+      "color": "black",
+      "season": "spring"
+    },
+    {
+      "id": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "isActive": true,
+      "titleId": "1a2a8137-c4e1-4fde-aafd-dfe9ec2c42c9",
+      "descriptionId": "b225dc55-ea47-4641-8c32-5b8a76b4e704",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681765043/poliqlo/products/tmp-14-1681765042838.jpg",
+      "backgroundColor": "#D1CFCA",
+      "foregroundColor": "#283642",
+      "price": 29.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "sweat",
+      "color": "orange",
+      "season": "autumn"
+    },
+    {
+      "id": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "isActive": true,
+      "titleId": "d70fb187-0668-4012-b192-561e746eb41c",
+      "descriptionId": "816de312-9468-4181-b60d-32d0e557df1e",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681764609/poliqlo/products/tmp-13-1681764609076.jpg",
+      "backgroundColor": "#EFEBE9",
+      "foregroundColor": "#827A81",
+      "price": 49.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "skirt",
+      "color": "black",
+      "season": "autumn"
+    },
+    {
+      "id": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "isActive": true,
+      "titleId": "15882afa-6fbe-4fdf-82d1-7281a4af3110",
+      "descriptionId": "1931efb8-29ab-44b6-85c2-a2339cc3f02b",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681756285/poliqlo/products/tmp-5-1681756284925.jpg",
+      "backgroundColor": "#A3BCCF",
+      "foregroundColor": "#161C28",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "man",
+      "category": "sweat",
+      "color": "brown",
+      "season": "autumn"
+    },
+    {
+      "id": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "isActive": true,
+      "titleId": "39217e66-9b99-48b8-973b-5631029c65a8",
+      "descriptionId": "861603c6-e411-4619-911b-c4cc8efa4c5d",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681762325/poliqlo/products/tmp-7-1681762324988.jpg",
+      "backgroundColor": "#F4EFED",
+      "foregroundColor": "#8D7B7D",
+      "price": 39.9,
+      "sale": 0,
+      "gender": "woman",
+      "category": "shirt",
+      "color": "white",
+      "season": "spring"
+    }
+  ],
+  "selections": [
+    {
+      "id": "19419d54-64e8-427d-8f02-838b15da0a45",
+      "titleId": "160f85ba-569b-45dc-9428-cfecb9efba5a",
+      "descriptionId": "337520cb-4e23-4f12-9c81-bfa287d37331",
+      "selectionPath": "product?category=accessory",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681892688/poliqlo/selections/tmp-2-1681892687795.jpg",
+      "backgroundColor": "#E9E9E9",
+      "foregroundColor": "#3B3736",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "25cef2e1-689c-4be7-80ea-a8c109255a49",
+      "titleId": "7e81b17a-810e-4ffc-94b5-51c19070d994",
+      "descriptionId": "a7918572-9e16-497c-b779-c1c5031b72fc",
+      "selectionPath": "product?category=dress",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681894673/poliqlo/selections/tmp-2-1681894672564.jpg",
+      "backgroundColor": "#1A2712",
+      "foregroundColor": "#815A47",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "3ed56487-d2b0-47ee-9d5a-0a660d3cfb0f",
+      "titleId": "9901d798-6f53-4ec2-8861-ffd7e26e006e",
+      "descriptionId": "6dee90cd-0844-4aff-bd4b-aad9658bb367",
+      "selectionPath": "product?keywords=hoodie",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681856261/poliqlo/selections/tmp-1-1681856261411.jpg",
+      "backgroundColor": "#090F0D",
+      "foregroundColor": "#400A0E",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "43fb9a70-44a4-4f8f-afd7-e98f1a33cad7",
+      "titleId": "38de5b19-3dac-4578-a58c-634981dd1f2f",
+      "descriptionId": "79a1ec4e-40b9-41ef-9ddf-fe17c3b9d2a8",
+      "selectionPath": "product?category=t_shirt",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681893558/poliqlo/selections/tmp-1-1681893557872.jpg",
+      "backgroundColor": "#E7E1D7",
+      "foregroundColor": "#95643E",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "a149864c-3d26-476d-8a4c-492c53f89929",
+      "titleId": "201a4078-63dd-4d34-be9f-7276eafe6b58",
+      "descriptionId": "b1f19b5e-617e-4fee-8f4c-a52724959d0d",
+      "selectionPath": "product?category=skirt",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681895125/poliqlo/selections/tmp-3-1681895124563.jpg",
+      "backgroundColor": "#AEBEC9",
+      "foregroundColor": "#2D2C34",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "a87dd37c-eeab-45fa-a98c-42b27c3fabe2",
+      "titleId": "92995fe4-ae2f-4392-b2ab-e79e48360960",
+      "descriptionId": "98c54cf7-bee0-48dd-9c71-11ff0e2353c4",
+      "selectionPath": "product?category=short&genre=woman",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681857253/poliqlo/selections/tmp-3-1681857252628.jpg",
+      "backgroundColor": "#D4D4D4",
+      "foregroundColor": "#20201F",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "c977703c-913b-4884-b8d0-70db582701c5",
+      "titleId": "c09202ec-3537-4231-8b38-e040228f2e50",
+      "descriptionId": "f74df2d2-bd58-4320-bf2a-3e9d1ef233c9",
+      "selectionPath": "product?category=pull&season=winter",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681857772/poliqlo/selections/tmp-4-1681857771535.jpg",
+      "backgroundColor": "#C8BEB8",
+      "foregroundColor": "#B69D7E",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "cdfc4004-6bf0-4560-b637-c529a9adb933",
+      "titleId": "c498acc3-1543-4a08-a5f0-100d7c1d1dd7",
+      "descriptionId": "f2603fac-0b34-4c0f-85f7-ce7fad7dfe27",
+      "selectionPath": "product?category=shirt",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681856804/poliqlo/selections/tmp-2-1681856804098.jpg",
+      "backgroundColor": "#C3CBDE",
+      "foregroundColor": "#080E26",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    },
+    {
+      "id": "dd2e1af2-46ac-40e4-94ed-aa81e88239c9",
+      "titleId": "c419a971-c3ea-4f92-be19-7be89a0116a4",
+      "descriptionId": "1e121633-139f-46f3-9c21-79fbd7e69a5a",
+      "selectionPath": "product?category=sweat",
+      "imageUrl": "https://res.cloudinary.com/dlubgbeav/image/upload/v1681892907/poliqlo/selections/tmp-3-1681892906869.jpg",
+      "backgroundColor": "#FBBE55",
+      "foregroundColor": "#F09E2E",
+      "isActive": false,
+      "dateStart": "2023-04-30T22:57:53.701Z",
+      "dateEnd": "9999-04-30T22:57:53.701Z",
+      "imageAspect": "landscape",
+      "countries": ["EN", "FR"],
+      "updatedAt": "2023-04-30T22:57:53.701Z"
+    }
+  ],
+  "skus": [
+    {
+      "id": "02c32c50-4149-47f2-a58f-7e873c49c5d9",
+      "ref": "1f53f520",
+      "quantity": 1309,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "xs"
+    },
+    {
+      "id": "031d63d9-3a5b-456a-88af-ec28884cb5d5",
+      "ref": "3420147e",
+      "quantity": 469,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "xl"
+    },
+    {
+      "id": "04d8d591-6315-4daf-afc7-5e3f831ae364",
+      "ref": "6507b788",
+      "quantity": 2913,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu38"
+    },
+    {
+      "id": "0503af11-08cb-42fb-ada6-8032b70619ae",
+      "ref": "3d5bb3b1",
+      "quantity": 2609,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "l"
+    },
+    {
+      "id": "05be9a02-11f5-4326-aedc-4d80b896e9d6",
+      "ref": "a9ce2576",
+      "quantity": 2439,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "xxl"
+    },
+    {
+      "id": "06bac2ed-5531-4529-9a21-81173b52d6d3",
+      "ref": "3ad3f5a3",
+      "quantity": 706,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu40"
+    },
+    {
+      "id": "0893c797-86c1-4ae1-929f-deaa88272c5f",
+      "ref": "2f3cf85b",
+      "quantity": 763,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "xxs"
+    },
+    {
+      "id": "0b061279-5f50-45fc-8f69-eb8353579e33",
+      "ref": "c6793ebe",
+      "quantity": 1645,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "xs"
+    },
+    {
+      "id": "0c8fad48-7bcc-479d-8025-25c3422ba602",
+      "ref": "7c1df623",
+      "quantity": 1425,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "xs"
+    },
+    {
+      "id": "0d7ceb14-7b8d-4802-9af8-2dfac3762095",
+      "ref": "0ee72caa",
+      "quantity": 2585,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu36"
+    },
+    {
+      "id": "0e54a4a8-f2ea-4ba6-98f0-b88020d63a1e",
+      "ref": "625629",
+      "quantity": 792,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "s"
+    },
+    {
+      "id": "0ebbac67-9f6a-46cd-a449-36e68b195c5f",
+      "ref": "12b585a3",
+      "quantity": 186,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu46"
+    },
+    {
+      "id": "0f003113-b550-4876-8c95-113eb27a6f94",
+      "ref": "d887148c",
+      "quantity": 1617,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "xxs"
+    },
+    {
+      "id": "0f4aae17-1518-4de0-acec-e6e2e7f8136e",
+      "ref": "faaf56ba",
+      "quantity": 930,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "s"
+    },
+    {
+      "id": "11ef19f7-be64-442e-8252-0a3d5bb3e714",
+      "ref": "dd83d95c",
+      "quantity": 1795,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "m"
+    },
+    {
+      "id": "1273db4e-ccda-461f-ad25-3ccdfdb3fab9",
+      "ref": "6831bc07",
+      "quantity": 2595,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "l"
+    },
+    {
+      "id": "12a6572a-c980-4c3f-a770-2afd33b95a4f",
+      "ref": "3a6ec8c8",
+      "quantity": 1495,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu46"
+    },
+    {
+      "id": "12cee3f7-89d5-42d1-b789-bf1bb4156f13",
+      "ref": "8c707d49",
+      "quantity": 2287,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "l"
+    },
+    {
+      "id": "13bd61b1-498e-42de-ac53-71fc5385186f",
+      "ref": "89b81d04",
+      "quantity": 29,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu36"
+    },
+    {
+      "id": "148dbd08-9997-4341-af7d-cf126abb2e50",
+      "ref": "f8f49cff",
+      "quantity": 1694,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "xs"
+    },
+    {
+      "id": "169244cd-9c64-4a7a-8074-922360ff6998",
+      "ref": "8e3508ea",
+      "quantity": 1009,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "xs"
+    },
+    {
+      "id": "1759ccd5-37de-4fb3-b6ed-ba93e9b9e206",
+      "ref": "1e7711fc",
+      "quantity": 2624,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "xs"
+    },
+    {
+      "id": "17f47830-3691-47b3-925f-fa2265a9fe33",
+      "ref": "c9881d9b",
+      "quantity": 573,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "xxs"
+    },
+    {
+      "id": "183851b2-4007-422b-9b56-5fdd0b7013c5",
+      "ref": "1571477",
+      "quantity": 511,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "xl"
+    },
+    {
+      "id": "185189f1-e9e0-41f9-a151-08cb918d367e",
+      "ref": "fb2fb2a3",
+      "quantity": 4,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "xl"
+    },
+    {
+      "id": "18546890-e032-4c97-a86e-c762134d2d1a",
+      "ref": "a73749ec",
+      "quantity": 916,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "xs"
+    },
+    {
+      "id": "18ee0f0d-bf1a-43bd-941a-7baedbb21cc2",
+      "ref": "e70ec857",
+      "quantity": 2494,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "xxl"
+    },
+    {
+      "id": "1982a9f0-65da-4442-b7ae-88efdd543b1c",
+      "ref": "fe6bc672",
+      "quantity": 1099,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu32"
+    },
+    {
+      "id": "198e7fa9-cf13-4e86-a408-cf6088a69da5",
+      "ref": "889336",
+      "quantity": 1390,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "xxs"
+    },
+    {
+      "id": "1a98a042-bc67-4db7-95c4-4360a403a12a",
+      "ref": "c8306cc3",
+      "quantity": 1810,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu36"
+    },
+    {
+      "id": "1dad01cf-90e3-4e17-be16-0314c9c4ed3c",
+      "ref": "b49176c2",
+      "quantity": 1418,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "xl"
+    },
+    {
+      "id": "1ead007e-c5a0-421a-a4ec-f4608bca0dd4",
+      "ref": "23aa27e0",
+      "quantity": 838,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "m"
+    },
+    {
+      "id": "1fde2124-e9ed-455a-b9ee-d6c22723b35a",
+      "ref": "2fb32c90",
+      "quantity": 1623,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "xl"
+    },
+    {
+      "id": "1fe375f2-4097-4cf3-a63d-3aebfc74e077",
+      "ref": "59584bec",
+      "quantity": 2590,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "xxs"
+    },
+    {
+      "id": "20761e76-7e4c-4841-abc1-16cb37cc08c3",
+      "ref": "1182145a",
+      "quantity": 490,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "l"
+    },
+    {
+      "id": "20c8f34d-a06b-4ba2-bda1-536a8189173e",
+      "ref": "f8e21666",
+      "quantity": 200,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "xxl"
+    },
+    {
+      "id": "21c8b287-adb8-4055-9045-96d8647b7aca",
+      "ref": "897030",
+      "quantity": 876,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "xl"
+    },
+    {
+      "id": "26f4ad8f-1dd3-4af0-8c50-f37c702955cd",
+      "ref": "131053",
+      "quantity": 1243,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "m"
+    },
+    {
+      "id": "286cd243-ab62-4dd3-a667-7b3919f46fde",
+      "ref": "dd335c86",
+      "quantity": 2931,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "m"
+    },
+    {
+      "id": "288d0966-6b43-4367-b08d-fca59d98078b",
+      "ref": "1796677",
+      "quantity": 509,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "s"
+    },
+    {
+      "id": "28c7e97c-29b7-46b4-b857-1391a53ec897",
+      "ref": "4e24a5de",
+      "quantity": 2774,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "xxl"
+    },
+    {
+      "id": "297af4ce-2396-464d-a326-03535d9d080a",
+      "ref": "1505300",
+      "quantity": 287,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "m"
+    },
+    {
+      "id": "299107bf-8a4f-48af-9585-71046448ffdb",
+      "ref": "d0f2ffb4",
+      "quantity": 2011,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "l"
+    },
+    {
+      "id": "2a4abad9-91fa-4557-a5c4-f6ca4dafb141",
+      "ref": "1a0b2688",
+      "quantity": 226,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "xl"
+    },
+    {
+      "id": "2a7c3138-e277-4409-b511-a574e499b858",
+      "ref": "77e8cc02",
+      "quantity": 624,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "s"
+    },
+    {
+      "id": "2c2771a5-edd4-4ecf-a201-92fa920638c8",
+      "ref": "fda02485",
+      "quantity": 802,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "xl"
+    },
+    {
+      "id": "2d2c5dee-043a-4b87-89d7-80d582c08dc2",
+      "ref": "10f88862",
+      "quantity": 2712,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "m"
+    },
+    {
+      "id": "2da45b1d-71fb-4e2d-a18d-9b4b3a430ab1",
+      "ref": "8cc6b9fc",
+      "quantity": 1126,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "xxs"
+    },
+    {
+      "id": "2e46d75e-6303-483f-9e95-d829ebaa28f0",
+      "ref": "3d3d16c7",
+      "quantity": 2712,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "xxs"
+    },
+    {
+      "id": "30842f30-b6e0-45a7-b315-514635d33a42",
+      "ref": "734a99f9",
+      "quantity": 1600,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "l"
+    },
+    {
+      "id": "319129e6-e325-4cf3-ab0f-05b91c135725",
+      "ref": "1159046",
+      "quantity": 158,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "xxl"
+    },
+    {
+      "id": "31fb0cd6-2861-4aa2-85d2-b34502288c3f",
+      "ref": "d9a51098",
+      "quantity": 926,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "xxs"
+    },
+    {
+      "id": "328b89e8-b369-4763-83c6-b13a9dfdf15d",
+      "ref": "17c694c8",
+      "quantity": 152,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "xl"
+    },
+    {
+      "id": "32dc0424-008b-4ac8-9884-c1ea67f53257",
+      "ref": "06d8613c",
+      "quantity": 1046,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "s"
+    },
+    {
+      "id": "334c5b7a-a237-442f-bc33-488446a64d83",
+      "ref": "160e7329",
+      "quantity": 1293,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "xs"
+    },
+    {
+      "id": "338398c6-d53d-4ae0-9d24-c46386f492aa",
+      "ref": "1d69faeb",
+      "quantity": 1502,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "m"
+    },
+    {
+      "id": "349266e3-b2f8-40af-80c0-11e6499cd7b6",
+      "ref": "1950800",
+      "quantity": 1961,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "xxl"
+    },
+    {
+      "id": "34d10084-d2e3-4042-a5eb-a56093c5d80c",
+      "ref": "854397a7",
+      "quantity": 57,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "m"
+    },
+    {
+      "id": "365ab72c-edea-40ed-9554-761c2b3938f9",
+      "ref": "00399132",
+      "quantity": 1514,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "xxs"
+    },
+    {
+      "id": "3712afc0-3c20-4fe7-8180-ba46d7e967ee",
+      "ref": "3066955d",
+      "quantity": 635,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu40"
+    },
+    {
+      "id": "37237714-71aa-4496-8f3e-c3ddccab28f4",
+      "ref": "6504fdbf",
+      "quantity": 35,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "xxl"
+    },
+    {
+      "id": "37290c31-5d55-4fa9-aefc-c368677c4aca",
+      "ref": "cc3faae6",
+      "quantity": 325,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "m"
+    },
+    {
+      "id": "38763b0d-cb03-4cb3-a8a4-53350968bb06",
+      "ref": "eb3efde9",
+      "quantity": 1134,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "l"
+    },
+    {
+      "id": "391ceb8e-9bb4-4223-8316-ffdf566d7bbe",
+      "ref": "30a90f70",
+      "quantity": 2843,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "s"
+    },
+    {
+      "id": "3b053402-90b6-4c98-b1ad-1eed1ec9fd18",
+      "ref": "1182715",
+      "quantity": 1981,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "l"
+    },
+    {
+      "id": "3b1efa16-fe5c-471f-8309-94b48964ba15",
+      "ref": "077d3a06",
+      "quantity": 1781,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "xl"
+    },
+    {
+      "id": "3b99eb00-ee3c-4910-b4b9-552ef8237664",
+      "ref": "2a5d8fbd",
+      "quantity": 632,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "s"
+    },
+    {
+      "id": "3d9c363d-3db6-4e68-91e2-014e402f9a4f",
+      "ref": "fb9556f2",
+      "quantity": 706,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "xs"
+    },
+    {
+      "id": "3f50c2cc-c177-43fe-b877-6241e0937965",
+      "ref": "b638ae09",
+      "quantity": 104,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "s"
+    },
+    {
+      "id": "40e14cbc-7703-4220-a76a-4ce4ac427b9b",
+      "ref": "7cc92b2a",
+      "quantity": 56,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu42"
+    },
+    {
+      "id": "41f0ab7a-f091-49ae-b7fb-f0527a16d7a6",
+      "ref": "c48c2fd1",
+      "quantity": 922,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "xs"
+    },
+    {
+      "id": "425604cf-7740-4e30-9940-9881af692f15",
+      "ref": "8733995a",
+      "quantity": 2982,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "xxl"
+    },
+    {
+      "id": "429eba85-6757-4ee3-8218-30241fdead0c",
+      "ref": "fe61e5b2",
+      "quantity": 2678,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "s"
+    },
+    {
+      "id": "4535f77b-43f0-4fb6-877c-5c5485362a99",
+      "ref": "cfded606",
+      "quantity": 2305,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "s"
+    },
+    {
+      "id": "470eedeb-f9af-473e-a05d-29420c209fc9",
+      "ref": "7d265f2f",
+      "quantity": 734,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu36"
+    },
+    {
+      "id": "47233ec0-89f8-460f-bb44-12192b006c9f",
+      "ref": "6672c9fb",
+      "quantity": 432,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "xs"
+    },
+    {
+      "id": "47d5df52-b504-485d-9e07-c1afb8a0d85f",
+      "ref": "794975",
+      "quantity": 1090,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "l"
+    },
+    {
+      "id": "482219ef-8487-4d97-8d4d-42eff5ec810a",
+      "ref": "16b12c27",
+      "quantity": 1010,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "m"
+    },
+    {
+      "id": "4a2ec259-9ddd-4848-bd12-2c08945a4d86",
+      "ref": "a4ebe53a",
+      "quantity": 2916,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "s"
+    },
+    {
+      "id": "4abe8075-8677-435e-b1eb-1cb6ed531b0c",
+      "ref": "161306",
+      "quantity": 834,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "m"
+    },
+    {
+      "id": "4ae35bd0-f03d-4d27-88cb-366062c7b150",
+      "ref": "f665505f",
+      "quantity": 2103,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "xxs"
+    },
+    {
+      "id": "4c040dee-7f5b-40e6-a329-05c7a5dbb443",
+      "ref": "a39b228e",
+      "quantity": 2664,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "l"
+    },
+    {
+      "id": "4c55bdd0-6ed7-4379-bda3-1724be16f0cd",
+      "ref": "4e5219e5",
+      "quantity": 727,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "xxl"
+    },
+    {
+      "id": "4d5ce2d0-4f3e-457a-9836-2bb65eec2e11",
+      "ref": "23e6e949",
+      "quantity": 711,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "m"
+    },
+    {
+      "id": "4d751c86-a6aa-458a-bbbd-b064eb173409",
+      "ref": "0167048e",
+      "quantity": 828,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "m"
+    },
+    {
+      "id": "4f37a198-a7e2-43e2-8751-06c8ecf0d956",
+      "ref": "1339597",
+      "quantity": 1740,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "m"
+    },
+    {
+      "id": "4f440708-b02a-453c-abd5-5b8c6ae7b50c",
+      "ref": "cd27ad51",
+      "quantity": 2998,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "xxl"
+    },
+    {
+      "id": "4f5c3264-123b-4e3d-8266-70e87f3dacd3",
+      "ref": "1169334",
+      "quantity": 1449,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "s"
+    },
+    {
+      "id": "4fcafa86-838e-48e8-8aad-262837f0367c",
+      "ref": "90275222",
+      "quantity": 317,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu36"
+    },
+    {
+      "id": "503801d6-ca96-44a4-b6ed-b12762027f11",
+      "ref": "b7c40710",
+      "quantity": 2552,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "l"
+    },
+    {
+      "id": "508f4209-b25e-4d52-8d9b-a1d947337714",
+      "ref": "07855e4e",
+      "quantity": 417,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "m"
+    },
+    {
+      "id": "5341c723-76af-4055-a290-b17b80e39b49",
+      "ref": "30b17bbb",
+      "quantity": 1459,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu44"
+    },
+    {
+      "id": "56201a2d-0106-4022-b3f8-85eea4fb3537",
+      "ref": "1e0cef3c",
+      "quantity": 1003,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "xxl"
+    },
+    {
+      "id": "56917c39-7414-46c5-9300-a6876d09dea2",
+      "ref": "0ad32e94",
+      "quantity": 428,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "xs"
+    },
+    {
+      "id": "56b6fc46-129c-4271-87d1-36c5525764cf",
+      "ref": "477f7f7e",
+      "quantity": 2935,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu46"
+    },
+    {
+      "id": "599cf9aa-0467-4791-b94c-f296076a815d",
+      "ref": "a9306aff",
+      "quantity": 2186,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "xxs"
+    },
+    {
+      "id": "5a086e38-fcde-4bb1-aee0-99d441798c5a",
+      "ref": "8621f356",
+      "quantity": 558,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "xs"
+    },
+    {
+      "id": "5a46f24f-7bc3-4da0-8789-8a2c56c2e3d2",
+      "ref": "1156448",
+      "quantity": 451,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "xs"
+    },
+    {
+      "id": "5b8c8a9c-7e6e-4131-8963-1405ab906c8d",
+      "ref": "9de92167",
+      "quantity": 504,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu34"
+    },
+    {
+      "id": "5c70faf5-ea53-4811-89a0-435c2c5b33b4",
+      "ref": "19bd7158",
+      "quantity": 1806,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu44"
+    },
+    {
+      "id": "5cc36734-f826-47fb-b378-59da4c44273e",
+      "ref": "5a180f78",
+      "quantity": 1545,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "xs"
+    },
+    {
+      "id": "5e930802-d5d2-4100-8b3d-f3b58468b757",
+      "ref": "4c968578",
+      "quantity": 60,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "xxl"
+    },
+    {
+      "id": "5ea0ffa7-8975-4d11-bc76-b6855f532b93",
+      "ref": "5c23b559",
+      "quantity": 2009,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "xl"
+    },
+    {
+      "id": "5f0c304f-d590-4825-87c8-d29c2c0598d8",
+      "ref": "67c601ea",
+      "quantity": 629,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "xl"
+    },
+    {
+      "id": "6043c2d5-8094-40f1-a2c5-154db72205e8",
+      "ref": "5990a05d",
+      "quantity": 1798,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "s"
+    },
+    {
+      "id": "61224732-4993-4059-9afa-ccf14eec0d58",
+      "ref": "1440557",
+      "quantity": 292,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "xl"
+    },
+    {
+      "id": "62beeff1-f6bd-41fe-9786-f02fdd47e731",
+      "ref": "2b892c06",
+      "quantity": 1268,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu38"
+    },
+    {
+      "id": "6336108b-02b7-417b-886d-47c4e59a277e",
+      "ref": "ca4cb226",
+      "quantity": 2164,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "xl"
+    },
+    {
+      "id": "63cca506-c44c-4d8a-8145-6095aeaaa273",
+      "ref": "9b2eea7c",
+      "quantity": 1996,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "s"
+    },
+    {
+      "id": "647a54ad-83f9-461a-9f50-ebe496682dbf",
+      "ref": "4e60babe",
+      "quantity": 2315,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "xxs"
+    },
+    {
+      "id": "67350da1-ec22-4684-8ea9-8afca5f10f4a",
+      "ref": "32537e50",
+      "quantity": 1087,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "l"
+    },
+    {
+      "id": "69df64ab-16f0-4345-9e8b-c9d41751a644",
+      "ref": "870867",
+      "quantity": 336,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "l"
+    },
+    {
+      "id": "6acf33c5-0096-4977-8aa6-c7f0b4e6bd17",
+      "ref": "e1564ffd",
+      "quantity": 429,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu32"
+    },
+    {
+      "id": "6bb193e9-93d2-4fe1-abe3-642ea451197b",
+      "ref": "df5b0ac6",
+      "quantity": 1123,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "l"
+    },
+    {
+      "id": "6cb2b718-5fbc-446e-8677-f56132465dd7",
+      "ref": "c3aeaf8a",
+      "quantity": 257,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "xxs"
+    },
+    {
+      "id": "6d5555d3-81b3-429d-ac33-ea89e90160dd",
+      "ref": "ed0e99c4",
+      "quantity": 759,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "xxl"
+    },
+    {
+      "id": "6d60bb80-d45c-4bf9-8744-b818968cd1de",
+      "ref": "df9c9f13",
+      "quantity": 827,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "m"
+    },
+    {
+      "id": "6e9fd73e-4c47-4b22-acb1-474f3e47d3cd",
+      "ref": "c27381f3",
+      "quantity": 1692,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu44"
+    },
+    {
+      "id": "70d27d1c-f829-4e5c-9317-6e58ff774542",
+      "ref": "16dce000",
+      "quantity": 1599,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu38"
+    },
+    {
+      "id": "717e415e-7097-469f-862d-5e38075ebbfa",
+      "ref": "fe2fe901",
+      "quantity": 562,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "xxl"
+    },
+    {
+      "id": "71d53a6a-9f89-41e2-9d2f-26bafc0cbbb1",
+      "ref": "36f9c213",
+      "quantity": 507,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "s"
+    },
+    {
+      "id": "731e1bcc-b269-4de0-9916-b95a83712596",
+      "ref": "95a32f14",
+      "quantity": 1302,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "s"
+    },
+    {
+      "id": "7357c0e4-bce5-439e-8171-593dc80087f9",
+      "ref": "84c48bc4",
+      "quantity": 2714,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "l"
+    },
+    {
+      "id": "751564ac-f776-461c-ba5c-4d1ac667f04a",
+      "ref": "eda962e1",
+      "quantity": 2139,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "xl"
+    },
+    {
+      "id": "76207e0b-7edb-4ce6-909f-bfab8709949a",
+      "ref": "ffdf85fe",
+      "quantity": 1138,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu32"
+    },
+    {
+      "id": "769e9daa-acb9-4db8-a6b5-fb99280b1302",
+      "ref": "7ddd7a45",
+      "quantity": 2891,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "xxs"
+    },
+    {
+      "id": "7b4196fc-8c8a-415c-bc61-c6bf1456c860",
+      "ref": "4d607ba0",
+      "quantity": 2822,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "xs"
+    },
+    {
+      "id": "7d39deea-72ba-4e00-968e-8f48e8ef398c",
+      "ref": "def60775",
+      "quantity": 1028,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu38"
+    },
+    {
+      "id": "7d92099e-397f-45d1-9dc3-c3baa2ab9d1f",
+      "ref": "1339504",
+      "quantity": 642,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "xxl"
+    },
+    {
+      "id": "7eea8dce-0617-4491-8147-732b569643f1",
+      "ref": "3e69940f",
+      "quantity": 1630,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "l"
+    },
+    {
+      "id": "7ef7edf5-66c5-4472-a3e7-4b0f1f51a35e",
+      "ref": "136d3d1a",
+      "quantity": 1429,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "xxl"
+    },
+    {
+      "id": "7fb2bcee-308e-4b14-8748-70952bd861ef",
+      "ref": "de0a1bb3",
+      "quantity": 1687,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "xs"
+    },
+    {
+      "id": "819064c0-d68a-4669-9106-dbef3cd3d53c",
+      "ref": "a0e18c85",
+      "quantity": 267,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "xl"
+    },
+    {
+      "id": "835c8002-023d-47c3-bc73-b48f151d858b",
+      "ref": "170f81cd",
+      "quantity": 448,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu42"
+    },
+    {
+      "id": "843a4e56-dd90-40d9-a394-dacbc88bb6e3",
+      "ref": "7a46bd3b",
+      "quantity": 1791,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "xxl"
+    },
+    {
+      "id": "85985ab4-aaf9-4170-ae4e-3a6ce86201c6",
+      "ref": "c22787f9",
+      "quantity": 2674,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu38"
+    },
+    {
+      "id": "89675601-c710-4647-9c6e-f90cced07332",
+      "ref": "1135262",
+      "quantity": 1798,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "xl"
+    },
+    {
+      "id": "899850ba-86fe-4a50-9d7e-58370565938c",
+      "ref": "f486a1b4",
+      "quantity": 787,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu40"
+    },
+    {
+      "id": "8a1d0846-2c86-491e-ba23-99ab126bb9bd",
+      "ref": "f3c8d086",
+      "quantity": 1607,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "xxs"
+    },
+    {
+      "id": "8b5e032c-30c1-4860-95ab-9606fc5dce02",
+      "ref": "f0a390f1",
+      "quantity": 668,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "xxl"
+    },
+    {
+      "id": "8b860af9-338e-4603-b102-15095bc00403",
+      "ref": "2966c8e4",
+      "quantity": 1809,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "s"
+    },
+    {
+      "id": "8bbb64dc-5fe2-4aad-97e2-f3234a2a47bd",
+      "ref": "4caa4f84",
+      "quantity": 286,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "m"
+    },
+    {
+      "id": "8ce15b17-c372-40ee-a9bf-d1a4f59a1e97",
+      "ref": "f43e045e",
+      "quantity": 2013,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "xxl"
+    },
+    {
+      "id": "8df5c43b-2ca8-48b8-896f-06f30a5f4fde",
+      "ref": "1523193",
+      "quantity": 1695,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "xl"
+    },
+    {
+      "id": "8e3b42d9-d8c1-4a87-aadb-f7ca967c8c33",
+      "ref": "ac9c6f27",
+      "quantity": 2562,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "xl"
+    },
+    {
+      "id": "8f6ca24e-5042-4718-b9c4-19a34c3d8451",
+      "ref": "c4b23362",
+      "quantity": 865,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "l"
+    },
+    {
+      "id": "908898e3-ee68-4e1b-9e6f-e080836c70c9",
+      "ref": "935c4c38",
+      "quantity": 2044,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "xl"
+    },
+    {
+      "id": "92020a2c-e762-4bf2-a8c1-58042f60efd5",
+      "ref": "654c9536",
+      "quantity": 1045,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu44"
+    },
+    {
+      "id": "927539ec-4906-43a3-a499-49987403469d",
+      "ref": "de801b97",
+      "quantity": 531,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "xxs"
+    },
+    {
+      "id": "932d7049-9336-48aa-9849-37a71ff10c52",
+      "ref": "5776ca7e",
+      "quantity": 2648,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "l"
+    },
+    {
+      "id": "935756eb-12c0-48f8-b5f5-eff0d93a8d56",
+      "ref": "bb4e0cf1",
+      "quantity": 444,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "xxs"
+    },
+    {
+      "id": "947e7e8c-11cb-4479-a818-d85ee09d5ef8",
+      "ref": "cc023b86",
+      "quantity": 1345,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "s"
+    },
+    {
+      "id": "95a2194e-406d-4528-b1cf-d0a572bd52ef",
+      "ref": "31fa4a42",
+      "quantity": 1881,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "xs"
+    },
+    {
+      "id": "97a68851-4d96-4361-bb5d-26e18b6d235e",
+      "ref": "a08b58bb",
+      "quantity": 227,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "xxs"
+    },
+    {
+      "id": "9827ac63-8bae-4d43-b836-57b3396e5784",
+      "ref": "b9215d33",
+      "quantity": 2848,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "l"
+    },
+    {
+      "id": "9b610a1e-bb68-4591-9368-6f4e3fb60b61",
+      "ref": "ab112018",
+      "quantity": 208,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "s"
+    },
+    {
+      "id": "9c206cf5-5849-4a0a-a0d4-065e80d90f7d",
+      "ref": "67bc9952",
+      "quantity": 661,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu40"
+    },
+    {
+      "id": "9c92c0aa-dabe-46b3-97a6-b311e8895b00",
+      "ref": "8d96cb46",
+      "quantity": 2162,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "l"
+    },
+    {
+      "id": "9d1c1c22-a73a-4c89-a99e-8366c91b62d2",
+      "ref": "343179",
+      "quantity": 1095,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "xxs"
+    },
+    {
+      "id": "9da98405-43f1-4e95-9f44-aea91c9c14eb",
+      "ref": "259eb7c7",
+      "quantity": 757,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "xxl"
+    },
+    {
+      "id": "9f013d49-614c-469d-b8f3-a56f9d8040da",
+      "ref": "c1901ee7",
+      "quantity": 2857,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "xxs"
+    },
+    {
+      "id": "a22b30d8-e166-4db1-8339-24008dc64589",
+      "ref": "a6a2bc3b",
+      "quantity": 269,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu46"
+    },
+    {
+      "id": "a238c384-c61e-4528-b7de-f0a8d3b81bc3",
+      "ref": "2121a0a5",
+      "quantity": 2542,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu44"
+    },
+    {
+      "id": "a2ce969b-7fa2-4f93-9e98-bab759089d8c",
+      "ref": "1958897",
+      "quantity": 63,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "xxs"
+    },
+    {
+      "id": "a4b7abae-5ba7-4d24-aa23-8573ecdc4bb4",
+      "ref": "a62a6e92",
+      "quantity": 2742,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "xs"
+    },
+    {
+      "id": "a76ba4a5-ed31-4d63-8396-d26feba4e4cb",
+      "ref": "e511832e",
+      "quantity": 581,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu46"
+    },
+    {
+      "id": "a76c457e-b825-4207-a5ab-40cb48d1fa89",
+      "ref": "dbfe3181",
+      "quantity": 2738,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "xxs"
+    },
+    {
+      "id": "a8221caa-d478-41c4-bf3d-eabbde446cdb",
+      "ref": "cd061d18",
+      "quantity": 515,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu34"
+    },
+    {
+      "id": "a9cd7484-2149-4d92-938e-f09b354ed868",
+      "ref": "5340e0bf",
+      "quantity": 1498,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "xs"
+    },
+    {
+      "id": "a9d20a78-4ebb-4960-8ff1-ba4f05648046",
+      "ref": "1470590",
+      "quantity": 815,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "l"
+    },
+    {
+      "id": "aa41dbfb-d09f-4c89-80c5-5bfe628ec0f2",
+      "ref": "049860cc",
+      "quantity": 2983,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu34"
+    },
+    {
+      "id": "aa9f235a-0c06-409c-8843-2749af5eb8e6",
+      "ref": "521947",
+      "quantity": 564,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "m"
+    },
+    {
+      "id": "ab14f6cd-26c4-4609-bc50-cef5cdea69bd",
+      "ref": "af3cdc6d",
+      "quantity": 59,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "m"
+    },
+    {
+      "id": "abbe72f3-86ce-4f8b-98e4-26e5b5f21f28",
+      "ref": "0ff7ca6d",
+      "quantity": 2374,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "m"
+    },
+    {
+      "id": "ac145cc5-4ac3-4428-8510-71af6fc61a95",
+      "ref": "af7ae9d2",
+      "quantity": 1754,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "xl"
+    },
+    {
+      "id": "ac7d1cc0-baf1-4f3b-a5f4-3f674967d995",
+      "ref": "018f803d",
+      "quantity": 1882,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "l"
+    },
+    {
+      "id": "acd18420-8006-486d-8126-e0a2c71b737f",
+      "ref": "679cbbe9",
+      "quantity": 2282,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "xl"
+    },
+    {
+      "id": "ad47871d-576c-4e92-b5e8-16ccf249b8c7",
+      "ref": "0f383944",
+      "quantity": 987,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "m"
+    },
+    {
+      "id": "ae73708c-ac21-4835-93f0-78127a1ce5f1",
+      "ref": "35a901de",
+      "quantity": 1598,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "m"
+    },
+    {
+      "id": "af25b6ba-3df9-41d6-ac18-b41eedc977d3",
+      "ref": "38ff111c",
+      "quantity": 14,
+      "productId": "38fdf25d-5ac0-4683-abad-f86e6d903a63",
+      "size": "xl"
+    },
+    {
+      "id": "b071bdaa-fead-4097-8ab6-6fa6db64ba94",
+      "ref": "a7f9a3c2",
+      "quantity": 468,
+      "productId": "d0c394b9-529d-4a78-887a-474e96a07053",
+      "size": "m"
+    },
+    {
+      "id": "b0add5a1-2773-41c8-919a-e2a70789f0fb",
+      "ref": "6c9eb857",
+      "quantity": 1805,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "m"
+    },
+    {
+      "id": "b1e63f3e-e2df-4092-b002-e6e32c9ddcb9",
+      "ref": "563fc211",
+      "quantity": 271,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "xl"
+    },
+    {
+      "id": "b1fcaa9e-a276-4809-9eb0-7c38932d027c",
+      "ref": "5f995254",
+      "quantity": 416,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "m"
+    },
+    {
+      "id": "b2287530-bb65-4408-9c75-1b669b1aa262",
+      "ref": "871575",
+      "quantity": 1483,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "xxs"
+    },
+    {
+      "id": "b24261b5-e2f6-4bde-97c4-dbc22cf696e9",
+      "ref": "12563d84",
+      "quantity": 1089,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "l"
+    },
+    {
+      "id": "b2cc8abc-a2fa-4b96-933e-5af96b235856",
+      "ref": "88556d9d",
+      "quantity": 406,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "m"
+    },
+    {
+      "id": "b3d1a336-6a46-4618-958c-676c990cbbad",
+      "ref": "e927d656",
+      "quantity": 2763,
+      "productId": "996baf7c-655e-4ccf-a1ed-46a9decc3782",
+      "size": "xxl"
+    },
+    {
+      "id": "b3fe386d-7aea-41af-aaa3-5a454dc6dd78",
+      "ref": "8925f6f4",
+      "quantity": 1553,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "m"
+    },
+    {
+      "id": "b471891b-db59-40b2-93e3-26fcd5f5781b",
+      "ref": "1898971",
+      "quantity": 1427,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "xxl"
+    },
+    {
+      "id": "b5c798ed-fda6-48eb-aa1d-45996b69771d",
+      "ref": "97745389",
+      "quantity": 35,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "xxl"
+    },
+    {
+      "id": "b6b3aea7-13d2-49d1-9ad5-46b585199273",
+      "ref": "ff62906c",
+      "quantity": 966,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu40"
+    },
+    {
+      "id": "b78366f9-d264-4c99-8d0c-1bd777c3ceb7",
+      "ref": "499606",
+      "quantity": 1427,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "xxl"
+    },
+    {
+      "id": "b7abd104-ae9a-42f6-8e46-841e0abe6393",
+      "ref": "2c0409c6",
+      "quantity": 1344,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu34"
+    },
+    {
+      "id": "b8cffe07-b957-4ded-8802-05cdc8c8a2b8",
+      "ref": "624e1b24",
+      "quantity": 2489,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "s"
+    },
+    {
+      "id": "b8e8f56a-9d35-49a9-b4a6-54168c061502",
+      "ref": "796290",
+      "quantity": 257,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "xxl"
+    },
+    {
+      "id": "b9a98349-e81f-4182-ad09-ca91f37a4e3c",
+      "ref": "fb3caf45",
+      "quantity": 549,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "xxl"
+    },
+    {
+      "id": "ba9c182f-4dc9-44fd-b6d2-852dd80d544e",
+      "ref": "56b69ad7",
+      "quantity": 2690,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "xl"
+    },
+    {
+      "id": "bae569ba-eebe-4936-adec-9d4a4eb25497",
+      "ref": "55a81f4b",
+      "quantity": 2191,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "m"
+    },
+    {
+      "id": "bb8c2c7f-9e4f-4412-a373-2713b6e59ba1",
+      "ref": "255325e2",
+      "quantity": 996,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "s"
+    },
+    {
+      "id": "bc7f2804-a340-4f3d-81b7-8afd387867d2",
+      "ref": "ed43acd4",
+      "quantity": 1730,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "s"
+    },
+    {
+      "id": "bd81d69d-45fb-4999-95cc-638b7a713226",
+      "ref": "1150495",
+      "quantity": 1910,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "s"
+    },
+    {
+      "id": "c0810f51-d0d9-4089-8ef2-87dbfdd63293",
+      "ref": "1324068",
+      "quantity": 1587,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "s"
+    },
+    {
+      "id": "c0b91062-e8a4-4045-a641-e1913b64df01",
+      "ref": "59762525",
+      "quantity": 2801,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu32"
+    },
+    {
+      "id": "c0ceabbf-2976-4220-8e69-37963297d775",
+      "ref": "4c386171",
+      "quantity": 1512,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "xl"
+    },
+    {
+      "id": "c119d28d-ec28-41c7-8b8d-4678bfd21669",
+      "ref": "a01b243f",
+      "quantity": 1866,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu38"
+    },
+    {
+      "id": "c25abf3f-050c-4a2b-b3dd-37219b8aa138",
+      "ref": "c3ac2276",
+      "quantity": 129,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "xxl"
+    },
+    {
+      "id": "c2a48b7a-b663-4ef7-a27d-99d5e73f1a32",
+      "ref": "13cdef3d",
+      "quantity": 39,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu46"
+    },
+    {
+      "id": "c35ea9e0-1116-4d4c-b9ab-760a776c16bc",
+      "ref": "755657ad",
+      "quantity": 647,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu34"
+    },
+    {
+      "id": "c3b1fa33-9964-4e55-919c-67ddaa07a5c0",
+      "ref": "603e9a45",
+      "quantity": 16,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "xxs"
+    },
+    {
+      "id": "c628437e-2f35-4666-bad9-d2abfc67776c",
+      "ref": "8ad4ab55",
+      "quantity": 2015,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "xs"
+    },
+    {
+      "id": "c6379f22-7490-452d-a0be-695233d06a61",
+      "ref": "1892409",
+      "quantity": 1633,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "xs"
+    },
+    {
+      "id": "c783e0c1-b6b2-4981-b27c-bb67cfb92464",
+      "ref": "34140562",
+      "quantity": 2034,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "xl"
+    },
+    {
+      "id": "c8606f09-eb2b-4767-ab87-230ed676bb5f",
+      "ref": "7b81d8bd",
+      "quantity": 573,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "xl"
+    },
+    {
+      "id": "c9adc37e-739c-42d4-8b47-3aa2521c1bdc",
+      "ref": "61e64a5f",
+      "quantity": 2866,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu40"
+    },
+    {
+      "id": "ca0284fe-08c4-4ff2-b3ba-6a1de2268427",
+      "ref": "aeae5df4",
+      "quantity": 1030,
+      "productId": "cfd90357-b19c-4738-81ae-e8508f31c0bd",
+      "size": "s"
+    },
+    {
+      "id": "cc7def2a-6964-42ee-b0a2-67628e80de40",
+      "ref": "2acba8b8",
+      "quantity": 962,
+      "productId": "f9d5a4e1-cf49-485b-bc63-35265454facf",
+      "size": "xxl"
+    },
+    {
+      "id": "ccab2970-1867-4046-ac4d-04731a932508",
+      "ref": "0b712ad3",
+      "quantity": 1635,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu42"
+    },
+    {
+      "id": "cd657e95-a77c-40cb-83cd-05c0f1403135",
+      "ref": "a49d6f5f",
+      "quantity": 2807,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "l"
+    },
+    {
+      "id": "ce4e6396-441c-4d82-b971-249934d2ef1d",
+      "ref": "56f0f548",
+      "quantity": 1630,
+      "productId": "12f7dae9-d25d-4fab-9ab8-2318353e89a9",
+      "size": "xxs"
+    },
+    {
+      "id": "cfe692c1-9a88-4f0c-b537-1a5ceddfadf2",
+      "ref": "943037",
+      "quantity": 1993,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "xxs"
+    },
+    {
+      "id": "d0467011-879f-4d01-a64a-b8806abdbe6b",
+      "ref": "881070f9",
+      "quantity": 1545,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "xxs"
+    },
+    {
+      "id": "d177846d-5b9b-4fd9-b3cc-67a5f9185fa8",
+      "ref": "1111399",
+      "quantity": 50,
+      "productId": "151a431d-7226-4153-a2cc-1d2c619e0a5b",
+      "size": "xs"
+    },
+    {
+      "id": "d1813038-501b-4858-af73-db69b211c1d7",
+      "ref": "ec8f30b2",
+      "quantity": 2046,
+      "productId": "377aabb3-fb6d-476b-aaf7-47866ab16967",
+      "size": "eu42"
+    },
+    {
+      "id": "d1a4489c-120a-4960-9503-f8e8a2e88a2e",
+      "ref": "756185",
+      "quantity": 1812,
+      "productId": "eecccb6d-d13b-414c-ab6a-a72ea7b7fb4d",
+      "size": "xxs"
+    },
+    {
+      "id": "d31f70f4-debe-4b7e-8b90-b61fd29d2477",
+      "ref": "1341429",
+      "quantity": 791,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "xs"
+    },
+    {
+      "id": "d4335d36-18e6-4708-a616-11d91f72d386",
+      "ref": "428385",
+      "quantity": 1875,
+      "productId": "ea03b984-e429-4696-8765-a1fd32ad1d8a",
+      "size": "l"
+    },
+    {
+      "id": "d5071c53-d917-4c38-8c06-7166b89611b3",
+      "ref": "2295bcab",
+      "quantity": 668,
+      "productId": "35abdc9b-9ae1-4c25-ae9f-81c4ed68b17d",
+      "size": "eu32"
+    },
+    {
+      "id": "d64ba9c5-6e14-4047-b3c9-f4039012f7bc",
+      "ref": "2d3346b5",
+      "quantity": 1301,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "xxs"
+    },
+    {
+      "id": "d65a6cd0-fabd-418d-b766-d2f99ea1dfcd",
+      "ref": "9c6e0a7e",
+      "quantity": 2712,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "xs"
+    },
+    {
+      "id": "d6a50aa8-0c75-4cac-a3c9-e8a05f421ddc",
+      "ref": "da27436e",
+      "quantity": 830,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "s"
+    },
+    {
+      "id": "d734b67a-def6-4a03-b40a-3a9839344182",
+      "ref": "1554117",
+      "quantity": 1666,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "l"
+    },
+    {
+      "id": "d80aca3f-ac32-49a9-a578-ecf3226501ee",
+      "ref": "52ab5c5c",
+      "quantity": 1602,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "xxs"
+    },
+    {
+      "id": "d824471a-b5ce-4997-b170-a89d14d902b9",
+      "ref": "c83ebc9c",
+      "quantity": 1060,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "s"
+    },
+    {
+      "id": "d961ea87-6bdc-4f76-ae1f-3190718e7fd8",
+      "ref": "c91ef9ed",
+      "quantity": 1314,
+      "productId": "fbc075f1-3a7b-4fa8-9cb0-9d1c552f3364",
+      "size": "xxl"
+    },
+    {
+      "id": "d98421f3-6805-4518-921f-3728d175df59",
+      "ref": "66982e32",
+      "quantity": 53,
+      "productId": "e2d1da71-cb79-475b-b0fa-ff67c4c718e3",
+      "size": "eu44"
+    },
+    {
+      "id": "da4a48dd-7fef-4c6c-8b58-c8ae750bccbb",
+      "ref": "1918697",
+      "quantity": 444,
+      "productId": "eb7accf0-0025-44c7-a008-c777707cded8",
+      "size": "m"
+    },
+    {
+      "id": "db8dd69e-501a-42ae-8ace-a24ad850e416",
+      "ref": "b8298e1b",
+      "quantity": 1991,
+      "productId": "a5b42fc5-5489-4cd9-aadf-d261106fa9cf",
+      "size": "l"
+    },
+    {
+      "id": "dd1a5e6d-89be-4909-84b3-7f454585d8d0",
+      "ref": "1354510",
+      "quantity": 826,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "s"
+    },
+    {
+      "id": "dd291ad2-30ee-4f0e-b201-7c17659b5631",
+      "ref": "9bee20eb",
+      "quantity": 553,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "s"
+    },
+    {
+      "id": "ddb3a74b-5ab1-4511-a332-63cde2c9ca7c",
+      "ref": "950e28b5",
+      "quantity": 1191,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "xxl"
+    },
+    {
+      "id": "e0a1b76d-d8e9-4f22-949a-3114aec97203",
+      "ref": "302675ac",
+      "quantity": 1978,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "xxl"
+    },
+    {
+      "id": "e0a6314e-7715-42a5-ab24-7312baad7119",
+      "ref": "fe9a7d21",
+      "quantity": 1457,
+      "productId": "53ce6b0c-7f7a-47cf-85d9-5993772c2227",
+      "size": "xs"
+    },
+    {
+      "id": "e1b2f0f3-9aa2-4878-9364-89af494d77a1",
+      "ref": "da61abb8",
+      "quantity": 1271,
+      "productId": "c2257db7-1821-454d-8498-9df24f9f7408",
+      "size": "eu42"
+    },
+    {
+      "id": "e1c67eab-f33d-499e-9deb-042a4e0d46b5",
+      "ref": "55e9f516",
+      "quantity": 2136,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu36"
+    },
+    {
+      "id": "e2555a26-09c7-408f-b36b-a3b65a63db5d",
+      "ref": "71578b88",
+      "quantity": 1213,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "xxl"
+    },
+    {
+      "id": "e2c82ab4-d448-4443-b957-c0047d7d3703",
+      "ref": "7e68f827",
+      "quantity": 2320,
+      "productId": "c23d69ba-e9af-4f65-82b3-31f03622314d",
+      "size": "xxs"
+    },
+    {
+      "id": "e3450758-b19f-4af8-9083-c5e5a4c8f8cc",
+      "ref": "a9bebac7",
+      "quantity": 2397,
+      "productId": "c20c19e9-57d2-4a22-969c-020663dc9607",
+      "size": "xxs"
+    },
+    {
+      "id": "e37b873a-c5eb-4dc7-b1e6-a2f7da32ea94",
+      "ref": "e57888ea",
+      "quantity": 2959,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "xl"
+    },
+    {
+      "id": "e3f98c2f-5a21-45e5-85d4-c18ad8f51424",
+      "ref": "83e3a390",
+      "quantity": 1558,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "l"
+    },
+    {
+      "id": "e3fafa1e-525c-4891-8d25-08bfd097c1c2",
+      "ref": "eddff1ac",
+      "quantity": 1843,
+      "productId": "b1269897-6c29-4b34-a5df-c5c457df7c8d",
+      "size": "m"
+    },
+    {
+      "id": "e7126dcf-e1f0-47db-9a13-9f33f4fef5a7",
+      "ref": "4112b653",
+      "quantity": 2439,
+      "productId": "de6477a5-eb4b-4f8b-aeb1-0cc8247e6fd4",
+      "size": "m"
+    },
+    {
+      "id": "e7a2dec5-2557-4513-a84d-97d32874f386",
+      "ref": "64397752",
+      "quantity": 1383,
+      "productId": "edc7b52b-d599-4c3d-b2c1-8d4565b12e90",
+      "size": "l"
+    },
+    {
+      "id": "e8cefb7f-ebee-4bd4-9a30-043a245e7b32",
+      "ref": "f47f084c",
+      "quantity": 1455,
+      "productId": "f0f1ddad-ae8f-4a16-9712-b94dbff613e4",
+      "size": "xs"
+    },
+    {
+      "id": "e8d2df8d-d072-4863-907a-2b3692cb3df8",
+      "ref": "31871e83",
+      "quantity": 1262,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "xl"
+    },
+    {
+      "id": "e9a4601e-0351-4aa7-8808-4b578f45591b",
+      "ref": "128170",
+      "quantity": 452,
+      "productId": "0fc82dc6-6d29-409b-94d7-d53b9040935a",
+      "size": "xs"
+    },
+    {
+      "id": "e9b86413-75d1-42c4-9a2a-98da67176803",
+      "ref": "f8b50ae9",
+      "quantity": 1261,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "s"
+    },
+    {
+      "id": "e9ccc6ac-77b0-4b85-a571-fc6fea183cd9",
+      "ref": "3fd8f055",
+      "quantity": 1618,
+      "productId": "c9137c58-8ebe-40b9-bcf7-85289458e6e7",
+      "size": "eu32"
+    },
+    {
+      "id": "ecbb618e-1dea-4d03-bcf5-619988ef0b5b",
+      "ref": "dfcfdc48",
+      "quantity": 299,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "xl"
+    },
+    {
+      "id": "ed76ef88-97c8-4c8b-a46e-65ce5b63c3b0",
+      "ref": "55bc2398",
+      "quantity": 1615,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "l"
+    },
+    {
+      "id": "eea2be0e-d2eb-42f9-943d-e7b9e3919eca",
+      "ref": "02efd82d",
+      "quantity": 629,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "l"
+    },
+    {
+      "id": "eea54350-0bcc-4a04-a3c8-cc1b88af022f",
+      "ref": "70d10c82",
+      "quantity": 2441,
+      "productId": "be132d6c-560d-46b7-ab25-cc006bb38a09",
+      "size": "xl"
+    },
+    {
+      "id": "ef3ec5a3-d73a-4b5f-a1ad-3a12dbc8e701",
+      "ref": "1706022",
+      "quantity": 1270,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "xl"
+    },
+    {
+      "id": "f09ddc2f-479b-440b-9d3f-6b9170015e7d",
+      "ref": "a0dfe5be",
+      "quantity": 540,
+      "productId": "f5f9c0d9-1bdc-40dd-9588-a19303b7852e",
+      "size": "s"
+    },
+    {
+      "id": "f22a06f1-24a2-488f-a83c-c1ecd921eaf0",
+      "ref": "0bd9a149",
+      "quantity": 1627,
+      "productId": "7d710d41-2ef1-4ed9-99ca-b64364c750e0",
+      "size": "xs"
+    },
+    {
+      "id": "f2a918fd-61ef-4f80-8f0b-7145d6751795",
+      "ref": "ea2f33c9",
+      "quantity": 2130,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu42"
+    },
+    {
+      "id": "f33480f4-9377-4f7c-ae32-20e3126132fd",
+      "ref": "52a8f838",
+      "quantity": 763,
+      "productId": "ea72e5b5-c43a-40e2-8a7f-cd8afeb66c99",
+      "size": "eu34"
+    },
+    {
+      "id": "f37e03f7-d373-41ac-9645-d327fa072a7c",
+      "ref": "962a9f67",
+      "quantity": 883,
+      "productId": "15572c0e-6278-46fc-bfa9-139d991cb415",
+      "size": "s"
+    },
+    {
+      "id": "f3aa431f-65cd-477e-b3b2-8f039fc2bbe5",
+      "ref": "ead0dc0b",
+      "quantity": 630,
+      "productId": "385385df-114e-4050-afa0-0dce42b14901",
+      "size": "xs"
+    },
+    {
+      "id": "f3f1fe1f-e3c6-4f79-9c2e-8bac773e5302",
+      "ref": "d66407be",
+      "quantity": 1870,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "m"
+    },
+    {
+      "id": "f4cd288f-f2ee-4bea-9df0-27ee4b67eb3a",
+      "ref": "b7c0dfc6",
+      "quantity": 1985,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "xs"
+    },
+    {
+      "id": "f813b3aa-3330-4654-936b-c02996023727",
+      "ref": "9f70c30e",
+      "quantity": 1557,
+      "productId": "79123189-b3f9-4d24-87de-674efa7e3e0c",
+      "size": "l"
+    },
+    {
+      "id": "fa57568c-48e8-46ef-8dfe-9425381424b0",
+      "ref": "e4530ad8",
+      "quantity": 1269,
+      "productId": "220a08a4-b861-40c3-833c-1c23ea66198c",
+      "size": "l"
+    },
+    {
+      "id": "fc65e614-73d7-4dd7-bf38-7a5fe34b0058",
+      "ref": "ccf315d4",
+      "quantity": 1086,
+      "productId": "bb7ece30-b428-4f18-8b6d-ddfafddda9c6",
+      "size": "xxl"
+    },
+    {
+      "id": "fcb584ee-2108-40df-91f5-e42d19df9fb2",
+      "ref": "2fe3ef61",
+      "quantity": 292,
+      "productId": "15772c34-e0d7-4790-965a-69563312cd63",
+      "size": "s"
+    },
+    {
+      "id": "fd04cb40-8dd4-4a38-8265-920854825d94",
+      "ref": "394058",
+      "quantity": 1892,
+      "productId": "177c6911-e6af-4cd3-8e67-4679f9d16e4b",
+      "size": "xs"
+    },
+    {
+      "id": "fd0a6441-ce0c-4d45-92ac-52b868c9c73b",
+      "ref": "f961c923",
+      "quantity": 702,
+      "productId": "e404bad5-2b87-4d01-979e-535e5d9dd965",
+      "size": "xs"
+    },
+    {
+      "id": "ffa85e50-9e21-468a-a427-9bf1378c9aa8",
+      "ref": "34b9c70a",
+      "quantity": 2110,
+      "productId": "89271e23-dda3-4446-a44d-28789b01c610",
+      "size": "xxs"
+    },
+    {
+      "id": "ffaad4a3-3e6f-400b-9046-186ef210742b",
+      "ref": "5ad01778",
+      "quantity": 633,
+      "productId": "0872c3cc-909c-4f45-b59d-4a5c370c87ef",
+      "size": "m"
+    }
+  ],
+  "texts": [
+    {
+      "id": "00374c88-170c-4a60-a740-2028575f4482",
+      "FR": "Pull rayé",
+      "EN": "Striped pullover"
+    },
+    {
+      "id": "0410bee2-a284-4fe0-a43a-40fbf48afe35",
+      "FR": "Cela demande beaucoup d’organisation, car il y a une quantité d’informations colossale à ingurgiter. Et puis, des cours aussi intensifs et intégralement en anglais ! Associés à une vie de famille confinée et particulièrement animée, ça ne fait pas forcément bon ménage. Non seulement on apprend beaucoup de choses, mais on apprend aussi beaucoup sur nous-même et on se découvre une immense capacité d’apprentissage et de persévérance.",
+      "EN": "It takes a lot of organization, because there is a huge amount of information to take in. And then, such intensive courses and entirely in English! Combined with a confined and busy family life, this is not a good combination. Not only do you learn a lot, but you also learn a lot about yourself and you discover an immense capacity for learning and perseverance."
+    },
+    {
+      "id": "080edc80-d0c1-4bfa-a9b9-caa0362141bd",
+      "FR": "Noël, c'est fini !",
+      "EN": "Winter is over !"
+    },
+    {
+      "id": "085a4a54-0bbb-487a-94d3-79a6a5fd929f",
+      "FR": "Parcours atypique d'un ancien chauffeur de bus devenu développeur web...",
+      "EN": "Atypical path of a former bus driver turned web developer..."
+    },
+    {
+      "id": "09d3530d-7384-4819-8b75-532c7738bba4",
+      "FR": "Pull vert",
+      "EN": "Spring sweater"
+    },
+    {
+      "id": "0a850a5d-4202-4b02-b7aa-160e51a14376",
+      "FR": "De joli fleur sur ce t-shirt décontracté pour chiller tout l'été et bien au delà.",
+      "EN": "Pretty flowers on this casual t-shirt to chill out all summer and beyond."
+    },
+    {
+      "id": "0c5ed04b-71ce-4f2a-aec8-45bb35ceb316",
+      "FR": "J’ai fait beaucoup de recherches sur les différentes formations et choisi un cursus spécialisé dans les technologies MERN (Mongo, Express, React, Node) qui sont très appréciées et recherchées dans le développement web. C’était important pour moi d’opter pour un cursus court et accessible, certes, mais il me tenait aussi à cœur d’avoir tous les outils nécessaires pour trouver du travail rapidement derrière. Je voulais quelque chose de professionnalisant.",
+      "EN": "I did a lot of research on the different courses and chose a course specialized in MERN technologies (Mongo, Express, React, Node) which are very appreciated and sought after in web development. It was important for me to choose a short and accessible course, but I also wanted to have all the necessary tools to find a job quickly. I wanted something professional."
+    },
+    {
+      "id": "0ddc5345-3c33-43d6-bc77-b7dc8aea24c6",
+      "FR": "Pull ajusté noir à col rond. Un style classique parfait pour sortir de l'hiver en douceur.",
+      "EN": "Black fitted sweater with round neck. A classic style perfect to get out of winter."
+    },
+    {
+      "id": "0e584725-c08a-4912-949e-cc8e8aedd9ad",
+      "FR": "Petit short",
+      "EN": "Tiny shorts"
+    },
+    {
+      "id": "0f1ba8ad-e3ba-4937-9d62-851fd05e48f2",
+      "FR": "Jean fuselé bleu avec effet usé pour homme. Pour un style à la fois décontracté et habillé.",
+      "EN": "Blue tapered jeans with worn effect for men. For a style that is both casual and dressy."
+    },
+    {
+      "id": "13358164-c588-4976-86c6-f4db2a7297e5",
+      "FR": "Je ne remercierai jamais assez l’équipe d’Ironhack (Tati, Nina, Frank, Katya, Morgane, Manon), mais aussi toute ma promo avec qui j’ai créé des liens forts, Fleet pour être les premiers à m’ouvrir les portes de cet univers ô combien riche, et évidemment mes proches et surtout ma femme pour m’avoir soutenu et avoir su répondre à toutes mes questions et mes doutes. Il faut être bien entouré pour accomplir un tel changement !",
+      "EN": "I will never thank enough the Ironhack team (Tati, Nina, Frank, Katya, Morgane, Manon), but also all my class with whom I created strong links, Fleet for being the first to open the doors of this universe so rich, and of course my close relations and especially my wife for having supported me and for having known how to answer all my questions and my doubts. You have to be well surrounded to accomplish such a change!"
+    },
+    {
+      "id": "14fe3f2e-aef5-43cf-9253-dbba37d23cf3",
+      "FR": "Tshirt noir",
+      "EN": "Black Tee"
+    },
+    {
+      "id": "15882afa-6fbe-4fdf-82d1-7281a4af3110",
+      "FR": "Sweat à capuche",
+      "EN": "Hoodies"
+    },
+    {
+      "id": "160f85ba-569b-45dc-9428-cfecb9efba5a",
+      "FR": "Accessoires indispensables",
+      "EN": "Must-have accessories"
+    },
+    {
+      "id": "1931efb8-29ab-44b6-85c2-a2339cc3f02b",
+      "FR": "Urbain et décontracté avec ce swear à capuche relax zippé pour accompagner tous vos styles en toute occasion.",
+      "EN": "Urban and casual with this relaxed zipped hoodie to accompany all your styles in any occasion."
+    },
+    {
+      "id": "1a2a8137-c4e1-4fde-aafd-dfe9ec2c42c9",
+      "FR": "Sweat orange",
+      "EN": "Orange sweatshirt"
+    },
+    {
+      "id": "1a61872a-af9b-4413-9c00-fa27ae78f1e0",
+      "FR": "Je ne remercierai jamais assez l’équipe d’Ironhack (Tati, Nina, Frank, Katya, Morgane, Manon), mais aussi toute ma promo avec qui j’ai créé des liens forts, Fleet pour être les premiers à m’ouvrir les portes de cet univers ô combien riche, et évidemment mes proches et surtout ma femme pour m’avoir soutenu et avoir su répondre à toutes mes questions et mes doutes. Il faut être bien entouré pour accomplir un tel changement !",
+      "EN": "I will never thank enough the Ironhack team (Tati, Nina, Frank, Katya, Morgane, Manon), but also all my class with whom I created strong links, Fleet for being the first to open the doors of this universe so rich, and of course my close relations and especially my wife for having supported me and for having known how to answer all my questions and my doubts. You have to be well surrounded to accomplish such a change!"
+    },
+    {
+      "id": "1d3d256f-ae64-4090-8e35-17e54e8b82cd",
+      "FR": "Tshirt décontracté",
+      "EN": "Casual Tshirt"
+    },
+    {
+      "id": "1e121633-139f-46f3-9c21-79fbd7e69a5a",
+      "FR": "Basic. Classique. Essentiel. Indémodable. Le must-have pour tout le monde",
+      "EN": "Basic. Classic. Essential. Timeless. The must-have for everyone"
+    },
+    {
+      "id": "201a4078-63dd-4d34-be9f-7276eafe6b58",
+      "FR": "Toutes les jupes !",
+      "EN": "Skirts only !"
+    },
+    {
+      "id": "2088e1ba-82fa-475d-910c-718e0165e9c1",
+      "FR": "T-shirt épais",
+      "EN": "Thick T-shirt"
+    },
+    {
+      "id": "245e0d24-0e4a-454d-92df-de52559b21df",
+      "FR": "T-shirt casual gris à col rond avec imprimé noir",
+      "EN": "Grey casual t-shirt with round neck and black print"
+    },
+    {
+      "id": "2b7bdb83-a66d-4596-bc7b-a67bc90ba79e",
+      "FR": "Pull slim à rayures horizontales classic, sobre et indémodable.",
+      "EN": "Slim-fit sweater with classic horizontal stripes, sober and timeless."
+    },
+    {
+      "id": "2c591a91-e168-48ca-aab8-f025146292ed",
+      "FR": "Jogger marron",
+      "EN": "Cozy jogger"
+    },
+    {
+      "id": "30c2f309-1817-4186-b4d1-f430cce340d2",
+      "FR": "Pull ajusté",
+      "EN": "Fitted sweater"
+    },
+    {
+      "id": "337520cb-4e23-4f12-9c81-bfa287d37331",
+      "FR": "Ce petit truc qui fait toute la différence peu importe ton style. Assurément accessoire. Absolument indispensable.",
+      "EN": "That little thing that makes all the difference no matter what your style. Definitely accessory. Absolutely essential."
+    },
+    {
+      "id": "35aa3790-84e4-4528-8fff-cc88ebfdf466",
+      "FR": "Chemise printanière",
+      "EN": "Springtime Shirt"
+    },
+    {
+      "id": "35b19a98-fca7-4ea4-9231-55f14a5b4b8e",
+      "FR": "Chemise blanche ample façon dentelle avec noeud devant",
+      "EN": "Loose lace-like white shirt with front bow"
+    },
+    {
+      "id": "360f94be-cea0-4502-abb3-a9cdbd2a4181",
+      "FR": "Jean skinny blue clair avec effet usé. Un classique indémodable.",
+      "EN": "Light blue skinny jeans with worn effect. A timeless classic."
+    },
+    {
+      "id": "38969fa7-7ecb-4bb1-9afd-75c77a965033",
+      "FR": "Pull à rayures",
+      "EN": "Striped sweater"
+    },
+    {
+      "id": "38de5b19-3dac-4578-a58c-634981dd1f2f",
+      "FR": "Le t-shirt, la base...",
+      "EN": "Basic Tee..."
+    },
+    {
+      "id": "39217e66-9b99-48b8-973b-5631029c65a8",
+      "FR": "chemise rayée",
+      "EN": "striped shirt"
+    },
+    {
+      "id": "39b8e285-4743-4519-8a6d-12dcea92db3c",
+      "FR": "Sweat polaire blue marine douillet, pour un style urbain assuré même en hiver.",
+      "EN": "Cozy navy blue fleece sweater, for an assured urban style even in winter."
+    },
+    {
+      "id": "3fa620de-301b-4206-acc4-5faf0a8b0d66",
+      "FR": "T-shirt imprimé",
+      "EN": "Printed tee"
+    },
+    {
+      "id": "43f8c13d-8f77-419a-8c97-94d1c8d548e9",
+      "FR": "Tshirt structuré",
+      "EN": "Structured Tshirt"
+    },
+    {
+      "id": "48e74957-f73d-43b5-8b03-26570c91871c",
+      "FR": "T-shirt oversize gris anthracite avec surpiqûre blanches pour style urbain",
+      "EN": "Charcoal gray oversized T-shirt with white stitching for urban style"
+    },
+    {
+      "id": "4a026ff7-0b4d-4c8a-9129-057b43c91c11",
+      "FR": "Chemise à carreaux",
+      "EN": "Checkered shirt"
+    },
+    {
+      "id": "4ad22c0d-0673-4677-b087-a338e18fee42",
+      "FR": "Oui, mais les cadeaux, non ! Selection d'articles d'hiver à prix fracassé...",
+      "EN": "Yes, but gifts, no! Selection of winter items at knock-down prices..."
+    },
+    {
+      "id": "52e7924e-1776-4f39-b3f5-c8fcb669114d",
+      "FR": "Pull en maille à motif pour femme couleur blanc cassé. Classique et ajusté. Parfait pour compléter tout vos styles.",
+      "EN": "Women's patterned knit sweater in off-white. Classic and fitted. Perfect to complete all your styles."
+    },
+    {
+      "id": "554cabc2-7ed0-446e-ac38-c4542d4be381",
+      "FR": "Chino regular",
+      "EN": "Regular chino"
+    },
+    {
+      "id": "55a6ba2c-d45e-4621-aa27-ba40a86ae081",
+      "FR": "Une couleur néon idéale pour des journées ensoleillés au bord de la piscine ou sur la plage.",
+      "EN": "A neon color ideal for sunny days by the pool or on the beach."
+    },
+    {
+      "id": "5612ca9f-ec7e-4002-b5c9-4bf5823d5f23",
+      "FR": "J’apprécie beaucoup la marge de progression infinie que j’aie : je n’ai jamais fini d’apprendre ! J’ai l’opportunité d’entreprendre sans cesse des missions nouvelles, en étant à la fois à l’écoute des utilisateurs et à la pointe de la technologie. Je ne pensais pas que être capable d’apprendre autant de choses aussi complexes et en si peu de temps. J’ai aussi réalisé que j’étais plus patient que je ne le pensais, que je savais me remettre en question, aller de l’avant. Et ce n’est que le début !",
+      "EN": "I really appreciate the infinite room for improvement I have: I'm never done learning! I have the opportunity to constantly undertake new missions, while being both attentive to users and at the cutting edge of technology. I never thought I would be able to learn so much in such a short time. I also realized that I was more patient than I thought, that I knew how to question myself, to move forward. And this is only the beginning!"
+    },
+    {
+      "id": "5c742c3c-b71c-49bb-8e72-c9c3ce54b08f",
+      "FR": "Petite chemise légère blanche avec grande encolure. Parfait pour l'été qui approche. Leger effet froissé et transparence sur la partie basse. Ajustement décontracté pour style bohème.",
+      "EN": "Small light white shirt with large neckline. Perfect for the upcoming summer. Light crumpled effect and transparency on the lower part. Casual fit for bohemian style."
+    },
+    {
+      "id": "5fdde55c-1985-437a-b816-5150b6c5b2ad",
+      "FR": "Pantalon chino beige style regular pour homme. Classic mais indispensable.",
+      "EN": "Beige chino pants regular style for men. Classic but essential."
+    },
+    {
+      "id": "6677f781-9ebe-4086-b127-7606c1f211c5",
+      "FR": "Pull pourpre",
+      "EN": "Purple sweater"
+    },
+    {
+      "id": "696cb688-4d3a-496f-a6bc-a5347e941130",
+      "FR": "Mini short blue clair avec effet chiné sur le devant et déchiré sur les jambières.",
+      "EN": "Light blue mini shorts with mottled effect on the front and ripped on the legs."
+    },
+    {
+      "id": "6dee90cd-0844-4aff-bd4b-aad9658bb367",
+      "FR": "Collection de sweats à capuche pour un style urbain assuré.",
+      "EN": "Collection of hoodies for an assured urban style."
+    },
+    {
+      "id": "7266f0e0-283e-45f8-a711-a372bcaf6238",
+      "FR": "T-shirt imprimé",
+      "EN": "Printed tee"
+    },
+    {
+      "id": "79a1ec4e-40b9-41ef-9ddf-fe17c3b9d2a8",
+      "FR": "À col rond, en v, col large, à manches courtes ou longues, ou pas de manches du tout, il t'en faut forcément au moins un !",
+      "EN": "Round neck, v-neck, wide neck, short or long sleeves, or no sleeves at all, you need at least one!"
+    },
+    {
+      "id": "7b5b5d61-b13c-401a-8237-396c0b9a8b65",
+      "FR": "T-shirt rose ample épais à col rond",
+      "EN": "Thick pink round neck T-shirt"
+    },
+    {
+      "id": "7e81b17a-810e-4ffc-94b5-51c19070d994",
+      "FR": "La petite robe noire, ou rouge...",
+      "EN": "The little black dress, or red..."
+    },
+    {
+      "id": "816de312-9468-4181-b60d-32d0e557df1e",
+      "FR": "Mini jupe noir à plie. Du style au bureau. Sérieuse mais pas trop",
+      "EN": "Mini skirt black pleated. Style in the office. Serious but not too much"
+    },
+    {
+      "id": "8211ae56-ace3-42a3-b1a4-9317c3b9990d",
+      "FR": "Pull en maille de couleur pourpre. Confortable et douillet. Sa taille ajustée est parfaite pour se réchauffer avec style",
+      "EN": "Purple knit sweater. Comfortable and cozy. Its fitted waist is perfect to warm up with style"
+    },
+    {
+      "id": "821a9288-4f89-4653-96b9-7891501b0f32",
+      "FR": "Pull en maille vert ajusté et col en V. Un style classique parfait pour accueillir l'hiver.",
+      "EN": "Green knit sweater with V-neck. A classic style perfect to welcome winter."
+    },
+    {
+      "id": "861603c6-e411-4619-911b-c4cc8efa4c5d",
+      "FR": "Chemise à parure rayée décontractée pour les working girls (mais pas trop).",
+      "EN": "Casual striped shirt for working girls (but not too much)."
+    },
+    {
+      "id": "86c0d220-6a1e-4483-b6fa-242ebed986be",
+      "FR": "À propos de moi",
+      "EN": "About me"
+    },
+    {
+      "id": "8c4befb9-1242-403b-99ba-0a8885bf1562",
+      "FR": "T-shirt noir imprimé tout en longueur",
+      "EN": "Black full-length printed T-shirt"
+    },
+    {
+      "id": "8e4155ea-2fd2-4808-8c7d-e1b8219b4ba6",
+      "FR": "Ça faisait presque dix ans que j’occupais mon poste de chauffeur de bus. J’étais confortablement installé dans ma profession, j’avais mes petites routines. Tous les matins, je saluais mes collègues, je faisais le tour du bus et je prenais la route. J’appréciais mon quotidien, quand en 2017, alors que je me rendais sur mon lieu de travail ju un accident de la route, je ne pouvais alors plus continuer d’exercer mon métier…",
+      "EN": "I had been working as a bus driver for almost ten years. I was comfortable in my profession, I had my little routines. Every morning, I greeted my colleagues, went around the bus and took the road. I was enjoying my daily life, when in 2017, while I was on my way to work I had a car accident, and I could no longer continue my job..."
+    },
+    {
+      "id": "92995fe4-ae2f-4392-b2ab-e79e48360960",
+      "FR": "Poum Poum Short",
+      "EN": "Tiny Mini Shorts"
+    },
+    {
+      "id": "9327aeb4-ac5a-4416-81c7-cb57f101907c",
+      "FR": "Pull en mailles ajusté à rayure. Idéal pour rester au chaud avec style.",
+      "EN": "Fitted knit sweater with stripes. Ideal for staying warm in style."
+    },
+    {
+      "id": "93a9231c-6f4d-41b2-812e-3976bf5ee28b",
+      "FR": "Sweat en polaire ample à capuche. Confortable est douillet. Un style urbain assuré.",
+      "EN": "Loose fleece hoodie. Comfortable and cozy. Urban style guaranteed."
+    },
+    {
+      "id": "94f97668-3d2b-429b-9363-46c33bc34fc1",
+      "FR": "Jean carrot troué avec empiècement pour un style décontracté.",
+      "EN": "Carrot jeans with holes and yoke for a casual style."
+    },
+    {
+      "id": "966384cd-17f7-46d9-8e96-85abb7837d6e",
+      "FR": "Sweat noir à imprimé flèches blanches. Un style oversize, un design over-stylé ",
+      "EN": "Black sweatshirt with white arrow print. An oversized style, an over-styled design "
+    },
+    {
+      "id": "98c54cf7-bee0-48dd-9c71-11ff0e2353c4",
+      "FR": "Petite collection de shorts pour te faire tourner les têtes, sur la plage, au bord de la piscine... bref, n'importe où !",
+      "EN": "Small collection of shorts to make you turn heads, on the beach, by the pool ... in short, anywhere!"
+    },
+    {
+      "id": "9901d798-6f53-4ec2-8861-ffd7e26e006e",
+      "FR": "Hoodies pour les Homies",
+      "EN": "Hoodies for Homies"
+    },
+    {
+      "id": "99360046-ac1d-43bf-95ae-9928716ca8a6",
+      "FR": "T-shirt cool jaune pour homme avec imprimé de couleur vive",
+      "EN": "Cool yellow T-shirt for men with brightly colored print"
+    },
+    {
+      "id": "9cf06f30-5c47-4d5e-a675-426f522390eb",
+      "FR": "T-shirt blanc à imprimé. Le compagnon idéal de vos randonné, ou vos brunch entre amis.",
+      "EN": "White T-shirt with print. The ideal companion for your hikes, or your brunch with friends."
+    },
+    {
+      "id": "9ec95c17-9a7d-4cdf-95bb-378f662cb501",
+      "FR": "Ça faisait presque dix ans que j’occupais mon poste de chauffeur de bus. J’étais confortablement installé dans ma profession, j’avais mes petites routines. Tous les matins, je saluais mes collègues, je faisais le tour du bus et je prenais la route. J’appréciais mon quotidien, quand en 2017, alors que je me rendais sur mon lieu de travail ju un accident de la route, je ne pouvais alors plus continuer d’exercer mon métier…",
+      "EN": "I had been working as a bus driver for almost ten years. I was comfortable in my profession, I had my little routines. Every morning, I greeted my colleagues, went around the bus and took the road. I was enjoying my daily life, when in 2017, while I was on my way to work I had a car accident, and I could no longer continue my job..."
+    },
+    {
+      "id": "a01463cc-78f9-478b-bd2e-57f0f74972e6",
+      "FR": "T-shirt imprimé",
+      "EN": "Printed tee"
+    },
+    {
+      "id": "a2dd9bb7-3c3a-4d41-872c-5f38072f7cea",
+      "FR": "La plage, la crème solaire, les cocktails, les BBQ au bord de la piscine... Les jours arrivent, alors on t'a concocté une petite selection d'article pour vous faire tout beau ! (pssst, garde l'oeil ouvert, certains articles sont soldé)",
+      "EN": "The beach, the sunscreen, the cocktails, the BBQ by the pool... The days are coming, so we bring you a selection of items to be on top! (pssst, keep your eyes open, some items are sold out)"
+    },
+    {
+      "id": "a7918572-9e16-497c-b779-c1c5031b72fc",
+      "FR": "Qu'elle soit longue ou courte, bohème ou chic, pour nous, les filles",
+      "EN": "Whether it's long or short, bohemian or chic, for us girls"
+    },
+    {
+      "id": "a9dc09b3-b4bb-4216-bc96-629be5d1e59f",
+      "FR": "Jogger marron décontracté, parfait pour chiller pendant vos weekends.",
+      "EN": "Brown casual jogger, perfect for chilling out during your weekends."
+    },
+    {
+      "id": "ac25c16b-57a3-4fc3-8a14-48ec61a6f3ed",
+      "FR": "T-shirt gris",
+      "EN": "Grey T-shirt"
+    },
+    {
+      "id": "b160ed93-4d29-4c9e-91a1-5871a3a1568e",
+      "FR": "Hoodie deisgn",
+      "EN": "Cool Hoodies"
+    },
+    {
+      "id": "b1f19b5e-617e-4fee-8f4c-a52724959d0d",
+      "FR": "Qu'elle soit longue ou courte, bohème ou chic, pour nous, les filles",
+      "EN": "Whether it's long or short, bohemian or chic, for us girls"
+    },
+    {
+      "id": "b225dc55-ea47-4641-8c32-5b8a76b4e704",
+      "FR": "Décontracté et cozy. Un sweat coloré pour aiguayer vos journées en toute circonstances. ",
+      "EN": "Relaxed and cozy. A colorful sweater to brighten up your day in all circumstances. "
+    },
+    {
+      "id": "b575dff7-58e4-4363-8d3f-d2a4e7f0a413",
+      "FR": "Mini short bleu estival retroussé, parfait pour chiller sur la plage ou au bord de la piscine.",
+      "EN": "Blue summer mini shorts rolled up, perfect for chilling on the beach or by the pool."
+    },
+    {
+      "id": "b7b4eee8-9e24-4958-b691-d9b0300d610d",
+      "FR": "Mini short",
+      "EN": "Mini shorts"
+    },
+    {
+      "id": "b95bd756-3613-439f-9bc8-e0a2178333b8",
+      "FR": "Short Flashy",
+      "EN": "Flashy shorts"
+    },
+    {
+      "id": "bb65ce92-2aed-4b49-9f34-d90eb90521a1",
+      "FR": "Tshirt estival",
+      "EN": "Summer Tshirt"
+    },
+    {
+      "id": "be376075-71f7-4e80-a62a-906ac37046a4",
+      "FR": "Chemise légère",
+      "EN": "Lightweight shirt"
+    },
+    {
+      "id": "bebc494e-bbbf-4cfc-9792-9243091c6218",
+      "FR": "Jean ajusté",
+      "EN": "Skinny jeans"
+    },
+    {
+      "id": "c09202ec-3537-4231-8b38-e040228f2e50",
+      "FR": "Tout chaud",
+      "EN": "So comfy"
+    },
+    {
+      "id": "c15bf6fb-1ad1-497c-badc-01398c3840e0",
+      "FR": "T-shirt rock",
+      "EN": "Tee-shirt rock"
+    },
+    {
+      "id": "c19758ff-efb2-4d56-aeaa-8c258891f7b6",
+      "FR": "Chemisier à encolure",
+      "EN": "Shirt with neckline"
+    },
+    {
+      "id": "c419a971-c3ea-4f92-be19-7be89a0116a4",
+      "FR": "Sweet Sweat",
+      "EN": "Basic Sweat"
+    },
+    {
+      "id": "c498acc3-1543-4a08-a5f0-100d7c1d1dd7",
+      "FR": "Avec ou sans Cravate",
+      "EN": "With or without tie"
+    },
+    {
+      "id": "c5da608b-93f7-4561-9262-c0d617f3c3c3",
+      "FR": "J’ai toujours été intéressé par la technologie et l’univers du web, mais jamais je n’aurais imaginé travailler dans l’informatique et encore moins en tant que développeur web, tout simplement parce que ce métier m’a toujours paru inaccessible aux personne qui comme moi n’ont pas fait de longues études.",
+      "EN": "I have always been interested in technology and the world of the web, but I would never have imagined working in IT and even less as a web developer, simply because this job has always seemed inaccessible to people like me who did not have long studies."
+    },
+    {
+      "id": "c672106d-2c19-4684-a0a0-12ec8bf51b7d",
+      "FR": "Sweat à capuche oversized blanc avec imprimés street art. ",
+      "EN": "Oversized white hoodie with street art print."
+    },
+    {
+      "id": "ca93acb6-44cc-4faf-9aab-e32ae40f43e5",
+      "FR": "Tshirt relax",
+      "EN": "Casual Tee"
+    },
+    {
+      "id": "cb53908e-de5d-48d5-99dd-370e726d15cc",
+      "FR": "T-shirt noir pour femme avec imprimé rock",
+      "EN": "Black t-shirt for women with rock print"
+    },
+    {
+      "id": "cd704191-1480-4a17-ad5e-4d4405a014d3",
+      "FR": "Chemise à paillettes",
+      "EN": "Glitter shirt"
+    },
+    {
+      "id": "d2be61e0-852d-4333-b5c8-d50db518626d",
+      "FR": "Sweat street",
+      "EN": "Street hoodies"
+    },
+    {
+      "id": "d5db8e68-6a08-46af-9ecd-5d974eded91d",
+      "FR": "Chemise style Daddy pour femme de style ample. Comfortable et chaud.",
+      "EN": "Daddy style shirt for women with a loose fit. Comfortable and warm."
+    },
+    {
+      "id": "d70fb187-0668-4012-b192-561e746eb41c",
+      "FR": "Mini jupe",
+      "EN": "Mini skirt"
+    },
+    {
+      "id": "da8c5ca1-49e1-431d-8f92-5276cdf3976e",
+      "FR": "Rien de mieux que cette chemise noir avec de petites paillette pour briller en soirée et vous démarquer avec style.",
+      "EN": "Nothing better than this black shirt with small sequins to shine in the evening and stand out with style."
+    },
+    {
+      "id": "e0fae358-3494-4dee-9243-49c35f904def",
+      "FR": "Jogger rose",
+      "EN": "Pink Jogger"
+    },
+    {
+      "id": "e50191be-4228-4bbd-ade1-266ad885c974",
+      "FR": "T-shirt basique noir avec imprimé et manches courtes retroussées. Parfait en toute circonstance.",
+      "EN": "Basic black T-shirt with print and rolled up short sleeves. Perfect for any occasion."
+    },
+    {
+      "id": "e67f228f-fa51-4f4f-9212-4b91406ef1fd",
+      "FR": "Sweat cozy",
+      "EN": "Fluffy sweat"
+    },
+    {
+      "id": "e70a0dc8-0d15-4dd5-9c9a-3d55d17b8284",
+      "FR": "L'été sera chaud !",
+      "EN": "Watch out the summer !"
+    },
+    {
+      "id": "e76afa20-fcda-446b-90d4-84afe8393312",
+      "FR": "Jean slim",
+      "EN": "Slim jeans"
+    },
+    {
+      "id": "e90cb8f6-beb9-4c5c-9b4a-f1e828f8a105",
+      "FR": "Tshirt noir fashion à poche texturée et au design structuré et à l'ajustement large",
+      "EN": "Fashionable black t-shirt with textured pocket and wide fit design"
+    },
+    {
+      "id": "ecb05090-a425-4fb9-880d-ee7d5a2f4654",
+      "FR": "Hoodie chaud",
+      "EN": "Warm Hoodie"
+    },
+    {
+      "id": "edc7f993-91df-4d46-ac0a-39541fd4b18f",
+      "FR": "Jean troué",
+      "EN": "Jean with hole"
+    },
+    {
+      "id": "f2603fac-0b34-4c0f-85f7-ce7fad7dfe27",
+      "FR": "Quelque soit ton style, avec une chemise tu seras toujours classe",
+      "EN": "Whatever your style, with a shirt you'll always look good"
+    },
+    {
+      "id": "f74df2d2-bd58-4320-bf2a-3e9d1ef233c9",
+      "FR": "Si t'as froid, fais-toi un petit chocolat chaud près de la cheminé avec ton pull tout doux.",
+      "EN": "If you're cold, make yourself a little hot chocolate by the fireplace with your soft sweater."
+    },
+    {
+      "id": "f7728dcb-365e-42d2-8cc5-f2318348416a",
+      "FR": "Chemise fleuri aux couleurs vives et un style décontracté pour préparer l'arrivée de l'été, à moins que ce ne soit déjà le cas.",
+      "EN": "Brightly colored floral shirt and a casual style to prepare for the arrival of summer, unless it is already the case."
+    },
+    {
+      "id": "fa3bf832-8ed0-40b1-a3e1-3ad06597a3ae",
+      "FR": "Pull en maille",
+      "EN": "Knitted sweater"
+    },
+    {
+      "id": "fc25e26e-afae-440e-abfe-62ec78014bca",
+      "FR": "Jogger ultra stylé ample avec poche sur le devant. Idéal pour un look sport et chic.",
+      "EN": "Ultra stylish loose fitting jogger with front pocket. Ideal for a sporty and chic look."
+    },
+    {
+      "id": "feba15dd-74ff-47ce-a015-273a9fc94171",
+      "FR": "T-shirt cool blanc pour homme avec imprimé",
+      "EN": "Printed cool white T-shirt for men with"
+    }
+  ],
+  "users": [
+    {
+      "id": "1ee1de53-f08d-4ed4-9832-fcc77416c605",
+      "email": "vic.team@not-a-domain.com",
+      "firstName": "Vic",
+      "lastName": "Team",
+      "updatedAt": "2023-04-30T22:57:53.701Z",
+      "createdAt": "2023-04-30T22:57:53.701Z",
+      "lastConnection": "2023-04-30T22:57:53.701Z",
+      "civility": "unknown",
+      "storeCountry": "FR"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("POSTGRES_URL")
+  url      = env("DATABASE_URL")
 }
 
 model Credentials {
@@ -20,7 +20,7 @@ model Credentials {
 }
 
 model User {
-  id             String       @id @default(uuid())
+  id             String       @id @unique @default(uuid())
   //
   email          String       @unique
   firstName      String
@@ -39,7 +39,7 @@ model User {
 }
 
 model Article {
-  id      String  @id @default(uuid())
+  id      String  @id @unique @default(uuid())
   //
   sale    Float   @default(0)
   skuId   String
@@ -53,7 +53,7 @@ model Article {
 }
 
 model Address {
-  id                   String  @id @default(uuid())
+  id                   String  @id @unique @default(uuid())
   //
   title                String  @default("")
   civility             String  @default("unknown")
@@ -75,7 +75,7 @@ model Address {
 }
 
 model CreditCard {
-  id             String  @id @default(uuid())
+  id             String  @id @unique @default(uuid())
   //
   CCNumber       String
   ExpirationDate String
@@ -89,7 +89,7 @@ model CreditCard {
 }
 
 model Order {
-  id                String      @id @default(uuid())
+  id                String      @id @unique @default(uuid())
   //
   orderNumber       String
   total             Decimal
@@ -112,7 +112,7 @@ model Order {
 }
 
 model Product {
-  id              String    @id @default(uuid())
+  id              String    @id @unique @default(uuid())
   //
   isActive        Boolean   @default(true)
   titleId         String    @unique
@@ -136,7 +136,7 @@ model Product {
 }
 
 model Sku {
-  id        String    @id @default(uuid())
+  id        String    @id @unique @default(uuid())
   //
   ref       String
   quantity  Int
@@ -150,7 +150,7 @@ model Sku {
 }
 
 model Selection {
-  id              String      @id @default(uuid())
+  id              String      @id @unique @default(uuid())
   //
   titleId         String      @unique
   descriptionId   String?     @unique
@@ -173,7 +173,7 @@ model Selection {
 }
 
 model Post {
-  id              String        @id @default(uuid())
+  id              String        @id @unique @default(uuid())
   //
   index           Int           @default(1)
   titleId         String        @unique
@@ -195,7 +195,7 @@ model Post {
 }
 
 model PostSection {
-  id           String      @id @default(uuid())
+  id           String      @id @unique @default(uuid())
   //
   index        Int         @default(1)
   postId       String
@@ -215,7 +215,7 @@ model PostSection {
 }
 
 model Keywords {
-  id            String       @id @default(uuid())
+  id            String       @id @unique @default(uuid())
   //
   productId     String?      @unique
   selectionId   String?      @unique
@@ -230,14 +230,14 @@ model Keywords {
 }
 
 model Store {
-  id      String      @id @default(uuid())
+  id      String      @id @unique @default(uuid())
   //enum
   status  StoreStatus @default(open)
   country Country     @unique @default(FR)
 }
 
 model Theme {
-  id        String    @id @default(uuid())
+  id        String    @id @unique @default(uuid())
   //
   isActive  Boolean   @default(true)
   name      String
@@ -248,7 +248,7 @@ model Theme {
 }
 
 model Text {
-  id                   String       @id @default(uuid())
+  id                   String       @id @unique @default(uuid())
   //
   FR                   String       @default("")
   EN                   String       @default("")

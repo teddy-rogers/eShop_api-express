@@ -3,13 +3,16 @@ import dotenv from 'dotenv';
 import express from 'express';
 import fileUpload from 'express-fileupload';
 import session from 'express-session';
-import { sessionSecrets } from './constants';
-import { appCache, SessionHelper } from './helpers';
+import { sessionSecrets } from './constants/sessionSecrets';
+import { LoggerHelper } from './helpers/logger';
+import { appCache } from './helpers/redis';
+import { SessionHelper } from './helpers/session';
 
 dotenv.config();
 
+const { logger } = new LoggerHelper();
 const sessionHelper = new SessionHelper();
-const port = parseInt(process.env.APP_PORT!!) as number;
+const port = process.env.PORT || '8080';
 const redisStore = connectRedis(session);
 
 const Router = express();
@@ -22,7 +25,7 @@ Router.use(
   session({
     secret: sessionHelper.shuffleSessionSecrets(sessionSecrets),
     store: new redisStore({
-      client: appCache,
+      client: appCache(),
       ttl: 86400,
     }),
     saveUninitialized: false,
@@ -42,6 +45,10 @@ Router.use((req, _, next) => {
   next();
 });
 
+Router.use('/yo', async (_, res) => {
+  res.status(200).json('Yo!');
+});
+
 Router.use('/user', require('./routes/user'));
 Router.use('/address', require('./routes/address'));
 Router.use('/article', require('./routes/article'));
@@ -52,6 +59,8 @@ Router.use('/post', require('./routes/post'));
 Router.use('/post_section', require('./routes/postSections'));
 
 Router.listen(port);
+
+logger.success('POLIQLO IS READY!!!');
 
 //
 
