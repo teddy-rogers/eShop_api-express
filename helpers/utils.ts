@@ -1,6 +1,6 @@
 import { Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
-import { invalidStrings } from '../constants';
+import { invalidStrings } from '../constants/filters';
 import { CloudinaryHelper, DestionationFolder } from './cloudinary';
 
 export class Utils {

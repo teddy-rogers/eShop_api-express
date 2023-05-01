@@ -1,6 +1,6 @@
 import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
-import { CreatePostFields, UpdatePostFields } from '../types';
+import { Utils } from '../helpers/utils';
+import { CreatePostFields, UpdatePostFields } from '../types/Post';
 
 export class PostService {
   private db = new PrismaClient();

@@ -1,12 +1,14 @@
-import { appCache } from '../helpers';
-import { CacheStore } from '../types';
+import { appCache } from '../helpers/redis';
+import { CacheStore } from '../types/Cache';
 
 export class CacheService {
   async get({ store, id }: { store: CacheStore; id: string | 'all' }) {
-    return await appCache.get(`${store}-${id}`).then((obj) => {
-      if (!obj) return;
-      return JSON.parse(obj);
-    });
+    return await appCache()
+      .get(`${store}-${id}`)
+      .then((obj) => {
+        if (!obj) return;
+        return JSON.parse(obj);
+      });
   }
 
   async set<T>({
@@ -18,11 +20,11 @@ export class CacheService {
     id: 'all' | string;
     data: T;
   }) {
-    const cacheResponse = await appCache.set(
+    const cacheResponse = await appCache().set(
       `${store}-${id}`,
       JSON.stringify(data),
     );
-    await appCache.expire(`${store}-${id}`, 60 * 60);
+    await appCache().expire(`${store}-${id}`, 60 * 60);
     if (cacheResponse === 'OK') {
       return await this.get({ store, id });
     }
@@ -43,7 +45,7 @@ export class CacheService {
       return [start, stop];
     };
     const [start, stop] = range(page);
-    let items = await appCache.lrange(`${store}-${id}`, start, stop);
+    let items = await appCache().lrange(`${store}-${id}`, start, stop);
     return items.map((i: any) => JSON.parse(i));
   }
 
@@ -58,10 +60,10 @@ export class CacheService {
     data: T[];
     page?: number;
   }) {
-    await appCache.del(`${store}-${id}`);
+    await appCache().del(`${store}-${id}`);
     for (let x in data) {
-      await appCache.rpush(`${store}-${id}`, JSON.stringify(data[x]));
-      await appCache.expire(`${store}-${id}`, 60 * 60);
+      await appCache().rpush(`${store}-${id}`, JSON.stringify(data[x]));
+      await appCache().expire(`${store}-${id}`, 60 * 60);
     }
     return await this.getList({ store, id, page });
   }
@@ -77,8 +79,8 @@ export class CacheService {
     data: T;
     page?: number;
   }) {
-    await appCache.rpush(`${store}-${id}`, JSON.stringify(data));
-    await appCache.expire(`${store}-${id}`, 60 * 60);
+    await appCache().rpush(`${store}-${id}`, JSON.stringify(data));
+    await appCache().expire(`${store}-${id}`, 60 * 60);
     return await this.getList({ store, id, page });
   }
 
@@ -95,7 +97,7 @@ export class CacheService {
     data: T;
     page?: number;
   }) {
-    await appCache.lset(`${store}-${id}`, index, JSON.stringify(data));
+    await appCache().lset(`${store}-${id}`, index, JSON.stringify(data));
     return await this.getList({ store, id, page });
   }
 
@@ -110,12 +112,12 @@ export class CacheService {
     data: T;
     page?: number;
   }) {
-    await appCache.lrem(`${store}-${id}`, 1, JSON.stringify(data));
+    await appCache().lrem(`${store}-${id}`, 1, JSON.stringify(data));
     return await this.getList({ store, id, page });
   }
 
   async delete({ store, id }: { store: CacheStore; id: string }) {
-    await appCache.del(`${store}-${id}`);
+    await appCache().del(`${store}-${id}`);
     return;
   }
 }

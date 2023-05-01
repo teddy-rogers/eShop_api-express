@@ -1,7 +1,9 @@
 import { Article, Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
-import { ArticleService, CacheService, SkuService } from '../services';
-import { CacheStore, SessionType } from '../types';
+import { ArticleService } from '../services/article';
+import { CacheService } from '../services/cache';
+import { SkuService } from '../services/sku';
+import { CacheStore, SessionType } from '../types/Cache';
 
 export class ArticleReslover {
   private articleService = new ArticleService();

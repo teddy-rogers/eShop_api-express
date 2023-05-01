@@ -1,5 +1,5 @@
 import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
+import { Utils } from '../helpers/utils';
 
 export class SkuService {
   private db = new PrismaClient();

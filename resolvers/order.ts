@@ -1,8 +1,10 @@
 import { Country } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
-import { OrderHelper } from '../helpers';
-import { ArticleService, OrderService } from '../services';
-import { OrderInputs, SessionType } from '../types';
+import { OrderHelper } from '../helpers/order';
+import { ArticleService } from '../services/article';
+import { OrderService } from '../services/order';
+import { SessionType } from '../types/Cache';
+import { OrderInputs } from '../types/Order';
 
 export class OrderResolver {
   private orderService = new OrderService();
@@ -13,7 +15,6 @@ export class OrderResolver {
     if (!session.userSession) throw 'User must be connected first!';
     return await this.orderService.findManyByUserId(
       session.userSession.userId,
-      lang,
     );
   }
 

@@ -1,6 +1,9 @@
 import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
-import { CreatePostSectionFields, UpdatePostSectionFields } from '../types';
+import { Utils } from '../helpers/utils';
+import {
+  CreatePostSectionFields,
+  UpdatePostSectionFields
+} from '../types/PostSection';
 
 export class PostSectionService {
   private db = new PrismaClient();

@@ -1,9 +1,6 @@
-import { AddressService } from '../services';
-import {
-  CreateAddressInputs,
-  SessionType,
-  UpdateAddressInputs
-} from '../types';
+import { AddressService } from '../services/address';
+import { CreateAddressInputs, UpdateAddressInputs } from '../types/Address';
+import { SessionType } from '../types/Cache';
 
 export class AddressResolver {
   private addressService = new AddressService();

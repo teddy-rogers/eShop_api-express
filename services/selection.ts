@@ -1,6 +1,6 @@
 import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
-import { CreateSelectionFields } from '../types';
+import { Utils } from '../helpers/utils';
+import { CreateSelectionFields } from '../types/Selection';
 
 export class SelectionService {
   private db = new PrismaClient();
