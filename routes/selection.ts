@@ -1,6 +1,6 @@
 import { Country } from '@prisma/database';
 import express from 'express';
-import { SelectionResolver } from '../resolvers';
+import { SelectionResolver } from '../resolvers/selection';
 
 const Router = express.Router();
 const selectionResolver = new SelectionResolver();

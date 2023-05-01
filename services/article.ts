@@ -1,6 +1,6 @@
 import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
-import { CreateArticleFields, UpdateArticleFields } from '../types';
+import { Utils } from '../helpers/utils';
+import { CreateArticleFields, UpdateArticleFields } from '../types/Article';
 
 export class ArticleService {
   private db = new PrismaClient();

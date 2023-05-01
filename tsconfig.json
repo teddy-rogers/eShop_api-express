@@ -10,11 +10,7 @@
     "strictPropertyInitialization": false,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDirs": [
-      "."
-    ]
+    "rootDirs": ["."]
   },
-  "includes": [
-    "."
-  ]
+  "includes": ["."]
 }

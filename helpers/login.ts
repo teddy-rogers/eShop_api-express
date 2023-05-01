@@ -1,6 +1,9 @@
 import bcrypt from 'bcryptjs';
-import { emailRegexPattern, passwordRegexPattern } from '../constants';
-import { LoginInputs } from '../types';
+import {
+  emailRegexPattern,
+  passwordRegexPattern
+} from '../constants/credentials';
+import { LoginInputs } from '../types/User';
 
 export class LoginHelper {
   credentialsInputsValidation(login: LoginInputs) {

@@ -1,9 +1,12 @@
 import { Country } from '@prisma/database';
 import bcrypt from 'bcryptjs';
 import { v4 as createUniqueId } from 'uuid';
-import { LoginHelper, SessionHelper } from '../helpers';
-import { CacheService, UserService } from '../services';
-import { CacheStore, LoginInputs, SessionType, UserInputs } from '../types';
+import { LoginHelper } from '../helpers/login';
+import { SessionHelper } from '../helpers/session';
+import { CacheService } from '../services/cache';
+import { UserService } from '../services/user';
+import { CacheStore, SessionType } from '../types/Cache';
+import { LoginInputs, UserInputs } from '../types/User';
 import { ArticleReslover } from './article';
 
 export class UserResolver {

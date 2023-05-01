@@ -1,11 +1,11 @@
 import { Country, PrismaClient, Product, Size, Sku } from '@prisma/database';
 import { v4 as createUniqueId } from 'uuid';
-import { Utils } from '../helpers';
+import { Utils } from '../helpers/utils';
 import {
   CreateProductFields,
   SearchProductFields,
   UpdateProductFields
-} from '../types';
+} from '../types/Product';
 
 export class ProductService {
   private db = new PrismaClient();

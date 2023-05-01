@@ -6,14 +6,15 @@ import {
   Season,
   Size
 } from '@prisma/database';
-import { Folder, Utils } from '../helpers';
-import { ProductService } from '../services';
+import { Folder } from '../helpers/cloudinary';
+import { Utils } from '../helpers/utils';
+import { ProductService } from '../services/product';
 import {
   CreateProductFields,
   CreateProductInputs,
   SearchProductInputs,
   UpdateProductFields
-} from '../types';
+} from '../types/Product';
 
 export class ProductResolver {
   private productService = new ProductService();
