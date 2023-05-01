@@ -34,12 +34,13 @@ export class CloudinaryHelper {
     foregroundColor: string;
   }> {
     try {
+      const subfolder = process.env.NODE_ENV === 'dev' ? '/dev' : '/prod';
       const options = {
         use_filename: true,
         unique_filename: false,
         overwrite: true,
         colors: true,
-        folder: `poliqlo/${destinationFolder}`,
+        folder: `poliqlo${subfolder}${destinationFolder}`,
         transformation: [
           {
             width: this.getWidth(destinationFolder),
@@ -91,12 +92,12 @@ export class CloudinaryHelper {
 }
 
 export enum Folder {
-  products = 'products',
-  selections = 'selections',
-  posts = 'posts',
+  products = '/products',
+  selections = '/selections',
+  posts = '/posts',
 }
 
-export type DestionationFolder = Folder | `posts/${string}`;
+export type DestionationFolder = Folder | `/posts/${string}`;
 
 enum Width {
   small = 800,

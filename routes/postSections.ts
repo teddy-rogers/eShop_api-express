@@ -1,6 +1,6 @@
 import { Country } from '@prisma/database';
 import express from 'express';
-import { PostSectionResolver } from '../resolvers';
+import { PostSectionResolver } from '../resolvers/postSection';
 
 const Router = express.Router();
 const postSectionResolver = new PostSectionResolver();

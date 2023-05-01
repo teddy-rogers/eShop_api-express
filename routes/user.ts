@@ -1,6 +1,6 @@
 import { Country } from '@prisma/database';
 import express from 'express';
-import { UserResolver } from '../resolvers';
+import { UserResolver } from '../resolvers/user';
 
 const Router = express.Router();
 const userResolver = new UserResolver();

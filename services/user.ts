@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/database';
-import { UserFields } from '../types';
+import { UserFields } from '../types/User';
 
 export class UserService {
   private db = new PrismaClient();

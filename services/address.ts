@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/database';
-import { CreateAddressFields, UpdateAddressFields } from '../types';
+import { CreateAddressFields, UpdateAddressFields } from '../types/Address';
 
 export class AddressService {
   private db = new PrismaClient();

@@ -1,12 +1,13 @@
 import { Country } from '@prisma/database';
-import { Folder, Utils } from '../helpers';
-import { SelectionService } from '../services';
+import { Folder } from '../helpers/cloudinary';
+import { Utils } from '../helpers/utils';
+import { SelectionService } from '../services/selection';
 import {
   CreateSelectionFields,
   CreateSelectionInputs,
   SearchSelectionInputs,
   UpdateSelectionInputs
-} from '../types';
+} from '../types/Selection';
 
 export class SelectionResolver {
   private selectionService = new SelectionService();

@@ -1,12 +1,12 @@
 import { Country, PrismaClient } from '@prisma/database';
-import { Utils } from '../helpers';
-import { OrderFields } from '../types';
+import { Utils } from '../helpers/utils';
+import { OrderFields } from '../types/Order';
 
 export class OrderService {
   private db = new PrismaClient();
   private utils = new Utils();
 
-  async findManyByUserId(userId: string, lang: Country) {
+  async findManyByUserId(userId: string) {
     try {
       return await this.db.order.findMany({
         where: { userId },
