@@ -4,7 +4,7 @@ import { Utils } from '../helpers/utils';
 import {
   CreateProductFields,
   SearchProductFields,
-  UpdateProductFields
+  UpdateProductFields,
 } from '../types/Product';
 
 export class ProductService {
@@ -13,7 +13,7 @@ export class ProductService {
 
   private getSearchOptions(lastId?: string) {
     let options = {};
-    options = { ...options, take: 100, orderBy: { id: 'asc' } };
+    options = { ...options, take: 24, orderBy: { id: 'asc' } };
     if (lastId)
       options = {
         ...options,
@@ -28,8 +28,8 @@ export class ProductService {
   private getSearchFields({ keywords, filters }: SearchProductFields) {
     const { price, size, gender, color, category, season, sale } = filters;
     let fields = {};
-    if (keywords)
-      fields = { ...fields, keywords: { indexes: { hasSome: keywords } } };
+    /*  if (keywords)
+      fields = { ...fields, keywords: { indexes: { hasSome: keywords } } }; */
     if (gender) fields = { ...fields, gender };
     if (color) fields = { ...fields, color };
     if (category) fields = { ...fields, category };
@@ -67,23 +67,29 @@ export class ProductService {
     lang: Country,
   ) {
     try {
-      return await this.db.product
+      return await this.db.keywords
         .findMany({
           ...this.getSearchOptions(lastId),
           where: {
-            ...this.getSearchFields({ keywords, filters }),
+            productId: { not: null },
+            ...(keywords !== undefined &&
+              keywords.length && { indexes: { hasSome: keywords } }),
+            product: { ...this.getSearchFields({ filters }) },
           },
-          include: {
-            title: this.utils.selectLanguage(lang),
+          select: {
+            product: {
+              include: { title: this.utils.selectLanguage(lang) },
+            },
           },
         })
-        .then((products) => {
-          return products.map((product) => {
-            return {
-              ...product,
-              price: product.price.toNumber(),
-              sale: product.sale.toNumber(),
-            };
+        .then((res) => {
+          return res.map((i) => {
+            return ({
+              ...i.product,
+              title: i.product.title[lang],
+              price: i.product.price.toNumber(),
+              sale: i.product.sale.toNumber(),
+            })
           });
         });
     } catch (error) {
