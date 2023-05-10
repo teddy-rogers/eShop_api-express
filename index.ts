@@ -12,7 +12,7 @@ dotenv.config();
 
 const { logger } = new LoggerHelper();
 const sessionHelper = new SessionHelper();
-const port = process.env.PORT || '8080';
+const port = process.env.APP_PORT || '8080';
 const redisStore = connectRedis(session);
 
 const Router = express();
