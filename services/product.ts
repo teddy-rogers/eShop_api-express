@@ -81,14 +81,12 @@ export class ProductService {
           },
         })
         .then((res) => {
-          return res.map((i) => {
-            return {
-              ...i.product,
-              title: i.product.title[lang],
-              price: i.product.price.toNumber(),
-              sale: i.product.sale.toNumber(),
-            };
-          });
+          return res.map((i) => ({
+            ...i.product,
+            title: i.product?.title[lang],
+            price: i.product?.price.toNumber(),
+            sale: i.product?.sale.toNumber(),
+          }));
         });
     } catch (error) {
       throw error;
