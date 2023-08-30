@@ -25,11 +25,9 @@ export class ProductService {
     return options;
   }
 
-  private getSearchFields({ keywords, filters }: SearchProductFields) {
+  private getSearchFields({ filters }: SearchProductFields) {
     const { price, size, gender, color, category, season, sale } = filters;
     let fields = {};
-    /*  if (keywords)
-      fields = { ...fields, keywords: { indexes: { hasSome: keywords } } }; */
     if (gender) fields = { ...fields, gender };
     if (color) fields = { ...fields, color };
     if (category) fields = { ...fields, category };
@@ -84,12 +82,12 @@ export class ProductService {
         })
         .then((res) => {
           return res.map((i) => {
-            return ({
+            return {
               ...i.product,
               title: i.product.title[lang],
               price: i.product.price.toNumber(),
               sale: i.product.sale.toNumber(),
-            })
+            };
           });
         });
     } catch (error) {
