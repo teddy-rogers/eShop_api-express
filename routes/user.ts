@@ -7,7 +7,8 @@ const userResolver = new UserResolver();
 
 Router.put('/sign-in', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await userResolver
       .signInUser(
         {
@@ -15,7 +16,7 @@ Router.put('/sign-in', async (req, res) => {
           password: req.body.user.password,
           firstName: req.body.user.firstName,
           lastName: req.body.user.lastName,
-          storeCountry: req.body.user.storeCountry,
+          storeCountry: req.body.user.storeCountry?.toUpperCase() as Country,
         },
         req.session,
         lang,
@@ -30,7 +31,8 @@ Router.put('/sign-in', async (req, res) => {
 
 Router.put('/log-in', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await userResolver
       .logInUser(
         {

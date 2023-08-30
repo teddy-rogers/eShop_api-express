@@ -7,7 +7,8 @@ const orderResolver = new OrderResolver();
 
 Router.get('/', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await orderResolver.getAllOrders(req.session, lang).then((orders) => {
       res.status(200).json(orders);
     });
@@ -18,7 +19,8 @@ Router.get('/', async (req, res) => {
 
 Router.get('/:id', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await orderResolver
       .getOneOrder(req.params.id, req.session, lang)
       .then((order) => {
@@ -31,7 +33,8 @@ Router.get('/:id', async (req, res) => {
 
 Router.put('/create', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await orderResolver
       .createOneOrder(req.body.order, req.session, lang)
       .then((order) => {

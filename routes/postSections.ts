@@ -7,7 +7,8 @@ const postSectionResolver = new PostSectionResolver();
 
 Router.get('/:postId', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await postSectionResolver
       .getAllPostSections(req.params.postId, lang)
       .then((sections) => {

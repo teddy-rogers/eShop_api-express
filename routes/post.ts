@@ -8,7 +8,8 @@ const postResolver = new PostResolver();
 Router.get('/', async (req, res) => {
   try {
     const country = req.query.country as string | undefined;
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     const posts =
       country === undefined
         ? await postResolver.getAllPosts(lang)
@@ -21,7 +22,8 @@ Router.get('/', async (req, res) => {
 
 Router.get('/:id', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await postResolver.getPostById(req.params.id, lang).then((post) => {
       res.status(200).json(post);
     });
