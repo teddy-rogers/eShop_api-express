@@ -83,7 +83,18 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{t-shirt,imprimé,printed,tee,noir,tout,en,longueur,black,full-length,man,summer}"
+      "indexes": [
+        "t-shirt",
+        "imprimé",
+        "printed",
+        "tee",
+        "noir",
+        "longueur",
+        "black",
+        "full-length",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "0379f434-293b-4d1c-8137-7ada6b4d9c8f",
@@ -91,7 +102,35 @@
       "selectionId": "43fb9a70-44a4-4f8f-afd7-e98f1a33cad7",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{le,t-shirt,\"\",la,base,..,basic,tee,à,col,rond,en,\"v,\",\"large,\",manches,courtes,ou,\"longues,\",pas,de,du,\"tout,\",il,t'en,faut,forcément,au,moins,un,round,neck,\"v-neck,\",wide,\"neck,\",short,long,\"sleeves,\",no,sleeves,at,\"all,\",you,need,least,one,product,fr}"
+      "indexes": [
+        "t-shirt",
+        "base",
+        "basic",
+        "tee",
+        "col",
+        "rond",
+        "v",
+        "large",
+        "manches",
+        "courtes",
+        "longues",
+        "faut",
+        "forcément",
+        "moins",
+        "round",
+        "neck",
+        "v-neck",
+        "wide",
+        "neck",
+        "short",
+        "long",
+        "sleeves",
+        "sleeves",
+        "need",
+        "least",
+        "one",
+        "product"
+      ]
     },
     {
       "id": "0ae07164-64a7-4bfc-b2e9-d6a36e93ccf6",
@@ -99,7 +138,37 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{jogger,rose,pink,ultra,stylé,ample,avec,poche,sur,le,devant,\"\",idéal,pour,un,look,sport,et,chic.,stylish,loose,fitting,front,pocket,ideal,sporty,chic,look.,woman,spring}"
+      "indexes": [
+        "jogger",
+        "rose",
+        "pink",
+        "ultra",
+        "stylé",
+        "ample",
+        "avec",
+        "poche",
+        "sur",
+        "le",
+        "devant",
+        "idéal",
+        "pour",
+        "un",
+        "look",
+        "sport",
+        "et",
+        "chic",
+        "stylish",
+        "loose",
+        "fitting",
+        "front",
+        "pocket",
+        "ideal",
+        "sporty",
+        "chic",
+        "look",
+        "woman",
+        "spring"
+      ]
     },
     {
       "id": "0f648650-946e-42d1-a844-35a3421a8a3a",
@@ -107,7 +176,19 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{t-shirt,rock,tee-shirt,noir,pour,femme,avec,imprimé,black,women,print,woman,spring}"
+      "indexes": [
+        "t-shirt",
+        "rock",
+        "tee-shirt",
+        "noir",
+        "femme",
+        "imprimé",
+        "black",
+        "women",
+        "print",
+        "woman",
+        "spring"
+      ]
     },
     {
       "id": "10abf74b-385c-4b8d-bfa2-9ecba7d8f7ef",
@@ -115,7 +196,21 @@
       "selectionId": "dd2e1af2-46ac-40e4-94ed-aa81e88239c9",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{sweet,sweat,basic,\"\",classique.,essentiel.,indémodable.,le,must-have,pour,tout,monde,classic.,essential.,timeless.,everyone,product,en,fr}"
+      "indexes": [
+        "sweet",
+        "sweat",
+        "basic",
+        "classique",
+        "essentiel",
+        "indémodable",
+        "must-have",
+        "monde",
+        "classic",
+        "essential",
+        "timeless",
+        "everyone",
+        "product"
+      ]
     },
     {
       "id": "14b1c193-c39d-419f-827d-847bccac354f",
@@ -123,7 +218,23 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chemise,rayée,striped,shirt,à,parure,décontractée,pour,les,working,girls,\"\",mais,pas,trop,casual,too,much,white,woman,spring}"
+      "indexes": [
+        "chemise",
+        "rayée",
+        "striped",
+        "shirt",
+        "parure",
+        "décontractée",
+        "working",
+        "girls",
+        "trop",
+        "casual",
+        "too",
+        "much",
+        "white",
+        "woman",
+        "spring"
+      ]
     },
     {
       "id": "1c9c8011-b4ef-4d0c-8647-9f38dc425ec3",
@@ -131,7 +242,30 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{jean,slim,jeans,fuselé,bleu,avec,effet,usé,pour,homme,\"\",un,style,à,la,fois,décontracté,et,habillé.,blue,tapered,worn,effect,men,both,casual,dressy.,man,autumn}"
+      "indexes": [
+        "jean",
+        "slim",
+        "jeans",
+        "fuselé",
+        "bleu",
+        "effet",
+        "usé",
+        "homme",
+        "style",
+        "fois",
+        "décontracté",
+        "habillé",
+        "blue",
+        "tapered",
+        "worn",
+        "effect",
+        "men",
+        "both",
+        "casual",
+        "dressy",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "22e3f48a-9a4a-400d-80ab-d40450eb9acb",
@@ -139,7 +273,7 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{}"
+      "indexes": []
     },
     {
       "id": "277ebe1a-0dbc-4626-83d4-3fb7dbe631ae",
@@ -147,7 +281,27 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{pull,rayé,striped,pullover,slim,à,rayures,horizontales,classic,\"\",sobre,et,indémodable,slim-fit,sweater,horizontal,stripes,sober,timeless,blue,man,autumn}"
+      "indexes": [
+        "pull",
+        "rayé",
+        "striped",
+        "pullover",
+        "slim",
+        "rayures",
+        "horizontales",
+        "classic",
+        "sobre",
+        "indémodable",
+        "slim-fit",
+        "sweater",
+        "horizontal",
+        "stripes",
+        "sober",
+        "timeless",
+        "blue",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "3583c30d-d274-44fa-938a-b40b765d6d49",
@@ -155,7 +309,22 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{mini,jupe,skirt,noir,à,plie,\"\",du,style,au,bureau.,sérieuse,mais,pas,trop,black,pleated,office.,serious,too,much,woman,autumn}"
+      "indexes": [
+        "mini",
+        "jupe",
+        "skirt",
+        "noir",
+        "plie",
+        "style",
+        "bureau",
+        "sérieuse",
+        "black",
+        "pleated",
+        "office",
+        "serious",
+        "woman",
+        "autumn"
+      ]
     },
     {
       "id": "36341df4-0e24-4025-b4c7-8ec425d16c29",
@@ -163,7 +332,7 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{}"
+      "indexes": []
     },
     {
       "id": "3a592cd6-decb-4723-a8d0-1065dc64e4af",
@@ -171,7 +340,28 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{sweat,street,hoodies,noir,à,imprimé,flèches,blanches,\"\",un,style,oversize,design,over-stylé,black,sweatshirt,white,arrow,print,oversized,over-styled,man,autumn}"
+      "indexes": [
+        "sweat",
+        "street",
+        "hoodies",
+        "noir",
+        "imprimé",
+        "flèches",
+        "blanches",
+        "style",
+        "oversize",
+        "design",
+        "over-stylé",
+        "black",
+        "sweatshirt",
+        "white",
+        "arrow",
+        "print",
+        "oversized",
+        "over-styled",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "3f4134da-a060-4140-891c-af0a0bdb6b7b",
@@ -179,7 +369,30 @@
       "selectionId": "a87dd37c-eeab-45fa-a98c-42b27c3fabe2",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{poum,short,tiny,mini,shorts,petite,collection,de,pour,te,faire,tourner,les,têtes,\"\",sur,la,\"plage,\",au,bord,piscine,..,\"bref,\",n'importe,où,small,make,you,turn,heads,\"beach,\",by,pool,\"short,\",anywhere,short&genre=woman,en,fr}"
+      "indexes": [
+        "poum",
+        "short",
+        "tiny",
+        "mini",
+        "shorts",
+        "petite",
+        "collection",
+        "tourner",
+        "plage",
+        "bord",
+        "piscine",
+        "bref",
+        "importe",
+        "small",
+        "make",
+        "turn",
+        "heads",
+        "beach",
+        "pool",
+        "short",
+        "anywhere",
+        "short"
+      ]
     },
     {
       "id": "4ca812ba-7bbd-4eba-abe9-98585aa9e22a",
@@ -187,7 +400,26 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chemise,à,paillettes,glitter,shirt,rien,de,mieux,que,cette,noir,avec,petites,paillette,pour,briller,en,soirée,et,vous,démarquer,style,\"\",nothing,better,than,black,small,sequins,shine,evening,stand,out,man,summer}"
+      "indexes": [
+        "chemise",
+        "paillettes",
+        "glitter",
+        "shirt",
+        "noir",
+        "paillette",
+        "briller",
+        "soirée",
+        "démarquer",
+        "style",
+        "better",
+        "black",
+        "small",
+        "sequins",
+        "shine",
+        "evening",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "4f550d1d-2de3-448d-8535-41cc9d873adb",
@@ -195,7 +427,25 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{sweat,orange,sweatshirt,décontracté,et,cozy,\"\",un,coloré,pour,aiguayer,vos,journées,en,toute,circonstances.,relaxed,colorful,sweater,brighten,up,day,all,circumstances.,woman,autumn}"
+      "indexes": [
+        "sweat",
+        "orange",
+        "sweatshirt",
+        "décontracté",
+        "cozy",
+        "coloré",
+        "aiguayer",
+        "journées",
+        "circonstances",
+        "relaxed",
+        "colorful",
+        "sweater",
+        "brighten",
+        "day",
+        "circumstances",
+        "woman",
+        "autumn"
+      ]
     },
     {
       "id": "53fdb92e-2c11-436b-a471-d1d04070bc4c",
@@ -203,7 +453,7 @@
       "selectionId": null,
       "postId": "1c3d83f1-2b0d-4055-9d85-cf9cfa7cfc30",
       "postSectionId": null,
-      "indexes": "{}"
+      "indexes": []
     },
     {
       "id": "57acd4c4-720f-4d66-b2ca-be305f1bb42c",
@@ -211,7 +461,27 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{sweat,cozy,fluffy,polaire,blue,marine,douillet,\"\",pour,un,style,urbain,assuré,même,en,hiver,navy,fleece,sweater,assured,urban,even,winter,man}"
+      "indexes": [
+        "sweat",
+        "cozy",
+        "fluffy",
+        "polaire",
+        "blue",
+        "marine",
+        "douillet",
+        "style",
+        "urbain",
+        "assuré",
+        "hiver",
+        "navy",
+        "fleece",
+        "sweater",
+        "assured",
+        "urban",
+        "even",
+        "winter",
+        "man"
+      ]
     },
     {
       "id": "5add31f5-e818-4a63-9f68-b7e032acca96",
@@ -219,7 +489,7 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{}"
+      "indexes": []
     },
     {
       "id": "5b4cd02f-457c-48fb-87bf-91226f5cdf9f",
@@ -227,7 +497,27 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{tshirt,décontracté,casual,t-shirt,oversize,gris,anthracite,avec,surpiqûre,blanches,pour,style,urbain,charcoal,gray,oversized,white,stitching,urban,black,man,autumn}"
+      "indexes": [
+        "tshirt",
+        "décontracté",
+        "casual",
+        "t-shirt",
+        "oversize",
+        "gris",
+        "anthracite",
+        "surpiqûre",
+        "blanches",
+        "urbain",
+        "charcoal",
+        "gray",
+        "oversized",
+        "white",
+        "stitching",
+        "urban",
+        "black",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "5d1b6cb8-3c2e-45be-9b1e-2a84103e57d8",
@@ -235,7 +525,19 @@
       "selectionId": "3ed56487-d2b0-47ee-9d5a-0a660d3cfb0f",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{hoodies,pour,les,homies,collection,de,sweats,à,capuche,un,style,urbain,assuré,\"\",assured,urban,keywords,hoodie,en,fr}"
+      "indexes": [
+        "hoodies",
+        "homies",
+        "collection",
+        "sweats",
+        "capuche",
+        "style",
+        "urbain",
+        "assuré",
+        "assured",
+        "urban",
+        "hoodie"
+      ]
     },
     {
       "id": "5dbc17cb-b380-42c9-83b3-842eed0f37a2",
@@ -243,7 +545,24 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chemise,à,carreaux,checkered,shirt,style,daddy,pour,femme,de,ample,\"\",comfortable,et,chaud.,women,loose,fit,warm.,blue,woman,winter}"
+      "indexes": [
+        "chemise",
+        "carreaux",
+        "checkered",
+        "shirt",
+        "daddy",
+        "femme",
+        "ample",
+        "comfortable",
+        "chaud",
+        "women",
+        "loose",
+        "fit",
+        "warm",
+        "blue",
+        "woman",
+        "winter"
+      ]
     },
     {
       "id": "5eee88ff-2a9e-479a-b626-c2dc9590c749",
@@ -251,7 +570,33 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chemise,printanière,springtime,shirt,fleuri,aux,couleurs,vives,et,un,style,décontracté,pour,préparer,l'arrivée,de,l'été,\"\",à,moins,que,ce,ne,soit,déjà,le,cas,brightly,colored,floral,casual,prepare,arrival,summer,unless,it,already,case,white,man,spring}"
+      "indexes": [
+        "chemise",
+        "printanière",
+        "springtime",
+        "shirt",
+        "fleuri",
+        "couleurs",
+        "vives",
+        "style",
+        "décontracté",
+        "préparer",
+        "arrivée",
+        "été",
+        "moins",
+        "brightly",
+        "colored",
+        "floral",
+        "casual",
+        "prepare",
+        "arrival",
+        "summer",
+        "unless",
+        "already",
+        "white",
+        "man",
+        "spring"
+      ]
     },
     {
       "id": "62041cb0-a6d6-454c-9183-fdd4f904f001",
@@ -259,7 +604,7 @@
       "selectionId": "cdfc4004-6bf0-4560-b637-c529a9adb933",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{avec,ou,sans,cravate,without,tie,quelque,soit,ton,style,\"\",une,chemise,tu,seras,toujours,classe,whatever,shirt,you'll,always,look,good,en,fr}"
+      "indexes": ["cravate", "style", "chemise", "classe", "shirt", "look"]
     },
     {
       "id": "647f46fa-6cf8-44d9-b3b5-6cec10ee220b",
@@ -267,7 +612,17 @@
       "selectionId": "19419d54-64e8-427d-8f02-838b15da0a45",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{accessoires,indispensables,must-have,accessories,ce,petit,truc,qui,fait,toute,la,différence,peu,importe,ton,style,\"\",assurément,accessoire.,absolument,indispensable.,little,thing,makes,all,difference,no,matter,definitely,accessory.,absolutely,essential.,product,accessory,en,fr}"
+      "indexes": [
+        "accessoires",
+        "indispensables",
+        "must-have",
+        "accessories",
+        "accessoire",
+        "indispensable",
+        "accessory",
+        "essential",
+        "accessory"
+      ]
     },
     {
       "id": "651735d8-e873-48cb-b493-6a0ece81f0eb",
@@ -275,7 +630,19 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{t-shirt,imprimé,printed,tee,cool,blanc,pour,homme,avec,white,men,man,summer}"
+      "indexes": [
+        "t-shirt",
+        "imprimé",
+        "printed",
+        "tee",
+        "cool",
+        "blanc",
+        "homme",
+        "white",
+        "men",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "6869656a-7e2c-4020-b5fa-c4fb851dd225",
@@ -283,7 +650,21 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{jean,troué,hole,carrot,avec,empiècement,pour,un,style,décontracté,\"\",jeans,holes,yoke,casual,blue,woman,spring}"
+      "indexes": [
+        "jean",
+        "troué",
+        "hole",
+        "carrot",
+        "empiècement",
+        "décontracté",
+        "jeans",
+        "holes",
+        "yoke",
+        "casual",
+        "blue",
+        "woman",
+        "spring"
+      ]
     },
     {
       "id": "6ab7b793-8411-4176-a811-43eec41a4dff",
@@ -291,7 +672,24 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{t-shirt,imprimé,printed,tee,cool,jaune,pour,homme,avec,de,couleur,vive,yellow,men,brightly,colored,print,man,summer}"
+      "indexes": [
+        "t-shirt",
+        "imprimé",
+        "printed",
+        "tee",
+        "cool",
+        "jaune",
+        "homme",
+        "couleur",
+        "vive",
+        "yellow",
+        "men",
+        "brightly",
+        "colored",
+        "print",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "702dc8c9-f567-4a86-8af4-5fe8c59c3bed",
@@ -299,7 +697,37 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": "ee6b9247-9c93-4836-8105-4cf803730007",
-      "indexes": "{je,ne,remercierai,jamais,assez,l’équipe,d’ironhack,\"\",tati,\"nina,\",\"frank,\",\"katya,\",\"morgane,\",manon,mais,aussi,toute,ma,promo,avec,qui,j’ai,créé,des,liens,\"forts,\",fleet,pour,être,les,premiers,à,m’ouvrir,portes,de,cet,univers,ô,combien,\"riche,\",et,évidemment,mes,proches,surtout,femme,m’avoir,soutenu,avoir,su,répondre,toutes,questions,doutes,il,faut,bien,entouré,accomplir,un,tel,changement,i,will,never,thank,enough,ironhack,team,also,all,my,class,whom,created,strong,\"links,\",being,first,open,doors,universe,so,\"rich,\",course,close,relations,especially,wife,having,supported,me,known,how,answer,doubts,you,have,be,well,surrounded,accomplish,such,change}"
+      "indexes": [
+        "remercierai",
+        "ironhack",
+        "tati",
+        "nina",
+        "frank",
+        "katya",
+        "morgane",
+        "manon",
+        "promo",
+        "liens",
+        "fleet",
+        "univers",
+        "proches",
+        "femme",
+        "soutenu",
+        "répondre",
+        "questions",
+        "ironhack",
+        "strong",
+        "links",
+        "doors",
+        "universe",
+        "relations",
+        "wife",
+        "supported",
+        "answer",
+        "doubts",
+        "surrounded",
+        "accomplish"
+      ]
     },
     {
       "id": "c64085e9-4e68-49d6-9ee5-ce86e2b7a27c",
@@ -307,7 +735,25 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": "6327550c-d61f-43c1-bdfc-6f94044a7700",
-      "indexes": "{ça,faisait,presque,dix,ans,que,j’occupais,mon,poste,de,chauffeur,bus,\"\",j’étais,confortablement,installé,dans,ma,profession,j’avais,mes,petites,routines.,tous,les,\"matins,\",je,saluais,\"collègues,\",faisais,le,tour,du,et,prenais,la,route.,j’appréciais,\"quotidien,\",quand,en,\"2017,\",alors,me,rendais,sur,lieu,travail,ju,un,accident,\"route,\",ne,pouvais,plus,continuer,d’exercer,métier…,i,had,been,working,as,driver,almost,ten,years,was,comfortable,my,little,every,\"morning,\",greeted,\"colleagues,\",went,around,took,road.,enjoying,daily,\"life,\",way,work,car,\"accident,\",could,no,longer,continue,job...}"
+      "indexes": [
+        "dix",
+        "chauffeur",
+        "bus",
+        "confortablement",
+        "collègues",
+        "quotidien",
+        "2017",
+        "working",
+        "driver",
+        "ten",
+        "comfortable",
+        "colleagues",
+        "life",
+        "work",
+        "car",
+        "accident",
+        "job"
+      ]
     },
     {
       "id": "74597118-c318-40d3-adfb-f0aa5034924b",
@@ -315,7 +761,7 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": "5e269bac-9735-4063-9a80-385699787c4d",
-      "indexes": "{j’apprécie,beaucoup,la,marge,de,progression,infinie,que,j’aie,:,je,n’ai,jamais,fini,d’apprendre,\"\",j’ai,l’opportunité,d’entreprendre,sans,cesse,des,missions,nouvelles,en,étant,à,fois,l’écoute,utilisateurs,et,pointe,technologie,ne,pensais,pas,être,capable,autant,choses,aussi,complexes,si,peu,temps.,réalisé,j’étais,plus,patient,le,\"pensais,\",savais,me,remettre,\"question,\",aller,l’avant.,ce,n’est,début,!,i,really,appreciate,infinite,room,improvement,have:,i'm,never,done,learning,have,opportunity,constantly,undertake,new,being,both,attentive,users,at,cutting,edge,technology,thought,would,be,able,learn,so,much,such,short,time.,also,realized,was,more,than,\"thought,\",knew,how,question,\"myself,\",move,forward.,beginning!}"
+      "indexes": []
     },
     {
       "id": "82c7aea4-79ab-4060-b10a-0167c3d95dd6",
@@ -323,7 +769,23 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{tshirt,estival,summer,de,joli,fleur,sur,ce,t-shirt,décontracté,pour,chiller,tout,l'été,et,bien,au,delà,\"\",pretty,flowers,casual,chill,out,all,beyond,blue,man}"
+      "indexes": [
+        "tshirt",
+        "estival",
+        "summer",
+        "fleur",
+        "t-shirt",
+        "décontracté",
+        "chiller",
+        "été",
+        "pretty",
+        "flowers",
+        "casual",
+        "chill",
+        "beyond",
+        "blue",
+        "man"
+      ]
     },
     {
       "id": "8528bfd1-6f26-4d45-978e-eff6b9cdcf41",
@@ -331,7 +793,25 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{pull,à,rayures,striped,sweater,en,mailles,ajusté,rayure,\"\",idéal,pour,rester,au,chaud,avec,style.,fitted,knit,stripes,ideal,staying,warm,black,man,winter}"
+      "indexes": [
+        "pull",
+        "rayures",
+        "striped",
+        "sweater",
+        "mailles",
+        "ajusté",
+        "rayure",
+        "chaud",
+        "style",
+        "fitted",
+        "knit",
+        "stripes",
+        "staying",
+        "warm",
+        "black",
+        "man",
+        "winter"
+      ]
     },
     {
       "id": "8644c8bd-513a-4119-a640-922e54d9c833",
@@ -339,7 +819,7 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{ça,faisait,presque,dix,ans,que,j’occupais,mon,poste,de,chauffeur,bus,\"\",j’étais,confortablement,installé,dans,ma,profession,j’avais,mes,petites,routines.,tous,les,\"matins,\",je,saluais,\"collègues,\",faisais,le,tour,du,et,prenais,la,route.,j’appréciais,\"quotidien,\",quand,en,\"2017,\",alors,me,rendais,sur,lieu,travail,ju,un,accident,\"route,\",ne,pouvais,plus,continuer,d’exercer,métier…,i,had,been,working,as,driver,almost,ten,years,was,comfortable,my,little,every,\"morning,\",greeted,\"colleagues,\",went,around,took,road.,enjoying,daily,\"life,\",way,work,car,\"accident,\",could,no,longer,continue,job...}"
+      "indexes": []
     },
     {
       "id": "86858b29-9a0f-4c51-84e2-f4ddb38553ed",
@@ -347,7 +827,23 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{hoodie,deisgn,cool,hoodies,sweat,à,capuche,oversized,blanc,avec,imprimés,street,art,\"\",white,print,man,spring}"
+      "indexes": [
+        "hoodie",
+        "deisgn",
+        "cool",
+        "hoodies",
+        "sweat",
+        "capuche",
+        "oversized",
+        "blanc",
+        "imprimés",
+        "street",
+        "art",
+        "white",
+        "print",
+        "man",
+        "spring"
+      ]
     },
     {
       "id": "88a196e3-17a2-4157-85d1-793fcfb61844",
@@ -355,7 +851,23 @@
       "selectionId": "c977703c-913b-4884-b8d0-70db582701c5",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{tout,chaud,so,comfy,si,t'as,froid,\"\",fais-toi,un,petit,chocolat,près,de,la,cheminé,avec,ton,pull,doux,if,you're,cold,make,yourself,little,hot,chocolate,by,fireplace,soft,sweater,pull&season=winter,en,fr}"
+      "indexes": [
+        "chaud",
+        "comfy",
+        "froid",
+        "chocolat",
+        "cheminé",
+        "pull",
+        "doux",
+        "cold",
+        "hot",
+        "chocolate",
+        "fireplace",
+        "soft",
+        "sweater",
+        "pull",
+        "winter"
+      ]
     },
     {
       "id": "8c46ccfe-e4aa-4e1f-b0c6-aceb2e866878",
@@ -363,7 +875,7 @@
       "selectionId": null,
       "postId": "052dd9e6-0720-4113-91b5-b6d60dcb3482",
       "postSectionId": null,
-      "indexes": "{}"
+      "indexes": []
     },
     {
       "id": "8c7039bf-2065-4d86-a986-dba28cdbcb57",
@@ -371,7 +883,34 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": "267ff2b5-b1e9-4640-9069-e485c4ca33df",
-      "indexes": "{cela,demande,beaucoup,d’organisation,\"\",car,il,y,une,quantité,d’informations,colossale,à,ingurgiter,et,\"puis,\",des,cours,aussi,intensifs,intégralement,en,anglais,associés,vie,de,famille,confinée,particulièrement,\"animée,\",ça,ne,fait,pas,forcément,bon,ménage.,non,seulement,apprend,\"choses,\",mais,sur,nous-même,se,découvre,immense,capacité,d’apprentissage,persévérance.,it,takes,lot,organization,because,there,huge,amount,information,take,\"then,\",such,intensive,courses,entirely,english,combined,confined,busy,family,\"life,\",good,combination.,you,learn,\"lot,\",also,about,yourself,discover,capacity,learning,perseverance.}"
+      "indexes": [
+        "organisation",
+        "informations",
+        "colossale",
+        "intensifs",
+        "intégralement",
+        "anglais",
+        "famille",
+        "confinée",
+        "animée",
+        "ménage",
+        "découvre",
+        "capacité",
+        "apprentissage",
+        "persévérance",
+        "takes",
+        "organization",
+        "huge",
+        "information",
+        "english",
+        "confined",
+        "family",
+        "yourself",
+        "discover",
+        "capacity",
+        "learning",
+        "perseverance"
+      ]
     },
     {
       "id": "92735aea-5fef-4dcd-9c02-949fec0c9d27",
@@ -379,7 +918,20 @@
       "selectionId": "a149864c-3d26-476d-8a4c-492c53f89929",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{toutes,les,jupes,\"\",skirts,qu'elle,soit,longue,ou,courte,bohème,\"chic,\",pour,\"nous,\",filles,whether,it's,long,short,bohemian,us,girls,product,skirt,en,fr}"
+      "indexes": [
+        "jupes",
+        "skirts",
+        "longue",
+        "courte",
+        "bohème",
+        "chic",
+        "filles",
+        "long",
+        "short",
+        "bohemian",
+        "girls",
+        "skirt"
+      ]
     },
     {
       "id": "9701ba8c-25bf-4a02-98da-8851057173ec",
@@ -387,7 +939,21 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chino,regular,pantalon,beige,style,pour,homme,\"\",classic,mais,indispensable.,pants,men,essential.,white,man,autumn}"
+      "indexes": [
+        "chino",
+        "regular",
+        "pantalon",
+        "beige",
+        "homme",
+        "classic",
+        "indispensable",
+        "pants",
+        "men",
+        "essential",
+        "white",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "97e6f1a7-46b9-4239-bd5a-93765b43d06b",
@@ -395,7 +961,18 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{accessoires,indispensables,must-have,accessories,ce,petit,truc,qui,fait,toute,la,différence,peu,importe,ton,style,\"\",assurément,accessoire.,absolument,indispensable.,little,thing,makes,all,difference,no,matter,definitely,accessory.,absolutely,essential.,product,accessory,en,fr}"
+      "indexes": [
+        "accessoires",
+        "indispensables",
+        "must-have",
+        "accessories",
+        "accessoire",
+        "difference",
+        "definitely",
+        "accessory",
+        "absolutely",
+        "essential"
+      ]
     },
     {
       "id": "9b3535e2-acc9-4489-adcd-cbb8655fafe2",
@@ -403,7 +980,25 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{sweat,à,capuche,hoodies,urbain,et,décontracté,avec,ce,swear,relax,zippé,pour,accompagner,tous,vos,styles,en,toute,occasion,\"\",urban,casual,relaxed,zipped,hoodie,accompany,all,brown,man,autumn}"
+      "indexes": [
+        "sweat",
+        "capuche",
+        "hoodies",
+        "urbain",
+        "décontracté",
+        "swear",
+        "relax",
+        "zippé",
+        "occasion",
+        "urban",
+        "casual",
+        "relaxed",
+        "zipped",
+        "hoodie",
+        "brown",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "9b55a4da-a1fe-4e2d-879c-4994a9d8c9c6",
@@ -411,7 +1006,29 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{pull,en,maille,knitted,sweater,à,motif,pour,femme,couleur,blanc,cassé,\"\",classique,et,ajusté.,parfait,compléter,tout,vos,styles.,women's,patterned,knit,off-white,classic,fitted.,perfect,complete,all,white,woman,winter}"
+      "indexes": [
+        "pull",
+        "maille",
+        "knitted",
+        "sweater",
+        "motif",
+        "femme",
+        "couleur",
+        "blanc",
+        "cassé",
+        "classique",
+        "ajusté",
+        "women",
+        "patterned",
+        "knit",
+        "off-white",
+        "classic",
+        "fitted",
+        "perfect",
+        "white",
+        "woman",
+        "winter"
+      ]
     },
     {
       "id": "a34d5b53-fc5a-4790-9615-a735cd9ac3ef",
@@ -419,7 +1036,7 @@
       "selectionId": null,
       "postId": "deee770b-0b7f-4a52-a262-9ee3bba5c51f",
       "postSectionId": null,
-      "indexes": "{}"
+      "indexes": []
     },
     {
       "id": "a360dfef-4b26-44bd-8211-2d6d6b483ba6",
@@ -427,7 +1044,32 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{hoodie,chaud,warm,sweat,en,polaire,ample,à,capuche,\"\",confortable,est,douillet.,un,style,urbain,assuré.,loose,fleece,comfortable,cozy.,urban,guaranteed.,blue,man,winter}"
+      "indexes": [
+        "hoodie",
+        "chaud",
+        "warm",
+        "sweat",
+        "polaire",
+        "ample",
+
+        "capuche",
+        "confortable",
+
+        "douillet",
+
+        "style",
+        "urbain",
+        "assuré",
+        "loose",
+        "fleece",
+        "comfortable",
+        "cozy",
+        "urban",
+        "guaranteed",
+        "blue",
+        "man",
+        "winter"
+      ]
     },
     {
       "id": "a500452b-93e4-49f4-a2ab-d22a7a5631ad",
@@ -435,7 +1077,30 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{pull,vert,spring,sweater,en,maille,ajusté,et,col,v,\"\",un,style,classique,parfait,pour,accueillir,l'hiver.,green,knit,v-neck,classic,perfect,welcome,winter.,man,autumn}"
+      "indexes": [
+        "pull",
+        "vert",
+        "spring",
+        "sweater",
+        "maille",
+        "ajusté",
+        "col",
+        "v",
+        "style",
+        "classique",
+        "parfait",
+        "accueillir",
+        "hiver",
+        "green",
+        "knit",
+        "v-neck",
+        "classic",
+        "perfect",
+        "welcome",
+        "winter",
+        "man",
+        "autumn"
+      ]
     },
     {
       "id": "a6c4dc96-d92a-4c6b-923d-89958e30ae5b",
@@ -443,7 +1108,58 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{ça,faisait,presque,dix,ans,que,j’occupais,mon,poste,de,chauffeur,bus,\"\",j’étais,confortablement,installé,dans,ma,profession,j’avais,mes,petites,routines.,tous,les,\"matins,\",je,saluais,\"collègues,\",faisais,le,tour,du,et,prenais,la,route.,j’appréciais,\"quotidien,\",quand,en,\"2017,\",alors,me,rendais,sur,lieu,travail,ju,un,accident,\"route,\",ne,pouvais,plus,continuer,d’exercer,métier…,i,had,been,working,as,driver,almost,ten,years,was,comfortable,my,little,every,\"morning,\",greeted,\"colleagues,\",went,around,took,road.,enjoying,daily,\"life,\",way,work,car,\"accident,\",could,no,longer,continue,job...}"
+      "indexes": [
+        "faisait",
+        "presque",
+        "dix",
+        "ans",
+        "occupais",
+        "poste",
+        "chauffeur",
+        "bus",
+        "confortablement",
+        "installé",
+        "profession",
+        "petites",
+        "routines",
+        "matins",
+        "saluais",
+        "collègues",
+        "faisais",
+        "prenais",
+        "route",
+        "quotidien",
+        "2017",
+        "rendais",
+        "lieu",
+        "travail",
+        "accident",
+        "route",
+        "pouvais",
+        "plus",
+        "continuer",
+        "métier",
+        "working",
+        "driver",
+        "almost",
+        "years",
+        "comfortable",
+        "little",
+        "every",
+        "morning",
+        "greeted",
+        "colleagues",
+        "around",
+        "took",
+        "road",
+        "enjoying",
+        "daily",
+        "life",
+        "work",
+        "accident",
+        "continue",
+        "job"
+      ]
     },
     {
       "id": "af28cdf0-0eef-49b4-9bc8-f074deabf348",
@@ -451,7 +1167,48 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chemisier,à,encolure,shirt,neckline,petite,chemise,légère,blanche,avec,grande,\"\",parfait,pour,l'été,qui,approche.,leger,effet,froissé,et,transparence,sur,la,partie,basse.,ajustement,décontracté,style,bohème.,small,light,white,large,perfect,upcoming,summer.,crumpled,effect,transparency,lower,part.,casual,fit,bohemian,style.,woman,summer}"
+      "indexes": [
+        "chemisier",
+        "encolure",
+        "shirt",
+        "neckline",
+        "petite",
+        "chemise",
+        "légère",
+        "blanche",
+        "grande",
+        "parfait",
+        "été",
+        "approche",
+        "leger",
+        "effet",
+        "froissé",
+        "transparence",
+        "partie",
+        "basse",
+        "ajustement",
+        "décontracté",
+        "style",
+        "bohème",
+        "small",
+        "light",
+        "white",
+        "large",
+        "perfect",
+        "upcoming",
+        "summer",
+        "crumpled",
+        "effect",
+        "transparency",
+        "lower",
+        "part",
+        "casual",
+        "fit",
+        "bohemian",
+        "style",
+        "woman",
+        "summer"
+      ]
     },
     {
       "id": "b30895c6-f6ee-47ff-bb87-232d7f8f8739",
@@ -459,7 +1216,29 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{tshirt,relax,casual,tee,t-shirt,blanc,à,imprimé,\"\",le,compagnon,idéal,de,vos,randonné,ou,brunch,entre,amis.,white,print,ideal,companion,hikes,friends.,woman,autumn}"
+      "indexes": [
+        "tshirt",
+        "relax",
+        "casual",
+        "tee",
+        "t-shirt",
+        "blanc",
+        "imprimé",
+        "compagnon",
+        "idéal",
+        "randonné",
+        "brunch",
+        "entre",
+        "amis",
+        "white",
+        "print",
+        "ideal",
+        "companion",
+        "hikes",
+        "friends",
+        "woman",
+        "autumn"
+      ]
     },
     {
       "id": "be9939b8-8db6-4999-a5fd-1c57dd016024",
@@ -467,7 +1246,29 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{short,flashy,shorts,une,couleur,néon,idéale,pour,des,journées,ensoleillés,au,bord,de,la,piscine,ou,sur,plage,\"\",neon,color,ideal,sunny,days,by,pool,beach,pink,man,winter}"
+      "indexes": [
+        "short",
+        "flashy",
+        "shorts",
+        "couleur",
+        "néon",
+        "idéale",
+        "journées",
+        "ensoleillés",
+        "bord",
+        "piscine",
+        "plage",
+        "neon",
+        "color",
+        "ideal",
+        "sunny",
+        "days",
+        "pool",
+        "beach",
+        "pink",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "c32f57c1-2d89-46a8-89a3-87664b8315d4",
@@ -475,7 +1276,28 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{mini,short,shorts,bleu,estival,retroussé,\"\",parfait,pour,chiller,sur,la,plage,ou,au,bord,de,piscine,blue,summer,rolled,up,perfect,chilling,beach,by,pool,woman}"
+      "indexes": [
+        "mini",
+        "short",
+        "shorts",
+        "bleu",
+        "estival",
+        "retroussé",
+        "parfait",
+        "pour",
+        "chiller",
+        "plage",
+        "bord",
+        "piscine",
+        "blue",
+        "summer",
+        "rolled",
+        "perfect",
+        "chilling",
+        "beach",
+        "pool",
+        "woman"
+      ]
     },
     {
       "id": "c7b76c1d-2700-42b5-8168-8974ae9a9b2c",
@@ -483,7 +1305,65 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": "88354b83-9f5a-4f04-961c-90319168a953",
-      "indexes": "{j’ai,fait,beaucoup,de,recherches,sur,les,différentes,formations,et,choisi,un,cursus,spécialisé,dans,technologies,mern,\"\",mongo,\"express,\",\"react,\",node,qui,sont,très,appréciées,recherchées,le,développement,web,c’était,important,pour,moi,d’opter,court,\"accessible,\",\"certes,\",mais,il,me,tenait,aussi,à,cœur,d’avoir,tous,outils,nécessaires,trouver,du,travail,rapidement,derrière.,je,voulais,quelque,chose,professionnalisant.,i,did,lot,research,different,courses,course,specialized,very,appreciated,sought,after,development,it,was,choose,short,accessible,\"course,\",also,wanted,have,all,necessary,tools,find,job,quickly.,something,professional.}"
+      "indexes": [
+        "fait",
+        "beaucoup",
+        "recherches",
+        "différentes",
+        "formations",
+        "choisi",
+        "cursus",
+        "spécialisé",
+        "technologies",
+        "mern",
+        "mongo",
+        "express",
+        "react",
+        "node",
+        "appréciées",
+        "recherchées",
+        "développement",
+        "web",
+        "important",
+        "moi",
+        "d’opter",
+        "court",
+        "accessible",
+        "certes",
+        "tenait",
+        "cœur",
+        "outils",
+        "nécessaires",
+        "trouver",
+        "travail",
+        "rapidement",
+        "derrière",
+        "voulais",
+        "quelque",
+        "chose",
+        "professionnalisant",
+        "research",
+        "different",
+        "courses",
+        "course",
+        "specialized",
+        "very",
+        "appreciated",
+        "sought",
+        "development",
+        "choose",
+        "short",
+        "accessible",
+        "course",
+        "wanted",
+        "necessary",
+        "tools",
+        "find",
+        "job",
+        "quickly",
+        "something",
+        "professional"
+      ]
     },
     {
       "id": "cf1be78c-9fe6-4abe-b5f3-a21f5080b872",
@@ -491,7 +1371,30 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{pull,ajusté,fitted,sweater,noir,à,col,rond,\"\",un,style,classique,parfait,pour,sortir,de,l'hiver,en,douceur.,black,round,neck,classic,perfect,out,winter.,man,spring}"
+      "indexes": [
+        "pull",
+        "ajusté",
+        "fitted",
+        "sweater",
+        "noir",
+        "col",
+        "rond",
+        "style",
+        "classique",
+        "parfait",
+        "sortir",
+        "l'hiver",
+        "douceur",
+        "black",
+        "round",
+        "neck",
+        "classic",
+        "perfect",
+        "out",
+        "winter",
+        "man",
+        "spring"
+      ]
     },
     {
       "id": "d45f0cb0-185d-462a-bd36-b3829903be76",
@@ -499,7 +1402,75 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{je,ne,remercierai,jamais,assez,l’équipe,d’ironhack,\"\",tati,\"nina,\",\"frank,\",\"katya,\",\"morgane,\",manon,mais,aussi,toute,ma,promo,avec,qui,j’ai,créé,des,liens,\"forts,\",fleet,pour,être,les,premiers,à,m’ouvrir,portes,de,cet,univers,ô,combien,\"riche,\",et,évidemment,mes,proches,surtout,femme,m’avoir,soutenu,avoir,su,répondre,toutes,questions,doutes,il,faut,bien,entouré,accomplir,un,tel,changement,i,will,never,thank,enough,ironhack,team,also,all,my,class,whom,created,strong,\"links,\",being,first,open,doors,universe,so,\"rich,\",course,close,relations,especially,wife,having,supported,me,known,how,answer,doubts,you,have,be,well,surrounded,accomplish,such,change}"
+      "indexes": [
+        "remercierai",
+        "jamais",
+        "l’équipe",
+        "d’ironhack",
+        "tati",
+        "nina",
+        "frank",
+        "katya",
+        "morgane",
+        "manon",
+        "promo",
+        "créé",
+        "liens",
+        "forts",
+        "fleet",
+        "premiers",
+        "m’ouvrir",
+        "portes",
+        "univers",
+        "combien",
+        "riche",
+        "évidemment",
+        "proches",
+        "surtout",
+        "femme",
+        "m’avoir",
+        "soutenu",
+        "avoir",
+        "su",
+        "répondre",
+        "questions",
+        "doutes",
+        "faut",
+        "bien",
+        "entouré",
+        "accomplir",
+        "changement",
+        "will",
+        "never",
+        "thank",
+        "enough",
+        "ironhack",
+        "team",
+        "class",
+        "created",
+        "strong",
+        "links",
+        "being",
+        "first",
+        "open",
+        "doors",
+        "universe",
+        "rich",
+        "course",
+        "close",
+        "relations",
+        "especially",
+        "wife",
+        "having",
+        "supported",
+        "known",
+        "answer",
+        "doubts",
+        "surrounded",
+        "accomplish",
+        "such",
+        "change"
+      ]
     },
     {
       "id": "d4810aff-dade-407b-b871-798f227d99e7",
@@ -507,7 +1478,27 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{petit,short,tiny,shorts,mini,blue,clair,avec,effet,chiné,sur,le,devant,et,déchiré,les,jambières,\"\",light,mottled,effect,front,ripped,legs,woman,summer}"
+      "indexes": [
+        "petit",
+        "short",
+        "tiny",
+        "shorts",
+        "mini",
+        "blue",
+        "clair",
+        "effet",
+        "chiné",
+        "déchiré",
+        "jambières",
+        "light",
+        "mottled",
+        "effect",
+        "front",
+        "ripped",
+        "legs",
+        "woman",
+        "summer"
+      ]
     },
     {
       "id": "dabe6adf-ea3e-4e7f-aaf8-1a07f5e9abd1",
@@ -515,7 +1506,25 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{jean,ajusté,skinny,jeans,blue,clair,avec,effet,usé,\"\",un,classique,indémodable.,light,worn,effect,timeless,classic.,woman,spring}"
+      "indexes": [
+        "jean",
+        "ajusté",
+        "skinny",
+        "jeans",
+        "blue",
+        "clair",
+        "effet",
+        "usé",
+        "classique",
+        "indémodable",
+        "light",
+        "worn",
+        "effect",
+        "timeless",
+        "classic",
+        "woman",
+        "spring"
+      ]
     },
     {
       "id": "dac6735e-01c3-4806-ab7e-68604d81172b",
@@ -523,7 +1532,30 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{tshirt,noir,black,tee,t-shirt,basique,avec,imprimé,et,manches,courtes,retroussées,\"\",parfait,en,toute,circonstance.,basic,print,rolled,up,short,sleeves,perfect,occasion.,woman,summer}"
+      "indexes": [
+        "tshirt",
+        "noir",
+        "black",
+        "tee",
+        "t-shirt",
+        "basique",
+        "imprimé",
+        "manches",
+        "courtes",
+        "retroussées",
+        "parfait",
+        "circonstance",
+        "basic",
+        "print",
+        "rolled",
+        "up",
+        "short",
+        "sleeves",
+        "perfect",
+        "occasion",
+        "woman",
+        "summer"
+      ]
     },
     {
       "id": "dcceebcd-1647-49af-b42d-be7cc50ff09d",
@@ -531,7 +1563,31 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{pull,pourpre,purple,sweater,en,maille,de,couleur,\"\",confortable,et,douillet.,sa,taille,ajustée,est,parfaite,pour,se,réchauffer,avec,style,knit,comfortable,cozy.,its,fitted,waist,perfect,warm,up,man,winter}"
+      "indexes": [
+        "pull",
+        "pourpre",
+        "purple",
+        "sweater",
+        "maille",
+        "couleur",
+        "confortable",
+        "douillet",
+        "taille",
+        "ajustée",
+        "parfaite",
+        "réchauffer",
+        "style",
+        "knit",
+        "comfortable",
+        "cozy",
+        "fitted",
+        "waist",
+        "perfect",
+        "warm",
+        "up",
+        "man",
+        "winter"
+      ]
     },
     {
       "id": "df832c95-3f00-4437-b6a4-665b98f009e0",
@@ -539,7 +1595,76 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": "8919209e-6579-4a9b-ab92-20eee1af956a",
-      "indexes": "{j’ai,toujours,été,intéressé,par,la,technologie,et,l’univers,du,web,\"\",mais,jamais,je,n’aurais,imaginé,travailler,dans,l’informatique,encore,moins,en,tant,que,développeur,\"web,\",tout,simplement,parce,ce,métier,m’a,paru,inaccessible,aux,personne,qui,comme,moi,n’ont,pas,fait,de,longues,études,i,have,always,been,interested,technology,world,would,never,imagined,working,it,even,less,as,\"developer,\",simply,because,job,has,seemed,people,like,me,who,did,long,studies}"
+      "indexes": [
+        "j’ai",
+        "toujours",
+        "été",
+        "intéressé",
+        "par",
+        "la",
+        "technologie",
+        "l’univers",
+        "du",
+        "web",
+        "mais",
+        "jamais",
+        "je",
+        "n’aurais",
+        "imaginé",
+        "travailler",
+        "dans",
+        "l’informatique",
+        "encore",
+        "moins",
+        "tant",
+        "développeur",
+        "web",
+        "tout",
+        "simplement",
+        "parce",
+        "métier",
+        "m’a",
+        "paru",
+        "inaccessible",
+        "aux",
+        "personne",
+        "qui",
+        "comme",
+        "moi",
+        "n’ont",
+        "pas",
+        "fait",
+        "de",
+        "longues",
+        "études",
+        "i",
+        "have",
+        "always",
+        "been",
+        "interested",
+        "technology",
+        "world",
+        "would",
+        "never",
+        "imagined",
+        "working",
+        "even",
+        "less",
+        "as",
+        "developer",
+        "simply",
+        "because",
+        "job",
+        "has",
+        "seemed",
+        "people",
+        "like",
+        "me",
+        "who",
+        "did",
+        "long",
+        "studies"
+      ]
     },
     {
       "id": "e44d8e12-a93f-4fd9-a85e-18b816d86808",
@@ -547,7 +1672,27 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{tshirt,structuré,structured,noir,fashion,à,poche,texturée,et,au,design,l'ajustement,large,fashionable,black,t-shirt,textured,pocket,wide,fit,man,summer}"
+      "indexes": [
+        "tshirt",
+        "structuré",
+        "structured",
+        "noir",
+        "fashion",
+        "poche",
+        "texturée",
+        "design",
+        "ajustement",
+        "large",
+        "fashionable",
+        "black",
+        "t-shirt",
+        "textured",
+        "pocket",
+        "wide",
+        "fit",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "e863a0e9-3c24-449b-b25c-c1f77a93cf1d",
@@ -555,7 +1700,21 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{t-shirt,épais,thick,rose,ample,à,col,rond,pink,round,neck,man,spring}"
+      "indexes": [
+        "t-shirt",
+        "épais",
+        "thick",
+        "rose",
+        "ample",
+        "à",
+        "col",
+        "rond",
+        "pink",
+        "round",
+        "neck",
+        "man",
+        "spring"
+      ]
     },
     {
       "id": "ea48aef2-adb3-4b9f-8d26-583e4796b141",
@@ -563,7 +1722,24 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{t-shirt,gris,grey,casual,à,col,rond,avec,imprimé,noir,round,neck,black,print,man,summer}"
+      "indexes": [
+        "t-shirt",
+        "gris",
+        "grey",
+        "casual",
+        "à",
+        "col",
+        "rond",
+        "avec",
+        "imprimé",
+        "noir",
+        "round",
+        "neck",
+        "black",
+        "print",
+        "man",
+        "summer"
+      ]
     },
     {
       "id": "f5fafff7-51bd-4530-8ab0-ce93f06981d8",
@@ -571,7 +1747,26 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{jogger,marron,cozy,décontracté,\"\",parfait,pour,chiller,pendant,vos,weekends,brown,casual,perfect,chilling,out,during,woman,autumn}"
+      "indexes": [
+        "jogger",
+        "marron",
+        "cozy",
+        "décontracté",
+        "parfait",
+        "pour",
+        "chiller",
+        "pendant",
+        "vos",
+        "weekends",
+        "brown",
+        "casual",
+        "perfect",
+        "chilling",
+        "out",
+        "during",
+        "woman",
+        "autumn"
+      ]
     },
     {
       "id": "fdb613c6-fef7-4d06-bf22-d43f75779b34",
@@ -579,7 +1774,31 @@
       "selectionId": "25cef2e1-689c-4be7-80ea-a8c109255a49",
       "postId": null,
       "postSectionId": null,
-      "indexes": "{la,petite,robe,noire,\"\",ou,rouge,..,little,black,dress,red,qu'elle,soit,longue,courte,bohème,\"chic,\",pour,\"nous,\",les,filles,whether,it's,long,short,bohemian,us,girls,product,en,fr}"
+      "indexes": [
+        "petite",
+        "robe",
+        "noire",
+        "rouge",
+        "little",
+        "black",
+        "dress",
+        "red",
+        "soit",
+        "longue",
+        "courte",
+        "bohème",
+        "chic",
+        "pour",
+        "nous",
+        "les",
+        "filles",
+        "whether",
+        "long",
+        "short",
+        "bohemian",
+        "girls",
+        "product"
+      ]
     },
     {
       "id": "fe360af5-2266-432a-aedf-53b870cbd1dc",
@@ -587,7 +1806,26 @@
       "selectionId": null,
       "postId": null,
       "postSectionId": null,
-      "indexes": "{chemise,légère,lightweight,shirt,blanche,ample,façon,dentelle,avec,noeud,devant,loose,lace-like,white,front,bow,woman,summer}"
+      "indexes": [
+        "chemise",
+        "légère",
+        "lightweight",
+        "shirt",
+        "blanche",
+        "ample",
+        "façon",
+        "dentelle",
+        "avec",
+        "noeud",
+        "devant",
+        "loose",
+        "lace-like",
+        "white",
+        "front",
+        "bow",
+        "woman",
+        "summer"
+      ]
     }
   ],
   "orders": [

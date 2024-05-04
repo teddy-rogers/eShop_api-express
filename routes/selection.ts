@@ -7,7 +7,8 @@ const selectionResolver = new SelectionResolver();
 
 Router.get('/', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await selectionResolver
       .getSelectionWhere(
         {
@@ -32,7 +33,8 @@ Router.get('/', async (req, res) => {
 
 Router.get('/:id', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await selectionResolver
       .getSelectionById(req.params.id, lang)
       .then((selection) => {

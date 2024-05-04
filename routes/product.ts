@@ -7,7 +7,8 @@ const productResolver = new ProductResolver();
 
 Router.get('/', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await productResolver
       .getProductWhere(
         {
@@ -35,7 +36,8 @@ Router.get('/', async (req, res) => {
 
 Router.get('/:id', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await productResolver
       .getProductById(req.params.id, lang)
       .then((product) => {

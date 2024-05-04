@@ -7,7 +7,8 @@ const articleResolver = new ArticleReslover();
 
 Router.get('/', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await articleResolver
       .getAllArticlesFromCart(req.session, lang)
       .then((cart) => {
@@ -20,7 +21,8 @@ Router.get('/', async (req, res) => {
 
 Router.get('/add/:id', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await articleResolver
       .addToCart(req.params.id, req.session, lang)
       .then((cart) => {
@@ -33,7 +35,8 @@ Router.get('/add/:id', async (req, res) => {
 
 Router.delete('/remove/:id', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await articleResolver
       .removeFromCart(req.params.id, req.session, lang)
       .then((cart) => {
@@ -46,7 +49,8 @@ Router.delete('/remove/:id', async (req, res) => {
 
 Router.delete('/reset', async (req, res) => {
   try {
-    const lang = req.session.storeCountry || Country.EN;
+    const lang =
+      (req.session.storeCountry?.toUpperCase() as Country) || Country.EN;
     await articleResolver.resetCart(req.session, lang).then((cart) => {
       res.status(200).json(cart);
     });
